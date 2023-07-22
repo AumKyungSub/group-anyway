@@ -1,10 +1,88 @@
 @charset "utf-8";
 
+/* 공통(common) */
+html {
+    background-color: #fff;
+    font-size: 62.5%;
+    -webkit-text-size-adjust: none;
+}
+
+
+/* 모바일 스타일 (767px 이하) */
+.products_wrap {
+  padding: 0;
+}
 .products_banner {
-    width: 100%;
+    padding: 0;
+    text-align: center;
 }
 .products_banner img {
     width: 100%;
     height: auto;
 }
+.products_sort {
+    width: 100%;
+}
+.products_sort .selectbox {
+    width: 100%;
+    position: relative;
+}
+.products_sort .selectbox select {
+    width: 100%;
+    height: 40px;
+    padding: 0 25px;
+    line-height: 40px;
+    font-size: 13px;
+    border: none;
+    -webkit-appearance: none; /* 웹킷 브라우저 스타일링 제거 */
+    -moz-appearance: none; /* 파이어폭스 브라우저 스타일링 제거 */
+    appearance: none; /* 논리적으로 스타일링을 제거 */
+}
+.products_sort .selectbox span {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* 화살표를 클릭 이벤트에서 제외 */
+}
+.products_sort select span img {
+    width: 20px;
+    height: 20px;
+}
 
+.products_sort .swiper {
+    width: 100%;
+    height: 46px;
+    padding: 0 20px;
+    background-color: #fbfbfa;
+    border-bottom: 1px solid #ddd;
+}
+.products_sort .swiper .swiper-slide {
+    width: auto !important;
+    padding: 0 10px;
+    color: #767676;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 46px;
+}
+.products_sort .swiper .selected {
+    color: #222;
+}
+
+/* 태블릿 스타일 (768px ~ 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .products_wrap {
+    padding: 0 30px;
+  }
+}
+
+/* PC 스타일 (1024px 이상) */
+@media screen and (min-width: 1024px) {
+  .products_wrap {
+    padding: 0 7%;
+  }
+}
