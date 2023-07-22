@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Group Anyway" />
+    <meta name="description" content="Portfolio, Sulwhasoo clone coding" />
+    <title>Portfolio, Sulwhasoo</title>
+    <!-- Font Awesome 5.15.4 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon/favicon32.png" />
+    <link
+      rel="apple-touch-icon=precomposed"
+      href="./images/favicon/favicon144.png"
+    />
+    <!-- jQuery -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <!-- 기본 코딩 CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css" />
+    <link rel="stylesheet" href="./css/display_none_scrollbar.css" />
+
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/products.css">
+
+    <!-- 스와이퍼 CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- 내부 스타일 영역 -->
+    <style></style>
+
+    <!-- 내부 스크립트 영역 -->
+    <script>
+      window.onload = function () {
+        const swiper = new Swiper('.swiper', {
+          // Optional parameters
+          slidesPerView: "auto",
+          spaceBetween: 30,
+          freeMode: true,
+
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+
+    </header>
+    <!-- /Header -->
+    <!-- GNB -->
+    <article>
+      <!-- GNB 영역 추가 -->
+    </article>
+    <!-- /GNB -->
+
+    <!-- Main -->
+    <main class="products_wrap">
+      <!-- 배너 -->
+      <picture class="products_banner">
+        <!-- 모바일용 이미지 -->
+        <source media="(max-width: 767px)" srcset="./images/product/230309_final_banner_best-seller_mo_1.jpg">
+        
+        <!-- 태블릿용 이미지 -->
+        <source media="(min-width: 768px) and (max-width: 1023px)" srcset="./images/product/2303096_final_banner_best-seller_pc_1.jpg">
+
+        <!-- 기본 이미지 (PC용) -->
+        <img src="./images/product/2303096_final_banner_best-seller_pc_1.jpg" alt="배너">
+      </picture>
+      <!-- /배너 -->
+
+      <!-- 메뉴선택 -->
+      <div class="products_sort">
+        <div class="selectbox">
+          <select id="sort_select">
+            <option value="제품유형별">제품 유형별</option>
+            <option value="피부고민별">피부 고민별</option>
+            <option value="제품라인별">제품 라인별</option>
+          </select>
+          <span><img src="./images/product/ico_arr_down.png" alt="화살표"></span>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide selected">전체</div>
+            <div class="swiper-slide">기프트 세트</div>
+            <div class="swiper-slide">클렌징</div>
+            <div class="swiper-slide">부스트에센스</div>
+            <div class="swiper-slide">스킨</div>
+            <div class="swiper-slide">로션</div>
+            <div class="swiper-slide">에센스/앰플</div>
+            <div class="swiper-slide">아이크림</div>
+            <div class="swiper-slide">크림</div>
+            <div class="swiper-slide">선크림</div>
+            <div class="swiper-slide">마스크/팩</div>
+          </div>
+        </div>
+        <!-- /메뉴선택 -->
+      </div>
+    </main>
+    <!-- /Main -->
+
+    <!-- Footer -->
+    <footer>
+      <!-- 풋터 영역 추가 -->
+    </footer>
+    <!-- /Footer -->
+
+    <!-- 페이지 JS -->
+    <script src="./js/main.js"></script>
+    <script src="./js/product.js"></script>
+
+    <!-- 스와이퍼 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </body>
+</html>
