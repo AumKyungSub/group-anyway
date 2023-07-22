@@ -126,7 +126,7 @@ main {
     }
 }
 
-/* PC 1024 */
+/* PC 1024 ~ 1440px */
 @media only all and (min-width: 1024px) {
     /* Main */
     main {
@@ -255,4 +255,25 @@ main {
     
 }
 
-
+/* PC over 1440px */
+@media only all and (min-width: 1441px) {
+    /* section1 & section2 common */
+    .sec_1 h2, 
+    .sec_2 h2 {
+        /* Font */
+        font-size: 60px;
+    }
+    .p_web {
+        /* Font */
+        font-size: 20px;
+    }
+    .sec_1 div a,
+    .sec_2 div a {
+        padding-right: 52px;
+        /* Font */
+        font-size: 20px;
+        /* Background */
+        background-position: right center;
+        background-size: contain;
+    }
+}
