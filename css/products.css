@@ -5,11 +5,13 @@ html {
     background-color: #fff;
     font-size: 62.5%;
     -webkit-text-size-adjust: none;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 
 /* 모바일 스타일 (767px 이하) */
 .products_wrap {
+  min-width: 320px;
   padding: 0;
   letter-spacing: -.07em;
   word-spacing: 0.05em;
@@ -47,6 +49,7 @@ html {
     -webkit-appearance: none; /* 웹킷 브라우저 스타일링 제거 */
     -moz-appearance: none; /* 파이어폭스 브라우저 스타일링 제거 */
     appearance: none; /* 논리적으로 스타일링을 제거 */
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .products_sort .selectbox span {
     position: absolute;
@@ -54,14 +57,15 @@ html {
     right: 15px;
     width: 40px;
     height: 100%;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    line-height: 40px;
     align-items: center;
     pointer-events: none; /* 화살표를 클릭 이벤트에서 제외 */
 }
-.products_sort select span .fas {
-    font-size: 20px;
-    color: #ccc;
+.products_sort .selectbox span .fas {
+    font-size: 14px;
+    color: #767676;
+    font-weight: 600;
 }
 
 .products_sort .swiper {
@@ -133,16 +137,19 @@ html {
     color: #222;
 }
 .product_list li .product_info {
-    overflow: hidden;
     padding: 18px 30px 0 15px;
+    overflow: hidden;
     background-color: #eee;
-    display: -webkit-box;
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
 }
 .product_list li .product_info h1{
     height: 20px;
     margin-bottom: 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
     font-size: 14px;
     line-height: 18px;
     font-weight: 700;
@@ -151,6 +158,8 @@ html {
 .product_list li .product_info h2{
     height: 30px;
     margin-bottom: 8px;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
     font-size: 12px;
     line-height: 14px;
     font-weight: 400;
@@ -195,6 +204,7 @@ html {
 }
 .paging strong {
     color: #333;
+    font-weight: 700;
 }
 .paging .paging_next {
     width: 40px;
@@ -207,7 +217,6 @@ html {
 @media screen and (min-width: 768px){
   .products_wrap {
     padding: 0 30px;
-    font-family: 'Noto Sans', 'Malgun Gothic', '맑은 고딕', 'Nanum Gothic', '나눔 고딕', '돋움', 'dotum', sans-serif;
   }
 
   /* 메뉴탭 */
@@ -232,7 +241,6 @@ html {
     color: #222;
     font-weight: 500;
     border-bottom: 1px solid #ddd;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 .products_sort .selectbox span {
     position: absolute;
