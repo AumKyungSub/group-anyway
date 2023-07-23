@@ -1,5 +1,7 @@
 # group-anyway
 
+수정을 develop 브렌치 readme에서 훗날 main으로 업데이트 하겠음
+
 어쨌든 시작했조
 그룹 프로젝트
 
