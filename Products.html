@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Group Anyway" />
+    <meta name="description" content="Portfolio, Sulwhasoo clone coding" />
+    <title>Portfolio, Sulwhasoo</title>
+    <!-- Font Awesome 5.15.4 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon/favicon32.png" />
+    <link
+      rel="apple-touch-icon=precomposed"
+      href="./images/favicon/favicon144.png"
+    />
+    <!-- jQuery -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <!-- 기본 코딩 CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css" />
+    <link rel="stylesheet" href="./css/display_none_scrollbar.css" />
+
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- 스와이퍼 CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- 내부 스타일 영역 -->
+    <style></style>
+
+    <!-- 내부 스크립트 영역 -->
+    <script>
+      window.onload = function () {
+        const swiper = new Swiper('.swiper', {
+          // Optional parameters
+          slidesPerView: "auto",
+          freeMode: true,
+
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+
+    </header>
+    <!-- /Header -->
+    <!-- GNB -->
+    <article>
+      <!-- GNB 영역 추가 -->
+    </article>
+    <!-- /GNB -->
+
+    <!-- Main -->
+    <main class="products_wrap">
+      <!-- 배너 -->
+      <picture class="products_banner">
+        <!-- 모바일용 이미지 -->
+        <source media="(max-width: 767px)" srcset="./images/product/230309_final_banner_best-seller_mo_1.jpg">
+        
+        <!-- 태블릿용 이미지 -->
+        <source media="(min-width: 768px) and (max-width: 1023px)" srcset="./images/product/2303096_final_banner_best-seller_pc_1.jpg">
+
+        <!-- 기본 이미지 (PC용) -->
+        <img src="./images/product/2303096_final_banner_best-seller_pc_1.jpg" alt="배너">
+      </picture>
+      <!-- /배너 -->
+
+      <!-- 메뉴선택 -->
+      <div class="products_sort">
+        <div class="selectbox">
+          <select id="sort_select">
+            <option value="제품유형별">제품 유형별</option>
+            <option value="피부고민별">피부 고민별</option>
+            <option value="제품라인별">제품 라인별</option>
+          </select>
+          <span><i class="fas fa-chevron-down"></i></span>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide selected">전체</div>
+            <div class="swiper-slide">기프트 세트</div>
+            <div class="swiper-slide">클렌징</div>
+            <div class="swiper-slide">부스트에센스</div>
+            <div class="swiper-slide">스킨</div>
+            <div class="swiper-slide">로션</div>
+            <div class="swiper-slide">에센스/앰플</div>
+            <div class="swiper-slide">아이크림</div>
+            <div class="swiper-slide">크림</div>
+            <div class="swiper-slide">선크림</div>
+            <div class="swiper-slide">마스크/팩</div>
+          </div>
+        </div>
+      </div>
+      <!-- /메뉴선택 -->
+
+      <!-- 제품 목록 -->
+      <div class="product_list_wrap">
+        <ul class="product_list cf">
+          <li>
+            <a href="#" class="product">
+              <div class="badge_wrap">
+                <p class="badge">
+                  <span>new</span>
+                </p>
+              </div>
+              <div class="product_info">
+                <h1>설화수 베스트셀러 컬렉션</h1>
+                <h2>Sulhwasoo Bestsellers</h2>
+                <h3>295,000<span>원</span></h3>
+              </div>
+              <figure>
+                <img src="./images/product/sulwhasoo-bestsellers-set_thumb_640_01_kr_230313.jpg" alt="설화수베스트셀러">
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="product">
+              <div class="badge_wrap">
+                <p class="badge">
+                  <span>new</span>
+                </p>
+              </div>
+              <div class="product_info">
+                <h1>나의 첫 설화수 세트</h1>
+                <h2>My first Sulwhasoo Set</h2>
+                <h3>140,000<span>원</span></h3>
+              </div>
+              <figure>
+                <img src="./images/product/20230227_final_My-first-Sulhwasoo_thumb_640.jpg" alt="설화수베스트셀러">
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="product">
+              <div class="badge_wrap">
+                <p class="badge">
+                  <span>new</span>
+                </p>
+              </div>
+              <div class="product_info">
+                <h1>윤조에센스 6세대</h1>
+                <h2>First Care Activating Serum Ⅵ</h2>
+                <h3>55,000<span>원~</span></h3>
+                <h4>3size</h4>
+              </div>
+              <figure>
+                <img src="./images/product/First-Care-Activating-Serum-VI-90ml_Thumb_2.jpg" alt="설화수베스트셀러">
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="product">
+              <div class="badge_wrap">
+                <p class="badge">
+                  <span class="exclusive">exclusive</span>
+                </p>
+              </div>
+              <div class="product_info">
+                <h1>윤조수 퍼펙팅</h1>
+                <h2>First Care Activating Perfecting Water</h2>
+                <h3>78,000<span>원</span></h3>
+                <h4>150ml</h4>
+              </div>
+              <figure>
+                <img src="./images/product/First-Care-Activating-Perfecting-Water-150ml.jpg" alt="설화수베스트셀러">
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="product">
+              <div class="badge_wrap">
+                <p class="badge">
+                  <span class="exclusive">exclusive</span>
+                </p>
+              </div>
+              <div class="product_info">
+                <h1>윤조유액 퍼펙팅</h1>
+                <h2>First Care Activating Perfecting Emulsion</h2>
+                <h3>82,000<span>원</span></h3>
+                <h4>125ml</h4>
+              </div>
+              <figure>
+                <img src="./images/product/First-Care-Activating-Perfecting-Emulsion-125ml.jpg" alt="설화수베스트셀러">
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="product">
+              <div class="badge_wrap">
+                <p class="badge">
+                  <span class="exclusive">exclusive</span>
+                </p>
+              </div>
+              <div class="product_info">
+                <h1>윤조아이크림 퍼펙팅</h1>
+                <h2>First Care Activating Perfecting Eye Cream</h2>
+                <h3>100,000<span>원</span></h3>
+                <h4>20ml</h4>
+              </div>
+              <figure>
+                <img src="./images/product/First-Care-Activating-Perfecting-Eye-Cream-20ml.jpg" alt="설화수베스트셀러">
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="product">
+              <div class="product_info">
+                <h1>자음생앰플 브라이트닝</h1>
+                <h2>Concentrated Ginseng Brightening Spot Ampoule</h2>
+                <h3>140,000<span>원</span></h3>
+                <h4>20g</h4>
+              </div>
+              <figure>
+                <img src="./images/product/CGR-Brightening-Serum-Ampoule-20g_Thumb.jpg" alt="설화수베스트셀러">
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="product">
+              <div class="product_info">
+                <h1>자음생세럼 브라이트닝</h1>
+                <h2>Concentrated Ginseng Brightening Serum</h2>
+                <h3>145,000<span>원~</span></h3>
+                <h4>2size</h4>
+              </div>
+              <figure>
+                <img src="./images/product/CGR-Brightening-Serum-50ml_Thumb.jpg" alt="설화수베스트셀러">
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="product">
+              <div class="product_info">
+                <div class="badge_wrap">
+                  <p class="badge">
+                    <span class="exclusive">exclusive</span>
+                  </p>
+                </div>
+                <h1>자음생크림 퍼펙팅 클래식</h1>
+                <h2>Concentrated Ginseng Renewing Perfecting Cream EX Classic</h2>
+                <h3>270,000<span>원</span></h3>
+                <h4>60ml</h4>
+              </div>
+              <figure>
+                <img src="./images/product/Concentrated-Ginseng-Renewing-Perfecting-Cream-EX-Classic-60ml.jpg" alt="설화수베스트셀러">
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="product">
+              <div class="product_info">
+                <h1>윤조마스크EX </h1>
+                <h2>First Care Activating Mask EX</h2>
+                <h3>60,000<span>원</span></h3>
+                <h4>5매(23g/매)</h4>
+              </div>
+              <figure>
+                <img src="./images/product/First-Care-Activating-Mask-EX-1ea_Thumb.jpg" alt="설화수베스트셀러">
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="product">
+              <div class="product_info">
+                <div class="badge_wrap">
+                  <p class="badge">
+                    <span>new</span>
+                  </p>
+                </div>
+                <h1>자음생세럼 </h1>
+                <h2>Concentrated Ginseng Renewing Serum EX</h2>
+                <h3>145,000<span>원~</span></h3>
+                <h4>2size</h4>
+              </div>
+              <figure>
+                <img src="./images/product/CGR-Serum-EX-50ml_Thumb.jpg" alt="설화수베스트셀러">
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="product">
+              <div class="product_info">
+                <h1>자음생아이크림 </h1>
+                <h2>Concentrated Ginseng Renewing Eye Cream</h2>
+                <h3>160,000<span>원</span></h3>
+                <h4>20ml</h4>
+              </div>
+              <figure>
+                <img src="./images/product/CGR-Eye-Cream-20ml_Thumb.jpg" alt="설화수베스트셀러">
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="product">
+              <div class="product_info">
+                <h1>자음생마스크EX </h1>
+                <h2>Concentrated Ginseng Renewing Creamy Mask EX</h2>
+                <h3>120,000<span>원</span></h3>
+                <h4>5매</h4>
+              </div>
+              <figure>
+                <img src="./images/product/CGR-Creamy-Mask-EX-1ea_Thumb.jpg" alt="설화수베스트셀러">
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="product">
+              <div class="product_info">
+                <div class="badge_wrap">
+                  <p class="badge">
+                    <span class="exclusive">exclusive</span>
+                  </p>
+                </div>
+                <h1>수분영양크림</h1>
+                <h2>Essential Perfecting Intensive Moisturizing Cream</h2>
+                <h3>80,000<span>원</span></h3>
+                <h4>50ml</h4>
+              </div>
+              <figure>
+                <img src="./images/product/Essential-Perfecting-Intensive-Moisturizing-Cream-50ml.jpg" alt="설화수베스트셀러">
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="product">
+              <div class="product_info">
+                <div class="badge_wrap">
+                  <p class="badge">
+                    <span class="exclusive">exclusive</span>
+                  </p>
+                </div>
+                <h1>탄력영양크림</h1>
+                <h2>Essential Perfecting Intensive Firming Cream</h2>
+                <h3>120,000<span>원</span></h3>
+                <h4>75ml</h4>
+              </div>
+              <figure>
+                <img src="./images/product/Essential-Perfecting-Intensive-Firming-Cream-75ml.jpg" alt="설화수베스트셀러">
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="product">
+              <div class="product_info">
+                <div class="badge_wrap">
+                  <p class="badge">
+                    <span class="exclusive">exclusive</span>
+                  </p>
+                </div>
+                <h1>자음수 퍼펙팅</h1>
+                <h2>Essential Perfecting Balancing Water</h2>
+                <h3>680,000<span>원</span></h3>
+                <h4>150ml</h4>
+              </div>
+              <figure>
+                <img src="./images/product/Essential-Perfecting-Balancing-Water-150ml.jpg" alt="설화수베스트셀러">
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /제품 목록 -->
+
+      <!-- 페이징 -->
+      <div class="paging">
+        <strong>1</strong>
+        &nbsp;of&nbsp;
+        <span>3</span>
+        <button class="paging_next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <!-- /페이징 -->
+
+    </main>
+    <!-- /Main -->
+
+    <!-- Footer -->
+    <footer>
+      <!-- 풋터 영역 추가 -->
+    </footer>
+    <!-- /Footer -->
+
+    <!-- 페이지 JS -->
+    <script src="./js/main.js"></script>
+    <script src="./js/product.js"></script>
+
+    <!-- 스와이퍼 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </body>
+</html>
