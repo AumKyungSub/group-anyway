@@ -1,0 +1,274 @@
+@charset "utf-8";
+body, html {
+    font-family: 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', 'Nanum Gothic', '나눔 고딕', '돋움', dotum, sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    min-width: 320px;
+}
+img {
+    width: 100%;
+}
+
+/* Section 1 */
+.ginseng-title {
+    text-align: center;
+    color: #222;
+    padding-top: 11.3333333333%;
+}
+.ginseng-title h3{
+    font-size: max(11px,4vw);
+    font-weight: 600;
+}
+.ginseng-title p {
+    font-size: max(11px,2.9333333333vw);
+    font-weight: 300;
+    color: #888;
+    margin-top: 1.9%;
+}
+.ginseng-title .ginsengName-kr {
+    font-size: max(11px,6.9333333333vw);
+    font-weight: 700;
+    margin-top: 5%;
+}
+.ginseng-title .ginsengName-en {
+    font-size: max(11px,4vw);
+    color: #444;
+    margin-top: 1.9%;
+}
+.ginseng-movie {
+    margin-top: 8.4%;
+}
+.ginseng-movie-mo {
+    display: block;
+}
+.ginseng-movie-pc {
+    display: none;
+}
+video {
+    width: 100%;
+}
+/* //////////////////////////////////////////////////////// */
+/* Section 2 */
+.ginseng-section2 {
+    margin-top: -2px;
+    /* 위치기준값 */
+    position: relative;
+}
+.ginseng-section2 .text-wrap {
+    color: #fff;
+    width: 100%;
+    max-width: 1920px;
+    text-align: left;
+    padding: 16.4% 0 0 8%;
+
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.ginseng-section2 .text-wrap h4 {
+    /* (14/360)*100 = 3.888888888888889 */
+    font-size: 4vw;
+    font-weight: 700;
+}
+.ginseng-section2 .text-wrap h2 {
+    /* (15/623)*100  = 2.4077046548956664 */
+    margin-top: 2.41vh;
+    font-size: max(11px,6.9333333333vw);
+    font-weight: 500;
+    line-height: 1.2;
+}
+.ginseng-section2 .text-wrap p {
+    font-size: max(11px,3.4666666667vw);
+    line-height: 1.5;
+    font-weight: 300;
+}
+.ginseng-section2 .text-wrap p:nth-of-type(1) {
+    margin-top: 16px;
+}
+.ginseng-section2 .text-wrap p:nth-of-type(2) {
+    margin-top: 8px;
+}
+.ginseng-section2 .text-wrap p:nth-of-type(3) {
+    font-size: max(11px,2.9333333333vw);
+    margin-top: 25px;
+    color: #f6cebd;
+}
+/* //////////////////////////////////////////////////////// */
+/* Section 3 */
+.ginseng-section3 {
+    display: block;
+    margin: 0 auto;
+}
+.ginseng-section3 .text-wrap {
+    text-align: center;
+    /* (58/360)*100 = 16.11111111111111  */
+    padding: 16.11111111111111% 0;
+    height: 295.22px;
+    /* (295.22/833)*100 = 35.4405762304922 =*/
+    /* height: 35.4405762304922vh; */
+}
+.ginseng-section3 .text-wrap .ginsengName-kr {
+    font-size: 22px;
+    /* (22/360)*100 = 6.111111111111111  */
+    font-size: 6.111111111111111vw;
+    font-weight: 500;
+}
+.ginseng-section3 .text-wrap .ginsengName-en {
+    font-family: Theinhardt,NotoSans,"Malgun Gothic","맑은 고딕","Nanum Gothic","나눔 고딕","돋움",dotum,sans-serif;
+    /* (12.48/360)*100 = 3.4666666666666663   */
+    font-size: 3.4666666666666663vw;
+    letter-spacing: 0.5px;
+    color: #888;
+    margin-top: 1.7317722222%;
+}
+.ginseng-section3 .text-wrap>p:nth-of-type(2) {
+    margin: 22px 0;
+    /* (22/360)*100 = 6.111111111111111*/
+    margin: 6.111111111111111% 0;
+    font-size: 3.4666666666666663vw;   
+}
+.ginseng-section3 .text-wrap .price-part {
+    font-size: 13.44px;
+    /* (13.44/360)*100 = 3.733333333333333 */
+    font-size: 3.733333333333333vw;
+    font-weight: 300;
+
+    /* 플렉스 */
+    display: flex;
+    justify-content: center;
+}
+.ginseng-section3 .price-part p {
+    font-weight: 500;
+}
+.ginseng-section3 .btn-wrap {
+    width: 100%;
+    margin-top: 33px;
+    /* (31.1875/360)*100 = 8.663194444444445 */
+    margin-top: 8.663194444444445%;
+    
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.ginseng-section3 .btn-wrap a {
+    padding: 10.5px 28px;
+    /* (10.5/360)*100 = 2.9166666666666665 */
+    /* (28/360)*100 = 7.777777777777778 */
+    padding: 2.9166666666666665% 7.777777777777778%;
+    border: 1px solid #000;
+    font-size: 12.48px;
+    /* (12.48/360)*100 = 3.4666666666666663 */
+    font-size: 3.4666666666666663vw;
+    font-weight: 600;    
+}
+.ginseng-section3 .btn-wrap a:nth-child(2) {
+    background: #000;
+    color: #fff;
+    margin-left: 6px;
+}
+.ginseng-section3 .text-wrap .price-part span {
+    color: #888;
+}
+
+.ginseng-section3 .product-img img {
+    width: 100%;
+}
+
+/* //////////////////////////////////////////////////////// */
+/* Section 4 */
+.ginseng-section4 {
+    background: url(../images/ginseng/ginseng_cream_img_03_mo_kr.jpg) no-repeat;
+    background-size: cover;
+}
+.ginseng-section4 .text-wrap {
+    color: #fff;
+    padding: 56px 0 90% 31px;
+}
+.ginseng-section4 .text-wrap h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+.ginseng-section4 .text-wrap h4 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.ginseng-section4 .text-wrap p {
+    font-size: 12.48px;
+    line-height: 1.58;
+    font-weight: 300;
+    letter-spacing: -0.05em;
+}
+.ginseng-section4 .text-wrap p:first-of-type {
+    margin-bottom: 5px;
+}
+
+/* Section 5 */
+.ginseng-section5 .section5-title p {
+    margin-top: 76px;
+    margin-bottom: 32px;
+    text-align: center;
+    color: #e86e25;
+    letter-spacing: 0.08em;
+    font-size: 11.52px;
+    font-weight: 300;
+}
+.ginseng-section5 .section5-movie {
+    width: auto;
+    padding: 0 5.33%;
+}
+.ginseng-section5 .section5-movie video {
+    width: 100%;
+}
+/* Section 6 */
+.ginseng-section6 {
+    margin-top: 84px;
+}
+.section6-img-wrap {
+    /* 위치기준값 */
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.ginseng-section6 .text-wrap {
+    /* 포지션 */
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 58px 0 0 29px;
+}
+.ginseng-section6 .text-wrap h3 {
+    font-size: 24.96px;
+    font-weight: 700;
+    line-height: 1.38;
+    margin-bottom: 12px;
+    letter-spacing: -0.04em;
+}
+.ginseng-section6 .text-wrap p {
+    font-size: 12.48px;
+    line-height: 1.53;
+}
+/* Section 7 */
+/* Section 8 */
+/* Section 9 */
+
+
+@media screen and (min-width:751px) {
+    .ginseng-movie-mo {
+        display: none;
+    }
+    .ginseng-movie-pc {
+        display: block;
+    }
+
+    .mo_only {
+        display: none;
+    }
+}
