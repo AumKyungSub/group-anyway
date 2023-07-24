@@ -56,7 +56,30 @@ $('.video_play_btn').click(function(){
 });
 
 
+/* 3. Swiper 사용한 슬라이드 효과 */
+// 자동 슬라이드
+var swiper = new Swiper(".mySwiper", {
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    }
+  });
+// 시작버튼 클릭시 자동 슬라이드 시작
+$('.start').on('click',function(){
+    // alert('test');
+    swiper.autoplay.start();
+    return false;
+})
+// 정지버튼 클릭시 자동 슬라이드 정지
+  $('.stop').on('click',function(){
+    // alert('test');
+    swiper.autoplay.stop();
+    return false;
+  })
 
+
+
+  
 /* 비고 */
 // 1. jQuery로 IntersectionObserver 사용해서 스크롤 애니메이션 하려 했지만 못하겠음....
 // const Observer = new IntersectionObserver((entries, observer) => {
@@ -79,3 +102,5 @@ $('.video_play_btn').click(function(){
 // });
 // console.log(test)
 //----------------------------------------------------------------------------------------------
+
+
