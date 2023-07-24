@@ -180,3 +180,8 @@ header{
     /* Font */
     font-weight: 700;
 }
+
+/* Section2 3rd */
+.sec_2_third h3 {
+    padding-top: 9.867vw;
+}
