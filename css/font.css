@@ -23,7 +23,18 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Gamja+Flower&display=swap');
-
+@font-face {
+    font-family: "theinhardt";
+    src: url("../font/theinhardt-regular.woff") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: "NotoSans";
+    src: url("../font/NotoSans-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
 
 /* 한글폰트 */
 .nanumgothic { font-family: 'Nanum Gothic', "나눔고딕" sans-serif;}

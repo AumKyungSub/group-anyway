@@ -1,0 +1,136 @@
+@charset "utf-8";
+main {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+/* purpose */
+.purpose {
+    width: 100%;
+    font-family: "theinhardt","NotoSans","Malgun Gothic","맑은 고딕","Nanum Gothic","나눔 고딕","돋움",dotum,sans-serif;
+   background-image: url(../images/about/brand_belief_visual_img_mo_kr_230511.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 37.6vw;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: max(11px,5.3333333333vw);
+    line-height: 1;
+}
+@keyframes fadeup {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.purpose p {
+    animation: fadeup 1s ease-out;
+}
+.purpose .title {
+    line-height: 1.25;
+    margin: 0 4%;
+    padding-top: 32.6666666667vw;
+    word-spacing: 0.27em;  
+}
+.purpose .title span {
+    word-spacing: 0.45em;
+}
+.purpose .title::after{
+    content: "";
+    display: block;
+    background: #fff;
+    margin: 0 auto;
+    width: 0.5333333333vw;
+    height: 9.3333333333vw;
+    margin-top: 10vw;
+}
+.purpose .subtitle {
+    font-size: max(11px,5.8666666667vw);
+    margin-top: 11.6vw;
+}
+.purpose .mtext {
+    font-size: max(11px,4.2666666667vw);
+    letter-spacing: -.02em;
+    font-weight: 800;
+    margin-top: 5.4666666667vw;
+}
+.purpose .stext {
+    line-height: 1.4615384615;
+    font-size: max(11px,3.4666666667vw);
+    letter-spacing: -.02em;
+    margin-top: 4.2666666667vw;
+}
+.purpose .stext:last-child {
+    margin-top: 1.8666666667vw;
+}
+
+/* belief */
+.content_wrap .belief h1{
+    padding-top: 31.4666666667vw;
+    font-size: max(11px,9.8666666667vw);
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width:751px) {
+    .purpose {
+        width: 100%;
+        font-family: "theinhardt","NotoSans","Malgun Gothic","맑은 고딕","Nanum Gothic","나눔 고딕","돋움",dotum,sans-serif;
+        background-image: url(../images/about/brand_belief_visual_img_pc_kr_230511.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 8.3854166667vw;
+        color: #fff;
+        text-align: center;
+        font-weight: 500;
+        font-size: max(11px,2.9166666667vw);
+        line-height: 1;
+    }
+    .purpose .title {
+        line-height: 1.25;
+        margin: 0 4%;
+        padding-top: 8.4375vw;
+        word-spacing: 0.27em;
+        letter-spacing: .07em;
+    }
+    .purpose .title::after{
+        content: "";
+        display: block;
+        background: #fff;
+        margin: 0 auto;
+        width: 0.15625vw;
+        height: 3.6458333333vw;
+        margin-top: 2.5vw;
+    }
+    .purpose .subtitle {
+        margin-top: 3.59375vw;
+        font-size: max(11px,2.0833333333vw);
+        letter-spacing: .05em;
+    }
+    .purpose .mtext {
+        font-size: max(11px,1.5625vw);
+        letter-spacing: -.02em;
+        font-weight: 800;
+        margin-top: 2.1875vw;
+    }
+    .purpose .stext {
+        line-height: 1.5;
+        font-size: max(11px,1.0416666667vw);
+        letter-spacing: -.02em;
+        margin-top: 1.25vw;
+    }
+    .purpose .stext:last-child {
+        margin-top: 0.7291666667vw;
+    }
+}
+
+@media screen and (min-width:1024px){
+
+}
