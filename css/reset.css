@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* 웹폰트 CSS*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat|PT+Serif');
+/* CSS불러오기*/
+@import url('font.css');
+/* CSS 초기화*/
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, cite, code, del, em, img, ins, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, section, summary, time, mark, audio, video, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+/* body에 폰트 속성,배경 속성, 글자 행간 속성 설정*/
+body {
+/*    font-family: 'Montserrat',sans-serif;*/
+    line-height: 1;
+}
+/* 새로운 html5 태그 IE 구버전에서 정상적으로 작동하도록 설정*/
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+/* li 관련 속성*/
+ul,li, ol {
+    list-style: none;
+}
+/* a요소 초기화*/
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+/* img 태그간 간격을 없애기 위해 설정*/
+img {
+    vertical-align: top;
+    text-decoration: none;
+}
+/* hr 요소*/
+hr {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 2px;
+    border: 0;
+}
+
+/* input, textarea 요소 */
+input, textarea {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: top;
+}
+/* 플롯 해제*/
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 보더박스 적용 */
+* {
+    box-sizing: border-box;
+}
+button {
+    background: none;
+}
+
+/* 마진, 패딩 없애기 */
+.no_mt {margin-top: 0 !important;}
+.no_mr {margin-right: 0 !important;}
+.no_mb {margin-bottom: 0 !important;}
+.no_ml {margin-left: 0 !important;}
+
+.no_pt {padding-top: 0 !important;}
+.no_pr {padding-right: 0 !important;}
+.no_pb {padding-bottom: 0 !important;}
+.no_pl {padding-left: 0 !important;}
+
+.no_bd {border: none !important;}
+
+/* 브라우저에 안보여도 되지만, 반드시 입력해야 할 HTML태그가 존재(웹접근성 때문에) */
+.blind {
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -99999px;
+    overflow: hidden;
+}
