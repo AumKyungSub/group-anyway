@@ -2,7 +2,7 @@
 
 /* 스클롤 애니메이션 */
 // 스크롤 애니메이션 해당 태그 선택
-let scrollAni = $('.sec_2 *:not(.sec_2_first *, .sec_2>div, .no_animate)');
+let scrollAni = $('main *:not(.no_animate, .no_animate_all *)');
 // console.log(scrollAni);
 // 스크롤 위치 조정을 위한 offset 설정
 let offset = $(window).height() - 100;
