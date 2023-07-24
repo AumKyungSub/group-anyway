@@ -84,14 +84,13 @@
       <div class="products_sort">
         <div class="selectbox">
           <select id="sort_select">
-            <option value="제품유형별">제품 유형별</option>
-            <option value="피부고민별">피부 고민별</option>
-            <option value="제품라인별">제품 라인별</option>
+            <option value="type">제품 유형별</option>
+            <option value="line">제품 라인별</option>
           </select>
           <span><i class="fas fa-chevron-down"></i></span>
         </div>
         <!-- Slider main container -->
-        <div class="swiper">
+        <div class="swiper" id="type">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -108,13 +107,30 @@
             <div class="swiper-slide" id="mask">마스크/팩</div>
           </div>
         </div>
+        <!-- Slider main container -->
+        <div class="swiper" id="line">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide selected" id="all">전체</div>
+            <div class="swiper-slide" id="yunjo">윤조</div>
+            <div class="swiper-slide" id="yunjoperfecting">윤조퍼펙팅</div>
+            <div class="swiper-slide" id="jaum">자음생</div>
+            <div class="swiper-slide" id="jaumbright">자음생 브라이트닝</div>
+            <div class="swiper-slide" id="comfort">에센셜 컴포트</div>
+            <div class="swiper-slide" id="perfect">에센셜 퍼펙팅</div>
+            <div class="swiper-slide" id="jinseol">진설</div>
+            <div class="swiper-slide" id="jjin">진설명작</div>
+            <div class="swiper-slide" id="etc">기타</div>
+          </div>
+        </div>
       </div>
       <!-- /메뉴선택 -->
 
       <!-- 제품 목록 -->
       <div class="product_list_wrap">
         <ul class="product_list cf">
-          <li id="gift">
+          <li class="gift">
             <a href="#" class="product">
               <div class="badge_wrap">
                 <p class="badge">
@@ -131,7 +147,7 @@
               </figure>
             </a>
           </li>
-          <li id="gift">
+          <li class="gift">
             <a href="#" class="product">
               <div class="badge_wrap">
                 <p class="badge">
@@ -148,7 +164,7 @@
               </figure>
             </a>
           </li>
-          <li id="boostessence">
+          <li class="boostessence yunjo">
             <a href="#" class="product">
               <div class="badge_wrap">
                 <p class="badge">
@@ -166,7 +182,7 @@
               </figure>
             </a>
           </li>
-          <li id="skin">
+          <li class="skin yunjoperfecting">
             <a href="#" class="product">
               <div class="badge_wrap">
                 <p class="badge">
@@ -184,7 +200,7 @@
               </figure>
             </a>
           </li>
-          <li id="lotion">
+          <li class="lotion yunjoperfecting">
             <a href="#" class="product">
               <div class="badge_wrap">
                 <p class="badge">
@@ -202,7 +218,7 @@
               </figure>
             </a>
           </li>
-          <li id="eyecream">
+          <li class="eyecream yunjoperfecting">
             <a href="#" class="product">
               <div class="badge_wrap">
                 <p class="badge">
@@ -220,7 +236,7 @@
               </figure>
             </a>
           </li>
-          <li id="essence_ample">
+          <li class="essence_ample jaumbright">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>자음생앰플 브라이트닝</h1>
@@ -233,7 +249,7 @@
               </figure>
             </a>
           </li>
-          <li id="essence_ample">
+          <li class="essence_ample jaumbright">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>자음생세럼 브라이트닝</h1>
@@ -246,7 +262,7 @@
               </figure>
             </a>
           </li>
-          <li id="cream">
+          <li class="cream jaum">
             <a href="#" class="product">
               <div class="product_info">
                 <div class="badge_wrap">
@@ -264,7 +280,7 @@
               </figure>
             </a>
           </li>
-          <li id="mask">
+          <li class="mask yunjo">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>윤조마스크EX </h1>
@@ -277,7 +293,7 @@
               </figure>
             </a>
           </li>
-          <li id="essence_ample">
+          <li class="essence_ample jaum">
             <a href="#" class="product">
               <div class="product_info">
                 <div class="badge_wrap">
@@ -295,7 +311,7 @@
               </figure>
             </a>
           </li>
-          <li id="eyecream">
+          <li class="eyecream jaum">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>자음생아이크림 </h1>
@@ -308,7 +324,7 @@
               </figure>
             </a>
           </li>
-          <li id="mask">
+          <li class="mask jaum">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>자음생마스크EX </h1>
@@ -321,7 +337,7 @@
               </figure>
             </a>
           </li>
-          <li id="cream">
+          <li class="cream perfect">
             <a href="#" class="product">
               <div class="product_info">
                 <div class="badge_wrap">
@@ -339,7 +355,7 @@
               </figure>
             </a>
           </li>
-          <li id="cream">
+          <li class="cream perfect">
             <a href="#" class="product">
               <div class="product_info">
                 <div class="badge_wrap">
@@ -357,7 +373,7 @@
               </figure>
             </a>
           </li>
-          <li id="skin">
+          <li class="skin perfect">
             <a href="#" class="product">
               <div class="product_info">
                 <div class="badge_wrap">
@@ -375,7 +391,7 @@
               </figure>
             </a>
           </li>
-          <li id="lotion">
+          <li class="lotion perfect">
             <a href="#" class="product">
               <div class="product_info">
                 <div class="badge_wrap">
@@ -393,7 +409,7 @@
               </figure>
             </a>
           </li>
-          <li id="skin">
+          <li class="skin comfort">
             <a href="#" class="product">
               <div class="product_info">
                 <div class="badge_wrap">
@@ -411,7 +427,7 @@
               </figure>
             </a>
           </li>
-          <li id="lotion">
+          <li class="lotion comfort">
             <a href="#" class="product">
               <div class="product_info">
                 <div class="badge_wrap">
@@ -429,7 +445,7 @@
               </figure>
             </a>
           </li>
-          <li id="cream">
+          <li class="cream comfort">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>탄력크림</h1>
@@ -442,7 +458,7 @@
               </figure>
             </a>
           </li>
-          <li id="cream">
+          <li class="cream jaum">
             <a href="#" class="product">
               <div class="product_info">
                 <div class="badge_wrap">
@@ -460,7 +476,7 @@
               </figure>
             </a>
           </li>
-          <li id="boostessence">
+          <li class="boostessence yunjoperfecting">
             <a href="#" class="product">
               <div class="product_info">
                 <div class="badge_wrap">
@@ -478,7 +494,7 @@
               </figure>
             </a>
           </li>
-          <li id="essence_ample">
+          <li class="essence_ample jaum">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>자음생앰플</h1>
@@ -491,7 +507,7 @@
               </figure>
             </a>
           </li>
-          <li id="skin">
+          <li class="skin jaum">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>자음생수EX</h1>
@@ -504,7 +520,7 @@
               </figure>
             </a>
           </li>
-          <li id="lotion">
+          <li class="lotion jaum">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>자음생유액EX</h1>
@@ -517,7 +533,7 @@
               </figure>
             </a>
           </li>
-          <li id="sunblock">
+          <li class="sunblock etc">
             <a href="#" class="product">
               <div class="product_info">
                 <div class="badge_wrap">
@@ -535,7 +551,7 @@
               </figure>
             </a>
           </li>
-          <li id="mask">
+          <li class="mask etc">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>백삼팩</h1>
@@ -548,7 +564,7 @@
               </figure>
             </a>
           </li>
-          <li id="mask">
+          <li class="mask etc">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>옥용팩</h1>
@@ -561,7 +577,7 @@
               </figure>
             </a>
           </li>
-          <li id="mask">
+          <li class="mask etc">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>여윤팩</h1>
@@ -574,7 +590,7 @@
               </figure>
             </a>
           </li>
-          <li id="essence_ample">
+          <li class="essence_ample jinseol">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>진설에센스</h1>
@@ -587,7 +603,7 @@
               </figure>
             </a>
           </li>
-          <li id="cream">
+          <li class="cream jinseol">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>진설크림</h1>
@@ -600,7 +616,7 @@
               </figure>
             </a>
           </li>
-          <li id="eyecream">
+          <li class="eyecream jinseol">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>진설아이에센스</h1>
@@ -613,7 +629,7 @@
               </figure>
             </a>
           </li>
-          <li id="eyecream">
+          <li class="eyecream jinseol">
             <a href="#" class="product">
               <div class="product_info">
                 <div class="badge_wrap">
@@ -631,7 +647,7 @@
               </figure>
             </a>
           </li>
-          <li id="skin">
+          <li class="skin jinseol">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>진설수</h1>
@@ -644,7 +660,7 @@
               </figure>
             </a>
           </li>
-          <li id="lotion">
+          <li class="lotion jinseol">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>진설유액</h1>
@@ -657,7 +673,7 @@
               </figure>
             </a>
           </li>
-          <li id="mask">
+          <li class="mask jinseol">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>진설마스크</h1>
@@ -670,7 +686,7 @@
               </figure>
             </a>
           </li>
-          <li id="cleansing">
+          <li class="cleansing jinseol">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>진설클렌징폼</h1>
@@ -683,7 +699,7 @@
               </figure>
             </a>
           </li>
-          <li id="cleansing">
+          <li class="cleansing etc">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>순행클렌징오일</h1>
@@ -696,7 +712,7 @@
               </figure>
             </a>
           </li>
-          <li id="cleansing">
+          <li class="cleansing etc">
             <a href="#" class="product">
               <div class="product_info">
                 <div class="badge_wrap">
@@ -714,7 +730,7 @@
               </figure>
             </a>
           </li>
-          <li id="cleansing">
+          <li class="cleansing etc">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>궁중비누</h1>
@@ -727,7 +743,7 @@
               </figure>
             </a>
           </li>
-          <li id="essence_ample">
+          <li class="essence_ample jjin">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>진설명작에센스</h1>
@@ -740,7 +756,7 @@
               </figure>
             </a>
           </li>
-          <li id="cream">
+          <li class="cream jjin">
             <a href="#" class="product">
               <div class="product_info">
                 <h1>진설명작크림</h1>
