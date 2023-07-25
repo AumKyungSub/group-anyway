@@ -4,6 +4,8 @@ main {
     margin: 0;
     padding: 0;
     font-family: "theinhardt","NotoSans","Malgun Gothic","맑은 고딕","Nanum Gothic","나눔 고딕","돋움",dotum,sans-serif;
+    letter-spacing: -.07em;
+    word-spacing: 0.05em;
 }
 img {
     max-width: 100%;
@@ -75,43 +77,123 @@ img {
     margin-top: 1.8666666667vw;
 }
 
-/* belief */
-.content_wrap .belief {
+/* section common*/
+.section_inner {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.section_body {
     margin: 0 4.5333333333vw;
     text-align: left;
 }
-.content_wrap .belief h1{
-    padding-top: 31.4666666667vw;
+.section_text h1{
     font-size: max(11px,9.8666666667vw);
     letter-spacing: .05em;
     text-transform: uppercase;
+    color: #171717;
 }
-.content_wrap .belief h2{
+.section_text h2 {
     line-height: 1.634;
     margin-left: 0.8vw;
     margin-top: 3.6vw;
-    font-size: max(11px,3.2vw);
     letter-spacing: -.02em;
+    font-size: max(11px,3.2vw);
+    color: #171717;
 }
-.content_wrap .belief h2 span {
+.section_text h2 span {
     display: block;
     margin-top: 1.775147929%;
 }
-.content_wrap .belief h2 br {
+.section_text h2 br {
     display: inline-block;
 }
-.content_wrap .belief .belief_img {
+.section_img {
     width: 89.3333333333vw;
     margin-top: 8.8vw;
     margin-left: 0.8vw;
     margin-right: auto;
 }
-.content_wrap .belief .belief_img img {
+.section_img img {
     width: 100%;
     max-width: 100%;
     margin-top: -1px;
 }
+/* belief */
+.content_wrap .belief h1{
+    padding-top: 31.4666666667vw;
+}
 
+/* ingredient */
+.content_wrap .ingredient {
+    padding: 6.6666666667vw 0;
+}
+.content_wrap .ingredient h1{
+    margin-top: 6.6666666667vw;
+}
+
+/* innovation */
+.content_wrap .innovation {
+    padding: 6.6666666667vw 0;
+}
+.content_wrap .innovation h1{
+    margin-top: 6.2666666667vw;
+}
+.content_wrap .innovation h2 {
+    line-height: 1.622;
+}
+.content_wrap .innovation .section_img {
+    margin-top: 9.3333333333vw;
+}
+
+/* created */
+.content_wrap .created {
+    padding: 6.6666666667vw 0;
+}
+.content_wrap .created .section_body {
+    margin-right: 0;
+}
+.content_wrap .created h1 {
+    line-height: 1.1891891892;
+    margin-top: 5.3333333333vw;
+}
+.content_wrap .created h2 {
+    margin-top: 2.8vw;
+}
+.content_wrap .created .swiper_list {
+    margin-top: 8.8vw;
+    margin-left: 0.8vw;
+    display: flex;
+}
+.content_wrap .created .swiper_list .swiper-slide{
+    width: 61.3333333333vw !important;
+}
+.content_wrap .created .swiper_list .swiper-slide:not(:last-child) {
+    margin-right: 4vw;
+}
+.content_wrap .created .swiper_list .swiper-slide:last-child{
+    margin-right: 4.5333333333vw;
+}
+
+/* journey */
+
+.content_wrap .journey {
+    position: relative;
+    margin-top: 32vw;
+    width: 100%;
+    /* 임의 높이 */
+    height: 1700px;
+    background-color: #333;
+}
+
+.content_wrap .journey .section_header {
+    margin: 0 5544703231vh;
+}
+.content_wrap .journey h1 {
+    /* 임의 너비 */
+    width: 500px;
+    font-size: 6.4815vh;
+    margin-top: 0;
+}
 @media screen and (min-width:751px) {
     .purpose {
         width: 100%;
@@ -162,6 +244,11 @@ img {
     }
     .purpose .stext:last-child {
         margin-top: 0.7291666667vw;
+    }
+
+
+    .content_wrap {
+        position: relative;
     }
 }
 
