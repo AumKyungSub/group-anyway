@@ -3,14 +3,19 @@ main {
     font-size: 1em;
     margin: 0;
     padding: 0;
+    font-family: "theinhardt","NotoSans","Malgun Gothic","맑은 고딕","Nanum Gothic","나눔 고딕","돋움",dotum,sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
 }
 /* purpose */
 .purpose {
     width: 100%;
-    font-family: "theinhardt","NotoSans","Malgun Gothic","맑은 고딕","Nanum Gothic","나눔 고딕","돋움",dotum,sans-serif;
-   background-image: url(../images/about/brand_belief_visual_img_mo_kr_230511.jpg);
-   background-position: center;
-   background-repeat: no-repeat;
+    background-image: url(../images/about/brand_belief_visual_img_mo_kr_230511.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 37.6vw;
     color: #fff;
@@ -71,11 +76,40 @@ main {
 }
 
 /* belief */
+.content_wrap .belief {
+    margin: 0 4.5333333333vw;
+    text-align: left;
+}
 .content_wrap .belief h1{
     padding-top: 31.4666666667vw;
     font-size: max(11px,9.8666666667vw);
     letter-spacing: .05em;
     text-transform: uppercase;
+}
+.content_wrap .belief h2{
+    line-height: 1.634;
+    margin-left: 0.8vw;
+    margin-top: 3.6vw;
+    font-size: max(11px,3.2vw);
+    letter-spacing: -.02em;
+}
+.content_wrap .belief h2 span {
+    display: block;
+    margin-top: 1.775147929%;
+}
+.content_wrap .belief h2 br {
+    display: inline-block;
+}
+.content_wrap .belief .belief_img {
+    width: 89.3333333333vw;
+    margin-top: 8.8vw;
+    margin-left: 0.8vw;
+    margin-right: auto;
+}
+.content_wrap .belief .belief_img img {
+    width: 100%;
+    max-width: 100%;
+    margin-top: -1px;
 }
 
 @media screen and (min-width:751px) {

@@ -32,9 +32,7 @@
 
     <!-- 페이지 CSS -->
     <link rel="stylesheet" href="./css/about.css" />
-
-    <!-- 부트스트랩 5.2 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- 내부 스타일 영역 -->
     <style></style>
@@ -60,7 +58,7 @@
 
     <!-- Main -->
     <main>
-      <section class="purpose">
+      <section class="purpose" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
         <p class="title">
           <span>BUILDING A WORLD OF BEAUTY</span>
           <br>
@@ -87,8 +85,35 @@
         <div class="navigation">
 
         </div>
-        <section class="belief">
-          <h1>our belief</h1>
+        <section class="belief" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-offset="200" data-aos-anchor-placement="top-bottom">
+          <div class="belief_text">
+            <h1>our belief</h1>
+            <h2>
+              설화수의 시선은 부분이 아닌 전체를 바라봅니다.
+              <br>
+              <span></span>
+              설화수는 겉으로 드러난 문제뿐 아니라
+              <br>
+              피부 속 근본 원인까지 주목합니다.
+              <span></span>
+              우리는 피부의 자생력을 회복하는 것이 진정한 해결책이며
+              <br>
+              피부가 가진 잠재 능력을 활성화 하는 것이 피부 건강을 위한
+              <br>
+              첫 단계라고 생각합니다.
+              <span></span>
+              이에 설화수는 피부 능력을 활성화하는 윤조에센스를 시작으로
+              <br>
+              피부를 위한 베스트 스킨케어 루틴을 제안합니다.
+            </h2>
+          </div>
+          <div class="belief_img" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+            <picture>
+              <source media="(max-width: 750px)" srcset="./images/about/brand_belief_content_img01_mo_kr_230511.jpg">
+              <source media="(min-width: 1023px)" srcset="d./images/about/brand_belief_content_img01_pc_kr_230511.jpg">
+              <img src="./images/about/brand_belief_content_img01_pc_kr_230511.jpg" alt="이미지 설명">
+            </picture>
+          </div>
         </section>
       </div>
     </main>
@@ -102,9 +127,10 @@
 
     <!-- 페이지 JS -->
     <script src="./js/about.js"></script>
-
-    <!-- 부트스트랩 5.2 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
   </body>
 </html>
