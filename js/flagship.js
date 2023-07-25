@@ -57,27 +57,41 @@ $('.video_play_btn').click(function(){
 
 
 /* 3. Swiper 사용한 슬라이드 효과 */
-// 자동 슬라이드
+// 슬라이드 이동 범위 동적 계산
+let slideWidthOuter = $('.swiper-slide').outerWidth(true);
+// console.log(slideWidthOuter);
+// 자동 슬라이드, 슬라이드 이동 범위 변경
 var swiper = new Swiper(".mySwiper", {
+    width: slideWidthOuter,
     autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+    speed: 1000,
+    loop: true,
+    loopAdditionalSlides : 1,
+    slidesPerView: 'auto',
+    pagination: {
+        el: ".paging1",
+        type: "progressbar",
     }
   });
 // 시작버튼 클릭시 자동 슬라이드 시작
 $('.start').on('click',function(){
     // alert('test');
+    $(this).css({'display':'none'});
+    $('.stop').css({'display':'block'});
     swiper.autoplay.start();
     return false;
 })
 // 정지버튼 클릭시 자동 슬라이드 정지
   $('.stop').on('click',function(){
     // alert('test');
+    $(this).css({'display':'none'});
+    $('.start').css({'display':'block'});
     swiper.autoplay.stop();
     return false;
   })
-
-
 
   
 /* 비고 */
