@@ -193,6 +193,9 @@ header{
     /* Position */
     position: relative;
 }
+.swiper-wrapper {
+    
+}
 .swiper-slide {
     width: 93.067vw !important;
     margin-right: 1.867vw !important;
@@ -288,4 +291,21 @@ header{
     border: 2px solid #64544a;
     border-top: 0;
     border-bottom: 0;
+}
+
+/* Section2 4th */
+.sec_2_fourth {
+    padding: 9.867vw 0 14vw !important;
+    background-color: #f2eeec;
+}
+.sec_2_fourth h3 {
+    padding-bottom: 2.1649vw !important;
+}
+.sec_2_4th_content {
+    width: 86.4vw !important;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.sec_2_4th_content img {
+    width: 100%;
 }
