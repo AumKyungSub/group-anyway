@@ -29,7 +29,7 @@
         <!-- 기본 코딩 CSS -->
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/notosans_kr_CDN.css" />
-        <link rel="stylesheet" href="./css/display_none_scrollbar.css" />
+        <!-- <link rel="stylesheet" href="./css/display_none_scrollbar.css" /> -->
 
         <!-- 페이지 CSS -->
         <link rel="stylesheet" href="./css/ginseng.css" />
@@ -49,13 +49,15 @@
         <!-- Main -->
         <article id="ginseng-container">
             <!-- Section 1 -->
-            <section class="ginseng-cream">
+            <section class="ginseng-cream ginseng-section1">
                 <!-- Ginseng Title -->
-                <div class="ginseng-title">
-                    <h3>독보적 인삼 헤리티지를 담은 설화수 No.1* 크림</h3>
-                    <p>* 2022년 누계 국내 매출 기준</p>
-                    <h1 class="ginsengName-kr">설화수 자음생크림</h1>
-                    <h2 class="ginsengName-en">CONCENTRATED GINSENG RENEWING CREAM EX</h2>
+                <div class="section1-title-wrap">
+                    <div class="ginseng-title">
+                        <h3>독보적 인삼 헤리티지를 담은 설화수 No.1* 크림</h3>
+                        <p>* 2022년 누계 국내 매출 기준</p>
+                        <h1 class="ginsengName-kr">설화수 자음생크림</h1>
+                        <h2 class="ginsengName-en">CONCENTRATED GINSENG RENEWING CREAM EX</h2>
+                    </div>
                 </div>
                 <div class="ginseng-movie ginseng-movie-mo">
                     <video src="./media/ginseng/video_1_mo.mp4" autoplay loop muted playsinline></video>
@@ -119,7 +121,10 @@
                     </div>
                 </div>
                 <div class="product-img">
+                    <picture>
+                    <source srcset="./images/ginseng/ginseng_cream_img_02_pc_kr.jpg" media="(min-width: 751px)">
                     <img src="./images/ginseng/ginseng_cream_img_02_mo_kr.jpg" alt="자음생크림">
+                </picture>
                 </div>
             </section>
             
@@ -146,11 +151,13 @@
                 <div class="section5-title">
                     <p>CONCENTRATED GINSENG RENEWING CREAM EX FILM</p>
                 </div>
-                <div class="section5-movie ginseng-movie-mo">
-                    <video src="./media/ginseng/video_2_mo.mp4" autoplay controls muted playsinline></video>
-                </div>
-                <div class="section5-movie ginseng-movie-pc">
-                    <video src="./media/ginseng/video_2_pc.mp4" autoplay controls muted playsinline></video>
+                <div class="movie-wrap">
+                    <div class="section5-movie ginseng-movie-mo">
+                        <video src="./media/ginseng/video_2_mo.mp4" autoplay controls muted playsinline></video>
+                    </div>
+                    <div class="section5-movie ginseng-movie-pc">
+                        <video src="./media/ginseng/video_2_pc.mp4" autoplay controls muted playsinline></video>
+                    </div>
                 </div>
             </section>
             
@@ -177,19 +184,104 @@
             </section>
             
             <!-- Section 7 -->
-            <section class="ginseng-cream">
-
+            <section class="ginseng-cream ginseng-section7">
+                <div class="inner-wrap">
+                    <div class="text-wrap">
+                        <p>
+                            4주 후 달라진 변화
+                        </p>
+                        <ul class="percentage">
+                            <li class="percentage-list-01">
+                                <p class="list-num">
+                                    +12.30%
+                                </p>
+                                <p class="list-desc">
+                                    피부 치밀도 강화
+                                </p>
+                            </li>
+                            <li class="percentage-list-02">
+                                <p class="list-num">
+                                    +10.26%
+                                </p>
+                                <p class="list-desc">
+                                    탄력 개선
+                                </p>
+                            </li>
+                            <li class="percentage-list-03">
+                                <p class="list-num">
+                                    -25.96%
+                                </p>
+                                <p class="list-desc">
+                                    주름 개선
+                                </p>
+                            </li>
+                        </ul>
+                        <p class="detail-desc">
+                            자음생크림 소프트 인체 적용 시험 결과 (4주 사용 결과)<br>
+                            시험 대상 : 30-60세 여성 31명 | 시험기간 : 2021.3.3-5.3<br>
+                            시험 기관 : 피엔케이피부임상연구센타(주)
+                        </p>
+                    </div>
+                </div>
             </section>
             
             <!-- Section 8 -->
-            <section class="ginseng-cream">
-
+            <section class="ginseng-cream ginseng-section8">
+                <div class="cream-type-soft">
+                    <div class="text-wrap">
+                        <h4>첫 설화수 크림으로 추천</h4>
+                        <h2>자음생크림 소프트</h2>
+                        <ul>
+                            <li><span class="list-dot">아침, 저녁 언제나</span></li>
+                            <li><span class="list-dot">끈적임 없는 깔끔함</span></li>
+                            <li><span class="list-dot">산뜻한 인삼꽃향</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cream-type-classic">
+                    <div class="text-wrap">
+                        <h4>영양가 높은 크림 선물로 추천</h4>
+                        <h2>자음생크림 클래식</h2>
+                        <ul>
+                            <li><span class="list-dot">건조한 날씨, 저녁 세안 후</span></li>
+                            <li><span class="list-dot">쫀쫀하고 꾸덕함</span></li>
+                            <li><span class="list-dot">은은한 인삼향</span></li>
+                        </ul>
+                    </div>
+                </div>
             </section>
             
             <!-- Section 9 -->
-            <section class="ginseng-cream">
-
-            </section>            
+            <sectin class="ginseng-cream ginseng-section9">
+                <div class="section9-product-part">
+                    <div class="inner-part-wrap">
+                        <ul>
+                            <li class="ginseng-cream-ex">
+                                <picture>
+                                    <source srcset="./images/ginseng/ginseng_cream_product_01_pc_kr.png" media="(min-width:751px)">
+                                    <img src="./images/ginseng/ginseng_cream_product_01_mo_kr.png" alt="진생크림">
+                                </picture>
+                                <div class="text-wrap">
+                                    <p class="product-title-kr">설화수 자음생크림</p>
+                                    <p class="product-title-en">CONCENTRATED GINSENG RENEWING CREAM EX</p>
+                                    <a href="#">구매하러 가기</a>
+                                </div>
+                            </li>
+                            <li class="ginseng-serum-ex">
+                                <picture>
+                                    <source srcset="./images/ginseng/ginseng_cream_product_02_pc_kr.png" media="(min-width:751px)">
+                                    <img src="./images/ginseng/ginseng_cream_product_02_mo_kr.png" alt="진생크림">
+                                </picture>
+                                <div class="text-wrap">
+                                    <p class="product-title-kr">설화수 자음생세럼</p>
+                                    <p class="product-title-en">CONCENTRATED GINSENG RENEWING SERUM EX</p>
+                                    <a href="#">구매하러 가기</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </sectin>            
         </article>
         <!-- /Main -->
 
