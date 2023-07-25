@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/* Section 2 */
+.ginseng-section2 {
+    margin-top: -2px;
+    /* 위치기준값 */
+    position: relative;
+}
+.ginseng-section2 .text-wrap {
+    color: #fff;
+    width: 100%;
+    max-width: 1920px;
+    text-align: left;
+    padding: 16.4% 0 0 8%;
+
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.ginseng-section2 .text-wrap h4 {
+    /* (14/360)*100 = 3.888888888888889 */
+    font-size: 4vw;
+    font-weight: 700;
+}
+.ginseng-section2 .text-wrap h2 {
+    /* (15/623)*100  = 2.4077046548956664 */
+    margin-top: 2.41vh;
+    font-size: max(11px,6.9333333333vw);
+    font-weight: 600;
+    line-height: 1.2;
+}
+.ginseng-section2 .text-wrap p {
+    font-size: max(11px,3.4666666667vw);
+    line-height: 1.5;
+    letter-spacing: -0.14em;
+}
+.ginseng-section2 .text-wrap p:nth-of-type(1) {
+    margin-top: 5.4%;
+}
+.ginseng-section2 .text-wrap p:nth-of-type(2) {
+    margin-top: 8px;
+}
+.ginseng-section2 .text-wrap p:nth-of-type(3) {
+    font-size: max(11px,2.9333333333vw);
+    margin-top: 7.3%;
+    color: #f6cebd;
+}
+
+/* 태블릿 750px이상 : 1920기준 */
+
+@media screen and (min-width:751px) {
+
+    .ginseng-section2 .text-wrap {
+        /* 수정 */
+        padding: 13.5416666667% 0 0 57.2916666667%;
+    }
+    .ginseng-section2 .text-wrap h4 {
+        /* (28/1920)*100 = 1.4583333333333333 */
+        font-size: max(11px,1.4583333333333333vw);
+    }
+    .ginseng-section2 .text-wrap h2 {
+        /* (48/1920)*100 = 2.5 */
+        font-size: max(11px,2.5vw);
+        font-weight: 500;
+    }
+    .ginseng-section2 .text-wrap p {
+        /* (24/1920)*100 = 1.25 */
+        font-size: max(11px,1.25vw);
+        font-weight: 300;
+    }
+    .ginseng-section2 .text-wrap p:nth-of-type(2) {
+        margin-top: 13.875px;
+    }
+    .ginseng-section2 .text-wrap p:nth-of-type(3) {
+        /* (56/1920)*100 = 2.9166666666666665  */
+        margin-top: 2.9166666666666665%;
+        font-size: max(11px,0.9375vw);
+    }
+    .mo_only {
+        display: none;
+    }
+
+}
