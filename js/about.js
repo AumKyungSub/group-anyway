@@ -1,5 +1,7 @@
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.navigation a');
+const navItems = document.querySelectorAll('.navigation li');
+const dummy = document.querySelector('#journey .dummy');
 
 // 네비게이션 부드러운 스크롤 기능
 navLinks.forEach(link => {
@@ -39,7 +41,16 @@ const options = {
         const id = entry.target.id;
         const newActiveLink = document.querySelector(`.navigation a[href="#${id}"]`);
         newActiveLink.classList.add('active');
-      }
+
+        // 마지막 섹션이 전체적으로 활성화되었는지 확인
+        if (id === 'journey') { // 'journey'는 마지막 섹션의 ID
+          // 모든 네비게이션 아이템에 'change' 클래스를 추가
+          navItems.forEach((navItem) => navItem.classList.add('change'));
+          }
+        } else if (entry.target.id === 'journey') {
+          // 'journey' 섹션을 벗어났을 때 'change' 클래스를 제거
+          navItems.forEach((navItem) => navItem.classList.remove('change'));
+        }
     });
   }, options);
   

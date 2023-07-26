@@ -157,6 +157,12 @@ img {
     color: #171717;
     border-top: 1px solid #d1d1d1;
 }
+.navigation_box .navigation li.change {
+    color: #fff;
+    border-top: 1px solid #5c5c5c;
+    transition: all .1s;
+}
+
 .navigation_box .navigation li a.active {
    color: #e86e25;
    transition: all 0.3s;
@@ -225,7 +231,7 @@ img {
     margin-top: 32vw;
     width: 100%;
     /* 임의 높이 */
-    height: 1700px;
+    height: 500px;
     background-color: #333;
 }
 
