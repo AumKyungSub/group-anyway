@@ -6,6 +6,8 @@ main {
     font-family: "theinhardt","NotoSans","Malgun Gothic","맑은 고딕","Nanum Gothic","나눔 고딕","돋움",dotum,sans-serif;
     letter-spacing: -.07em;
     word-spacing: 0.05em;
+    line-height: 1.5;
+    overflow: hidden;
 }
 img {
     max-width: 100%;
@@ -78,6 +80,11 @@ img {
 }
 
 /* section common*/
+.content_wrap .fixed {
+    position: fixed;
+    top: 0;
+    z-index: 50;
+}
 .section_inner {
     max-width: 1920px;
     margin: 0 auto;
@@ -118,6 +125,43 @@ img {
     max-width: 100%;
     margin-top: -1px;
 }
+
+/* navagition */
+.content_wrap{
+    position: relative;
+}
+
+.navigation_box{
+    min-width: 1920px;
+    margin: 0 auto;
+    display: none;
+}
+.navigation_box .navigation {
+    margin: 3.125vw;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 100;
+}
+.navigation_box .navigation li{
+    padding-bottom: 0.8333333333vw;
+    padding-top: 0.9895833333vw;
+    border-top-width: 0.0520833333vw;
+    font-size: max(11px,.8333333333vw);
+    width: 12.5vw;
+    letter-spacing: .05em;
+    font-weight: 700;
+    color: #171717;
+    border-top: 1px solid #d1d1d1;
+}
+.navigation_box .navigation li a.active {
+   color: #e86e25;
+   transition: all 0.3s;
+}
+
 /* belief */
 .content_wrap .belief h1{
     padding-top: 31.4666666667vw;
@@ -246,10 +290,132 @@ img {
         margin-top: 0.7291666667vw;
     }
 
-
-    .content_wrap {
-        position: relative;
+    /* section common*/
+    .section_body {
+        margin: 0 12.5vw 0 29.8958333333vw;
+        text-align: left;
     }
+    .section_text h1{
+        font-size: max(11px,3.6458333333vw);
+    }
+    .section_text h2 {
+        line-height: 1.6666666667;
+        margin-left: 0.2604166667vw;
+        margin-top: 0.9375vw;
+        letter-spacing: -.02em;
+        font-size: max(11px,.9375vw);
+        color: #171717;
+    }
+    .section_text span {
+        display: block;
+        margin-top: 1.775147929%;
+    }
+    .section_text .mo-margin {
+        margin: 0;
+    }
+    .section_text br {
+        display: inline-block;
+    }
+    .section_text .mo-only {
+        display: none;
+    }
+    .section_img {
+        width: 57.2916666667vw;
+        margin-top: 2.7604166667vw;
+        margin-left: 0.3125vw;
+        margin-right: auto;
+    }
+    .section_img img {
+        width: 100%;
+        max-width: 100%;
+        margin-top: -1px;
+    }
+
+
+    /* navagition */
+    .navigation_box{
+        display: block;
+    }
+
+    /* belief */
+    .content_wrap .belief h1{
+        margin-top: 0;
+        padding-top: 6.6666666667vw;
+    }
+
+    /* ingredient */
+    .content_wrap .ingredient {
+        padding: 2.6041666667vw 0;
+    }
+    .content_wrap .ingredient h1{
+        margin-top: 3.6458333333vw;
+    }
+
+    /* innovation */
+    .content_wrap .innovation {
+        padding: 2.6041666667vw 0;
+    }
+    .content_wrap .innovation h1{
+        margin-top: 3.59375vw;
+    }
+    .content_wrap .innovation h2 {
+        line-height: 1.6666666667;
+    }
+    .content_wrap .innovation .section_img {
+        margin-top: 2.7604166667vw;
+    }
+
+    /* created */
+    .content_wrap .created {
+        padding: 2.6041666667vw 0;
+    }
+    .content_wrap .created .section_body {
+        margin-right: 12.5vw;
+    }
+    .content_wrap .created h1 {
+        line-height: 1;
+        margin-top: 3.59375vw;
+    }
+    .content_wrap .created h2 {
+        margin-top: 2.8vw;
+    }
+    .content_wrap .created .swiper_list {
+        margin-top: 2.7083333333vw;
+        margin-left: 0.3125vw;
+        display: flex;
+    }
+    .content_wrap .created .swiper_list .swiper-slide{
+        width: 17.9166666667vw !important;
+    }
+    .content_wrap .created .swiper_list .swiper-slide:not(:last-child) {
+        margin-right: 1.7708333333vw;
+    }
+    .content_wrap .created .swiper_list .swiper-slide:last-child{
+        margin-right: 0;
+    }
+
+    /* journey */
+    .content_wrap .journey {
+        margin-top: 13.5416666667vw;
+        width: 100%;
+        /* 임의 높이 */
+        height: 1700px;
+        background-color: #333;
+    }
+
+    .content_wrap .journey .section_header {
+        margin: 0 5544703231vh;
+    }
+    .content_wrap .journey h1 {
+        /* 임의 너비 */
+        width: 500px;
+        font-size: 6.4815vh;
+        text-transform: uppercase;
+        margin-top: 0;
+        color: white;
+    }
+
+
 }
 
 @media screen and (min-width:1024px){
