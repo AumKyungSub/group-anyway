@@ -30,7 +30,6 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/font.css" />
     <link rel="stylesheet" href="./css/notosans_kr_CDN.css" />
-    <link rel="stylesheet" href="./css/display_none_scrollbar.css" />
 
     <!-- 페이지 CSS -->
     <link rel="stylesheet" href="./css/about.css" />
@@ -235,7 +234,7 @@
                 </h2>
                 </div>
                 <!-- Slider main container -->
-                <div class="swiper"  data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-bottom">
+                <div class="swiper swiper_created"  data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-bottom">
                   <!-- Additional required wrapper -->
                   <div class="swiper-wrapper swiper_list">
                     <!-- Slides -->
@@ -255,20 +254,98 @@
         </section>
         <section class="journey" id="journey">
           <div class="section_inner">
-            <div class="pin_spacer">
-              <div class="sticky">
-                <div class="section_contents">
-                  <div class="section_header">
-                    <h1>our journey</h1>
-                  </div>
-                  <div class="section_body">
-      
+            <div class="sticky">
+              <div class="section_contents">
+                <div class="section_header">
+                  <p>our journey</p>
+                </div>
+                <div class="section_body">
+                  <div class="horizontal_scroll">
+                    <!-- Slider main container -->
+                    <div class="swiper swiper_journey">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper swiper_list">
+                        <!-- Slides -->
+                        <div class="swiper-slide swiper_list_item">
+                          <div class="item_inner">
+                            <div class="journey_img">
+                              <img src="./images/about/brand_belief_content02_item01_kr_230511.jpg" alt="윤독정여사">
+                            </div>
+                            <div class="text_wrap">
+                              <p class="text_y">
+                                1932
+                              </p>
+                              <p class="text_m">
+                                설화수의 시작
+                              </p>
+                              <p class="text_s">
+                                윤독정 여사의 동백기름
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide swiper_list_item">
+                          <div class="item_inner">
+                            <div class="journey_img">
+                              <img src="./images/about/brand_belief_content02_item01_kr_230511.jpg" alt="윤독정여사">
+                            </div>
+                            <div class="text_wrap">
+                              <p class="text_y">
+                                1932
+                              </p>
+                              <p class="text_m">
+                                설화수의 시작
+                              </p>
+                              <p class="text_s">
+                                윤독정 여사의 동백기름
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide swiper_list_item">
+                          <div class="item_inner">
+                            <div class="journey_img">
+                              <img src="./images/about/brand_belief_content02_item01_kr_230511.jpg" alt="윤독정여사">
+                            </div>
+                            <div class="text_wrap">
+                              <p class="text_y">
+                                1932
+                              </p>
+                              <p class="text_m">
+                                설화수의 시작
+                              </p>
+                              <p class="text_s">
+                                윤독정 여사의 동백기름
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide swiper_list_item">
+                          <div class="item_inner">
+                            <div class="journey_img">
+                              <img src="./images/about/brand_belief_content02_item01_kr_230511.jpg" alt="윤독정여사">
+                            </div>
+                            <div class="text_wrap">
+                              <p class="text_y">
+                                1932
+                              </p>
+                              <p class="text_m">
+                                설화수의 시작
+                              </p>
+                              <p class="text_s">
+                                윤독정 여사의 동백기름
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
                   </div>
                 </div>
-              </div>
+            </div>
             </div>
           </div>
-          <div class="dummy"></div>
         </section>
       </div>
     </main>
@@ -292,11 +369,24 @@
     <!-- 쓰와이퍼 JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
-      const swiper = new Swiper('.swiper', {
+      const swiper = new Swiper('.swiper_created', {
         // Optional parameters
         slidesPerView: "auto",
         // spaceBetween: "4vw",
         freeMode: "true"
+      });
+
+      const swiperTwo = new Swiper('.swiper_journey', {
+        // Optional parameters
+        slidesPerView: "auto",
+        freeMode: "true",
+        mousewheel: true,
+        pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+        },
+        simulateTouch: false,
+        touchEventsTarget: 'wrapper',
       });
     </script>
 
