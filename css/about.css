@@ -290,7 +290,7 @@ img {
     overflow: hidden;
 }
 .swiper_journey {
-    overflow: visible !important;
+    
 }
 .swiper_journey .swiper-wrapper {
   pointer-events: none;
@@ -308,7 +308,7 @@ img {
 .swiper_journey .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
     background: white; /* 진행 색상 */
     width: 0; /* 초기에 0%로 시작 */
-    transition: width 0.3s; /* 애니메이션 효과를 위한 전환 설정 */
+    transition: width 0.1s; /* 애니메이션 효과를 위한 전환 설정 */
 }
 .content_wrap .journey .swiper_list {
     margin-left: 0;
@@ -409,8 +409,8 @@ img {
     top: -2.4042073629vh;
     left: 7.2126220887vh;
 }
-.content_wrap .journey .swiper_list .list_item_07 {
-    padding-right: 20vh;
+.content_wrap .journey .swiper_list .list_item_07 .sticky{
+    min-height: 100vh;
 }
 .content_wrap .journey .swiper_list .list_item_07 .journey_img{
     width: 26.5965439519vh;

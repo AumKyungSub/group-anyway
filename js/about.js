@@ -57,7 +57,7 @@ const swiperTwo = new Swiper('.swiper_journey', {
   },
 });
 
-let isHorizontalScrollEnd = false;
+
 // 스크롤에 따른 네비게이션 활성화 변경
 
 // Intersection Observer의 옵션을 설정
@@ -92,15 +92,6 @@ const observer = new IntersectionObserver((entries, observer) => {
         navItems.forEach((navItem) => navItem.classList.remove('change'));
       }
 
-      if (entry.isIntersecting && entry.target.id === 'journey') {
-        if (isHorizontalScrollEnd) {
-            // Enable page scroll
-            document.body.style.overflow = 'auto';
-        } else {
-            // Disable page scroll
-            document.body.style.overflow = 'hidden';
-        }
-      }
   });
 }, options);
 
@@ -127,8 +118,7 @@ window.addEventListener('scroll', () => {
       // 스크롤 위치가 섹션의 top 좌표 이전일 경우, 'fixed' 클래스를 제거
       navBox.classList.remove('fixed');
     }
-    if (isHorizontalScrollEnd) {
-      // Enable page scroll
-      document.body.style.overflow = 'auto';
-    }
 });
+
+
+
