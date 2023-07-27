@@ -4,11 +4,11 @@
 .ginseng-section9 {
     text-align: center;
 
+}
+.section9-product-part {
     background: url("/images/ginseng/ginseng_cream_img_07_mo.jpg") no-repeat;
     background-size: 100% 100%;
     background-position: 0 bottom;
-}
-.section9-product-part {
     padding: 32% 0 24%;
     width: 100%;
 }

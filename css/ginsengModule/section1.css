@@ -7,21 +7,25 @@
     padding-top: 11.3333333333%;
 }
 .ginseng-title h3 {
+    /* (30/750)*100 = 4 */
     font-size: max(11px,4vw);
     font-weight: 600;
 }
 .ginseng-title p {
+    /* (22/750)*100 = 2.933333333333333 */
     font-size: max(11px,2.9333333333vw);
     font-weight: 300;
     color: #888;
     margin-top: 3%;
 }
 .ginseng-title .ginsengName-kr {
+    /* (52/750)*100 = 6.933333333333333 */
     font-size: max(11px,6.9333333333vw);
     font-weight: 700;
     margin-top: 4.9333333333%;
 }
 .ginseng-title .ginsengName-en {
+    /* (30/750)*100 = 4 */
     font-size: max(11px,4vw);
     color: #444;
     margin-top: 1.8666666667%;

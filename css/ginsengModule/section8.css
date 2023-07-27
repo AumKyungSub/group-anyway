@@ -3,13 +3,11 @@
 /* Section 8 */
 .ginseng-section8 .cream-type-soft {
     background: url("/images/ginseng/ginseng_cream_img_05_mo_kr.jpg") no-repeat center;
-    background-size: cover;
     width: 100%;
     text-align: right;
 }
 .ginseng-section8 .cream-type-classic {
     background: url("/images/ginseng/ginseng_cream_img_06_mo_kr.jpg") no-repeat center;
-    background-size: cover;
     width: 100%;
     text-align: left;
 }
@@ -56,6 +54,7 @@
     .ginseng-section8 {
         display: flex;
         flex-flow: row nowrap;
+        margin-top: -10px;
     }
     .ginseng-section8 .cream-type-soft {
         background: url("/images/ginseng/ginseng_cream_img_05_pc_kr.jpg") no-repeat center;
