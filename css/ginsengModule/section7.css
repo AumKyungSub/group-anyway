@@ -6,9 +6,12 @@
     background-size: cover;
     width: 100%;
 }
+.ginseng-section7 .inner-wrap {
+    width: 100%;
+    padding: 26.7% 0;
+}
 .ginseng-section7 .text-wrap {
     text-align: center;
-    padding: 26.5% 0;
 }
 .ginseng-section7 .text-wrap > p:first-of-type {
     /* (24.96/360)*100 = 6.933333333333333 */
@@ -16,7 +19,7 @@
     font-weight: 700;
 }
 .ginseng-section7 .percentage {
-    margin: 4.6666666667% 0 10.3333333333%;
+    margin: 4.6666666667% 0 8.3333333333%;
     display: flex;
     justify-content: center;
 }
@@ -49,7 +52,10 @@
     .ginseng-section7 {
         background: url("/images/ginseng/ginseng_cream_img_09_pc_kr.jpg") no-repeat;
     }
-
+    .ginseng-section7 .inner-wrap {
+        width: 100%;
+        padding: 0;
+    }
     .ginseng-section7 .text-wrap {
         padding: 11.1145833333% 0;
     }

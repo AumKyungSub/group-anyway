@@ -31,13 +31,13 @@
     margin-bottom: 12px;
     /* (12/162)*100 = 3.3333333333333335 */
     margin-bottom: 3.3333333333333335%;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.06em;
 }
 .ginseng-section6 .text-wrap p {
     /* (12.48/360)*100 = 3.4666666666666663 */
     font-size: 3.4666666666666663vw;
     line-height: 1.53;
-    letter-spacing: -0.06em;
+    letter-spacing: -0.14em;
 }
 
 /* 태블릿 750px이상 : 1920기준 */
@@ -71,6 +71,7 @@
     .ginseng-section6 .text-wrap {
         /* 수정 */
         position: static;
+        padding: 0 0 0 8.055555555555555%;
     }
     .ginseng-section6 .text-wrap h3 {
         /* 수정 */
