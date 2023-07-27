@@ -25,7 +25,7 @@
 @import url('https://fonts.googleapis.com/css?family=Gamja+Flower&display=swap');
 @font-face {
     font-family: "theinhardt";
-    src: url("../font/theinhardt-regular.woff") format("woff2");
+    src: url("../font/theinhardt-regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
   }

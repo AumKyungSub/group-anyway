@@ -273,8 +273,24 @@ img {
     margin-right: 0;
     margin-left: 0;
 }
+.content_wrap .journey .section_body::before {
+    content: none;
+    display: block;
+    width: 32.1354166667vw;
+    height: 100%;
+    background-image: url(https://amc.apglobal.com/image/384224417642/image_j63lk3qthd5f19oc8nvjlamg5o/-FPNG/brand_belief_journey_item_pc_kr_230511.png);
+    background-position: left top;
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    position: absolute;
+    z-index: 10;
+}
+
 .content_wrap .journey .horizontal_scroll {
     overflow: hidden;
+}
+.swiper_journey {
+    overflow: visible !important;
 }
 .swiper_journey .swiper-wrapper {
   pointer-events: none;
@@ -286,9 +302,13 @@ img {
     margin-left: 3.0052592036vh;
     margin-top: 3.0052592036vh;
     height: 0.4507888805vh;
+    width: 100%; /* 초기 배경 100% */
 }
+
 .swiper_journey .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
     background: white; /* 진행 색상 */
+    width: 0; /* 초기에 0%로 시작 */
+    transition: width 0.3s; /* 애니메이션 효과를 위한 전환 설정 */
 }
 .content_wrap .journey .swiper_list {
     margin-left: 0;
@@ -304,15 +324,12 @@ img {
     width: auto;
     flex: 0 0 auto;
 }
+
 .content_wrap .journey .swiper_list .swiper_list_item .journey_img{
-    width: 26.5965439519vh;
-    margin-top: 18.9331329827vh;
-    padding-left: 0;
     margin-right: 0;
+    margin-top: 8.8vw;
 }
 .content_wrap .journey .swiper_list .swiper_list_item .text_wrap {
-    left: 17.7310293013vh;
-    top: -3.1555221638vh;
     right: 0;
     bottom: 0;
     width: 100%;
@@ -338,6 +355,70 @@ img {
     line-height: 1.634;
     letter-spacing: -.02em;
     color: #fff;
+}
+
+.content_wrap .journey .swiper_list .list_item_01 .journey_img{
+    width: 26.5965439519vh;
+    margin-top: 18.9331329827vh;
+    padding-left: 0;
+}
+.content_wrap .journey .swiper_list .list_item_01 .text_wrap {
+    left: 17.7310293013vh;
+    top: -3.1555221638vh;
+}
+.content_wrap .journey .swiper_list .list_item_02 {
+    text-align: right;
+}
+.content_wrap .journey .swiper_list .list_item_02 .journey_img{
+    width: 28.5499624343vh;
+}
+.content_wrap .journey .swiper_list .list_item_02 .text_wrap{
+    width: 100%;
+    top: 2.6296018032vh;
+    right: 0;
+    left: auto;
+    bottom: 0;
+}
+.content_wrap .journey .swiper_list .list_item_03 .journey_img{
+    width: 35.4620586026vh;
+    margin-top: 24.192336589vh;
+}
+.content_wrap .journey .swiper_list .list_item_03 .text_wrap{
+    top: -1.8031555222vh;
+    left: 9.3163035312vh;
+}
+.content_wrap .journey .swiper_list .list_item_04 .journey_img{
+    width: 43.4259954921vh;
+    margin-top: 10.2178812923vh;
+}
+.content_wrap .journey .swiper_list .list_item_04 .text_wrap{
+    top: 2.7798647633vh;
+}
+.content_wrap .journey .swiper_list .list_item_05 .journey_img{
+    width: 26.5965439519vh;
+    margin-top: 14.9511645379vh;
+}
+.content_wrap .journey .swiper_list .list_item_05 .text_wrap{
+    top: 3.0803906837vh;
+}
+.content_wrap .journey .swiper_list .list_item_06 .journey_img{
+    width: 35.4620586026vh;
+    margin-top: 5.9353869271vh;
+}
+.content_wrap .journey .swiper_list .list_item_06 .text_wrap{
+    top: -2.4042073629vh;
+    left: 7.2126220887vh;
+}
+.content_wrap .journey .swiper_list .list_item_07 {
+    padding-right: 20vh;
+}
+.content_wrap .journey .swiper_list .list_item_07 .journey_img{
+    width: 26.5965439519vh;
+    margin-top: 16.5289256198vh;
+}
+.content_wrap .journey .swiper_list .list_item_07 .text_wrap{
+    top: -6.8369646882vh;
+    left: 22.0886551465vh;
 }
 @media screen and (min-width:751px) {
     .purpose {
