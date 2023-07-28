@@ -605,6 +605,10 @@ img {
     .content_wrap .journey .swiper_list .swiper_list_item {
         height: 32.03125vw;
         padding-right: 4.6875vw;
+        margin-left: 0;
+        position: relative;
+        width: auto;
+        flex: 0 0 auto;
     }
     .content_wrap .journey .swiper_list .swiper_list_item .journey_img{
         margin-top: 2.7604166667vw;
@@ -638,9 +642,7 @@ img {
         padding-left: 29.84375vw;
         margin-top: 10.5729166667vw;
         margin-right: 0;
-    }
-    .content_wrap .journey .swiper_list .list_item_01 .journey_img img {
-
+        /* width: 44vw; */
     }
 
     .content_wrap .journey .swiper_list .list_item_01 .text_wrap {
