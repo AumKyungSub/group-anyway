@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/* Section 1 */
+.ginseng-title {
+    text-align: center;
+    color: #222;
+    padding-top: 11.3333333333%;
+}
+.ginseng-title h3 {
+    /* (30/750)*100 = 4 */
+    font-size: max(11px,4vw);
+    font-weight: 600;
+}
+.ginseng-title p {
+    /* (22/750)*100 = 2.933333333333333 */
+    font-size: max(11px,2.9333333333vw);
+    font-weight: 300;
+    color: #888;
+    margin-top: 3%;
+}
+.ginseng-title .ginsengName-kr {
+    /* (52/750)*100 = 6.933333333333333 */
+    font-size: max(11px,6.9333333333vw);
+    font-weight: 700;
+    margin-top: 4.9333333333%;
+}
+.ginseng-title .ginsengName-en {
+    /* (30/750)*100 = 4 */
+    font-size: max(11px,4vw);
+    color: #444;
+    margin-top: 1.8666666667%;
+}
+.ginseng-movie {
+    margin-top: 8.4%;
+}
+.ginseng-movie-mo {
+    display: block;
+}
+.ginseng-movie-pc {
+    display: none;
+}
+video {
+    width: 100%;
+}
+/* 1920기준 */
+@media screen and (min-width:751px) {
+    /* 추가 */
+    .section1-title-wrap {
+        margin: 0 auto;
+        max-width: 1440px;
+        padding: 0 12.5%;
+    }
+    .ginseng-title {
+        padding-top: 6.944444444444445%;
+    }
+    .ginseng-title h3 {
+        /* (28/1920)*100 = 1.4583333333333333 */
+        font-size: max(11px,1.4583333333333333vw);
+    }
+    .ginseng-title p {
+        /* (18/1920)*100 = 0.9375 */
+        font-size: max(11px,0.9375vw);
+        /* (13/1440)*100 = 0.9027777777777777 */
+        margin-top: 0.9027777777777777%;
+    }
+    .ginseng-title .ginsengName-kr {
+        font-size: 48px;
+        /* (48/1920)*100 = 2.5 */
+        font-size: max(11px,2.5vw);
+        /* 수정 */
+        font-weight: 800;
+        /* (33/1440)*100 = 2.2916666666666665 */
+        margin-top: 2.2916666666666665%;
+
+    }
+    .ginseng-title .ginsengName-en {
+        /* (28/1920)*100 = 1.4583333333333333 */
+        font-size: max(11px,1.4583333333333333vw);
+        /* (13/1440)*100 = 0.9027777777777777 */
+        margin-top: 0.9027777777777777%;
+    }
+    .ginseng-movie {
+        margin-top: 2.96875%;
+    }
+    /* 태블릿 수정 */
+    .ginseng-movie-mo {
+        display: none;
+    }
+    /* 태블릿 수정 */
+    .ginseng-movie-pc {
+        display: block;
+    }
+
+}

@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css); 
 @import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
@@ -23,36 +24,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Gamja+Flower&display=swap');
-@font-face {
-    font-family: "theinhardt";
-    src: url("../font/theinhardt-regular.woff") format("woff"), url(../font/Theinhardt-Regular.otf) format("otf");
-    font-weight: 500;
-    font-style: normal;
-  }
-@font-face {
-    font-family: "theinhardt";
-    src: url("../font/theinhardt-light-webfont.woff") format("woff"), url(../font/Theinhardt-Light.otf) format("otf");
-    font-weight: 400;
-    font-style: normal;
-  }
-@font-face {
-    font-family: "theinhardt";
-    src: url("../font/theinhardt-medium.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
-  }
-@font-face {
-    font-family: "theinhardt";
-    src: url("../font/theinhardt-bold.woff") format("woff"), url(../font/Theinhardt-Bold.otf) format("otf");
-    font-weight: bold;
-    font-style: normal;
-  }
-@font-face {
-    font-family: "NotoSans";
-    src: url("../font/NotoSans-Regular.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-  }
+
 
 /* 한글폰트 */
 .nanumgothic { font-family: 'Nanum Gothic', "나눔고딕" sans-serif;}
@@ -78,4 +50,70 @@
 .anton { font-family: 'Anton', sans-serif;}
 
 
+/* 폰트추가 */
+@font-face {
+	font-family: 'NotoSans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(/kr/ko/resource/css/fonts/NotoSansKR-Light-subset.eot);
+	src: local('Noto Sans Korean'), local("Apple SD Gothic Neo"), url(/kr/ko/resource/css/fonts/NotoSansKR-Light.woff2) format('woff2'), url(/kr/ko/resource/css/fonts/NotoSansKR-Light.woff) format('woff')
+}
 
+@font-face {
+	font-family: 'NotoSans';
+	font-style: normal;
+	font-weight: 500;
+	src: url(/kr/ko/resource/css/fonts/NotoSansKR-Regular.eot);
+	src: local('Noto Sans Korean'), local("Apple SD Gothic Neo"), url(/kr/ko/resource/css/fonts/NotoSansKR-Regular.woff2) format('woff2'), url(/kr/ko/resource/css/fonts/NotoSansKR-Regular.woff) format('woff')
+}
+
+@font-face {
+	font-family: 'NotoSans';
+	font-style: normal;
+	font-weight: 700;
+	src: url(/kr/ko/resource/css/fonts/NotoSansKR-Medium-subset.eot);
+	src: local('Noto Sans Korean'), local("Apple SD Gothic Neo"), url(/kr/ko/resource/css/fonts/NotoSansKR-Medium-subset.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Noto Sans Korean'), local('Apple SD Gothic Neo'),
+    url(/kr/ko/resource/css/fonts/NotoSansKR-Bold.woff2) format('woff2'),url(/kr/ko/resource/css/fonts/NotoSansKR-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Noto Sans Korean'), local('Apple SD Gothic Neo'),
+    url(/kr/ko/resource/css/fonts/NotoSansKR-Black.woff2) format('woff2'),url(/kr/ko/resource/css/fonts/NotoSansKR-Black.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Theinhardt';
+	font-style: normal;
+	font-weight: 400;
+	src: url(/kr/ko/resource/css/fonts/Theinhardt-Light.eot);
+	src: url(/kr/ko/resource/css/fonts/Theinhardt-Light.eot?#iefix) format('embedded-opentype'), url(/kr/ko/resource/css/fonts/Theinhardt-Light.woff) format('woff'), url(/kr/ko/resource/css/fonts/Theinhardt-Light.ttf) format('truetype');
+	unicode-range:U+0041-005A, U+0061-007A, U+0030-0039, U+0201-00F6;
+}
+
+@font-face {
+	font-family: 'Theinhardt';
+	font-style: normal;
+	font-weight: 500;
+	src: url(/kr/ko/resource/css/fonts/Theinhardt-Regular.eot);
+	src: url(/kr/ko/resource/css/fonts/Theinhardt-Regular.eot?#iefix) format('embedded-opentype'), url(/kr/ko/resource/css/fonts/Theinhardt-Regular.woff) format('woff'), url(/kr/ko/resource/css/fonts/Theinhardt-Regular.ttf) format('truetype');
+	unicode-range:U+0041-005A, U+0061-007A, U+0030-0039, U+0201-00F6;
+}
+
+@font-face {
+	font-family: 'Theinhardt';
+	font-style: normal;
+	font-weight: 700;
+	src: url(/kr/ko/resource/css/fonts/Theinhardt-Medium.eot);
+	src: url(/kr/ko/resource/css/fonts/Theinhardt-Medium.eot?#iefix) format('embedded-opentype'), url(/kr/ko/resource/css/fonts/Theinhardt-Medium.woff) format('woff'), url(/kr/ko/resource/css/fonts/Theinhardt-Medium.ttf) format('truetype');
+	unicode-range:U+0041-005A, U+0061-007A, U+0030-0039, U+0201-00F6;
+}
