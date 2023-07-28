@@ -22,40 +22,9 @@ navLinks.forEach(link => {
 const swiper = new Swiper('.swiper_created', {
   // Optional parameters
   slidesPerView: "auto",
-  // spaceBetween: "4vw",
   freeMode: "true"
 });
 
-// 스와이퍼 2
-const swiperTwo = new Swiper('.swiper_journey', {
-  // Optional parameters
-  slidesPerView: "auto",
-  freeMode: "true",
-  mousewheel: true,
-  pagination: {
-  el: ".swiper-pagination",
-  type: "progressbar",
-  },
-  simulateTouch: true,
-  touchEventsTarget: 'wrapper',
-  watchSlidesProgress: true, // 슬라이드 진행률 감시 활성화
-  on: {
-    progress: function() {
-      // 슬라이드 진행률에 따라 색상이 채워지는 프로그레스 바 너비 조정
-      var progressBarFill = this.el.querySelector('.swiper-pagination-progressbar-fill');
-      if (progressBarFill) {
-        progressBarFill.style.width = (this.progress * 100) + '%';
-      }
-    },
-    setTransition: function(transition) {
-      // 슬라이드 전환 시에도 프로그레스 바에 애니메이션 적용
-      var progressBarFill = this.el.querySelector('.swiper-pagination-progressbar-fill');
-      if (progressBarFill) {
-        progressBarFill.style.transitionDuration = transition + 'ms';
-      }
-    },
-  },
-});
 
 
 // 스크롤에 따른 네비게이션 활성화 변경
@@ -64,7 +33,7 @@ const swiperTwo = new Swiper('.swiper_journey', {
 const options = {
   root: null, // viewport를 root로 설정
   rootMargin: '0px',
-  threshold: 0.5 // 섹션의 50%가 보일 때 교차로 간주
+  threshold: 0.48 // 섹션의 48%가 보일 때 교차로 간주
 };
 
 // Intersection Observer의 콜백 함수를 정의
@@ -120,5 +89,66 @@ window.addEventListener('scroll', () => {
     }
 });
 
+const journeySection = (function () {
+  const wrapper = document.querySelector(".journey");
+  const list = wrapper.querySelector(".swiper_list");
 
+  function onInit() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const timeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".sticky",
+        invalidateOnRefresh: true,
+        pin: true,
+        scrub: 1,
+        start: "top top",
+        end: "100%",
+      },
+      defaults: { ease: "none", duration: 1 },
+    });
+
+    timeline
+      .add("start")
+      .fromTo(
+        ".indicator_bar",
+        { width: "0%" },
+        {
+          width: "100%",
+        },
+        "start"
+      )
+      .to(
+        ".swiper_list",
+        {
+          x: function () {
+            return (
+              -(list.scrollWidth - document.documentElement.clientWidth) +
+              "px"
+            );
+          },
+        },
+        "start"
+      );
+
+    ScrollTrigger.refresh();
+  }
+
+  function onResize() {}
+
+  return {
+    onInit: onInit,
+    onResize: onResize,
+  };
+})();
+
+document.addEventListener("readystatechange", function (event) {
+  if (event.target.readyState === "interactive") {
+    journeySection.onInit();
+  }
+});
+
+window.addEventListener("resize", function () {
+  journeySection.onResize();
+});
 
