@@ -638,11 +638,11 @@ img {
     }
 
     .content_wrap .journey .swiper_list .list_item_01 .journey_img{
-        width: 14.0625vw;
+        /* width: 14.0625vw; */
         padding-left: 29.84375vw;
         margin-top: 10.5729166667vw;
         margin-right: 0;
-        /* width: 44vw; */
+        width: 44vw;
     }
 
     .content_wrap .journey .swiper_list .list_item_01 .text_wrap {
