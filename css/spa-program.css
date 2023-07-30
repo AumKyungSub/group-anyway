@@ -1,0 +1,459 @@
+@charset "utf-8";
+
+/* 모바일퍼스트 반응형 360 */
+body, html {
+    font-family: 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', 'Nanum Gothic', '나눔 고딕', '돋움', dotum, sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    word-spacing: 0.05em;
+}
+#programs-container {
+    /* width: 100%; */
+    width: 91.66666666666666vw;
+    margin: 0 auto;
+}
+
+.program-section {
+    margin-top: 8px;
+    letter-spacing: -0.25em;
+}
+.program-section:first-child {
+    margin-top: 20px;
+}
+.program-section h2 {
+    font-family: Theinhardt, NotoSans, sans-serif;
+    font-size: 2.1rem;
+    font-weight: 300;
+    color: #191919;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.program-title {
+    /* (122/360)*100 = 33.88888888888889 */
+    height: 33.88888888888889vw;
+}
+
+.program-title picture source,
+.program-title picture img {
+    width: 100%;
+    height: 100%;
+}
+
+.program-title {
+    /* 위치기준값 */
+    position: relative;
+}
+.program-desc {
+    /* 포지션 */
+    position: absolute;
+    top: 22%;
+    left: 5%;
+    color: #fff;
+}
+.program-desc h3 {
+    font-size: 25px;
+    line-height: 2;
+    font-weight: 300;
+}
+.program-desc p {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.moreBtn {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    /* 포지션 */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+.moreBtn span {
+    display: inline-block;
+    width: 28px;
+    height: 1px;
+    background: #fff;
+    /* 포지션 */
+    position: absolute;
+    bottom: 40px;
+    right: 24px;
+
+    transition: all 0.1s ease-in-out;
+}
+.moreBtn.on span:nth-child(1) {
+    transform: rotate(90deg);
+}
+.moreBtn.on span:nth-child(2) {
+    transform: rotate(180deg);
+}
+.moreBtn span:nth-child(1) {
+    transform: rotate(180deg);
+}
+.moreBtn span:nth-child(2) {
+    transform: rotate(360deg);
+}
+
+.programs-detail {
+    display: none;
+}
+
+.program-part {
+    padding: 16px 18px;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    letter-spacing: -1px;
+    color: #333;
+    
+    transition: border 0.5s;
+}
+.program-part:hover {
+    border-bottom: 1px solid #000;
+}
+/* 마지막 밑줄 none */
+.program-part:last-child {
+    border-bottom: none;
+}
+/* 마지막 밑줄 none */
+.program-part:last-child:hover {
+    border-bottom: none;
+}
+.program-part h3 {
+    font-family: Theinhardt, NotoSans, sans-serif;
+}
+.program-part h3 p:first-child {
+    font-weight: 600;
+    font-size: 1.44rem;
+    text-decoration-line: underline;
+    padding-bottom: 13px;
+}
+.program-part .spa-en,
+.program-part .spa-ko {
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+.program-part .spa-desc {
+    color: #555;
+}
+.program-part .spa-price {
+    display: inline-block;
+    margin-top: 1.1em;
+    color: #767676;
+}
+.program-part button {
+    margin-top: 2em;
+}
+.program-part button a{
+    font-family: 'Noto Sans', 'Malgun Gothic', '맑은 고딕', 'Nanum Gothic', '나눔 고딕', '돋움', dotum, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.6em 3.4em;
+    border: 1px solid #333;
+    color: #333;
+    cursor: pointer;
+
+    transition: all 0.3s ease-out;
+}
+.program-part button a:hover {
+    color: #fff;
+    background: #333;
+}
+
+#store-info {
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #767676;
+    letter-spacing: -.10em;
+    word-spacing: 0.05em;
+    line-height: 1.5;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 미디어쿼리 600이상 */
+@media screen and (min-width:600px) {
+
+#programs-container {
+    /* 600이상 추가 */
+    max-width: 1100px;
+}
+
+.program-title {
+    /* 600이상 수정 */
+    height: auto;
+}
+.program-desc {
+    /* 600이상 수정 */
+    top: 8%;
+}
+}
+
+/* 미디어쿼리 768이상 */
+@media screen and (min-width:768px) {
+    .program-section h2 {
+        /* 768이상 수정 */
+        font-size: 2.75rem;
+    }
+    .program-desc {
+        /* 768이상 수정 */
+        top: 12%;
+    }
+    .program-desc h3 {
+        /* 768이상 수정 */
+        font-size: 2.7rem;
+    }
+    .program-desc p {
+        /* 768이상 수정 */
+        font-size: 1.5rem;
+    }
+    .program-part {
+        /* 768이상 추가 */
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        width:100%;
+        /* 768이상 수정 */
+        padding: 32px;
+    }
+    .program-part h3 {
+        /* 768이상 추가 */
+        max-width: 170px;
+        width:24%;
+    }
+    .program-part h3 p:first-child {
+        /* 768이상 수정 */
+        font-size: 1.04rem;
+    }
+    /* 768이상 추가 */
+    .program-part .spa-en {
+        font-size: 1.28rem;
+    }
+    /* 768이상 추가 */
+    .program-part .spa-ko {
+        font-size: 1.12rem;
+    }
+
+    .program-part .spa-desc {
+        /* 768이상 추가 */
+        font-size: 1.4rem;
+        width:50%;
+        padding: 0 2.4rem;
+    }
+
+    .program-part button {
+        /* 768이상 추가 */
+        align-self: start;
+        /* 768이상 수정 */
+        margin-top: 12px;
+    }
+    .program-part button a{
+        /* 768이상 수정 */
+        font-size: 1.4rem;
+    }
+}
+
+/* 미디어쿼리 1024이상 */
+@media screen and (min-width:1024px) {
+    body, html {
+        font-size: 62.5%;
+        font-family: 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', 'Nanum Gothic', '나눔 고딕', '돋움', dotum, sans-serif;
+    }
+    body {
+        word-spacing: 0.05em;
+    }
+    #programs-container {
+    /* width: 100%; */
+    width: 91.66666666666666vw;
+    margin: 0 auto;
+    /* 600이상 추가 */
+    max-width: 1100px;
+    }
+    
+    .program-section {
+        margin-top: 8px;
+        letter-spacing: -0.25em;
+    }
+    .program-section:first-child {
+        margin-top: 20px;
+    }
+    .program-section h2 {
+        font-family: Theinhardt, NotoSans, sans-serif;  
+        /* 768이상 수정 */
+        font-size: 2.75rem;
+        color: #191919;
+        padding: 15px 0;
+        text-align: center;
+    }
+    
+    .program-title {
+        height: auto;
+    }
+    
+    .program-title {
+        /* 위치기준값 */
+        position: relative;
+    }
+    .program-desc {
+        /* 포지션 */
+        position: absolute;
+        /* 1024이상 수정 */
+        top: 15%;
+        left: 5%;
+        color: #fff;
+    }
+    .program-desc h3 {
+        /* 1024이상 수정 */
+        font-size: 3.4rem;
+        line-height: 2;
+        font-weight: 300;
+    }
+    .program-desc p {
+        /* 1024이상 수정 */
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+    
+    .moreBtn {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        /* 포지션 */
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    
+    }
+    .moreBtn span {
+        display: inline-block;
+        width: 28px;
+        height: 1px;
+        background: #fff;
+        /* 포지션 */
+        position: absolute;
+        bottom: 40px;
+        right: 24px;
+    
+        transition: all 0.1s ease-in-out;
+    }
+    .moreBtn.on span:nth-child(1) {
+        transform: rotate(90deg);
+    }
+    .moreBtn.on span:nth-child(2) {
+        transform: rotate(180deg);
+    }
+    .moreBtn span:nth-child(1) {
+        transform: rotate(180deg);
+    }
+    .moreBtn span:nth-child(2) {
+        transform: rotate(360deg);
+    }
+    
+    .programs-detail {
+        display: none;
+    }
+    
+    .program-part {
+        /* 768이상 추가 */
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        width:100%;
+        /* 768이상 수정 */
+        padding: 32px;
+        border-bottom: 1px solid #ccc;
+        font-size: 1.3rem;
+        line-height: 1.5;
+        letter-spacing: -1px;
+        color: #333;
+        
+        transition: border 0.5s;
+
+
+    }
+    .program-part:hover {
+        border-bottom: 1px solid #000;
+    }
+    /* 마지막 밑줄 none */
+    .program-part:last-child {
+        border-bottom: none;
+    }
+    /* 마지막 밑줄 none */
+    .program-part:last-child:hover {
+        border-bottom: none;
+    }
+    .program-part h3 {
+        font-family: Theinhardt, NotoSans, sans-serif;
+        /* 768이상 추가 */
+        max-width: 170px;
+        width:24%;
+    }
+    .program-part h3 p:first-child {
+        font-weight: 600;
+        /* 1024이상 수정 */
+        font-size: 1.2935rem;
+        text-decoration-line: underline;
+        padding-bottom: 13px;
+
+    }
+    .program-part .spa-en {
+        /* 1024이상 수정 */
+        font-size: 1.592rem;
+    }
+    .program-part .spa-ko {
+        /* 1024이상 수정 */
+        font-size: 1.393rem;
+    }
+
+    .program-part .spa-desc {
+        color: #555;
+        /* 1024이상 수정 */
+        font-size: 1.6rem;
+        width:50%;
+        padding: 0 2.4rem;
+    }
+    .program-part .spa-price {
+        display: inline-block;
+        margin-top: 1.1em;
+        color: #767676;
+    }
+    .program-part button {
+        align-self: start;
+        margin-top: 12px;
+
+    }
+    .program-part button a{
+        font-family: 'Noto Sans', 'Malgun Gothic', '맑은 고딕', 'Nanum Gothic', '나눔 고딕', '돋움', dotum, sans-serif;
+        /* 1024이상 수정*/
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 0.6em 3.4em;
+        border: 1px solid #333;
+        color: #333;
+        cursor: pointer;
+    
+        transition: all 0.3s ease-out;
+    }
+    .program-part button a:hover {
+        color: #fff;
+        background: #333;
+    }
+    
+    #store-info {
+        margin-top: 12px;
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: #767676;
+        letter-spacing: -.10em;
+        word-spacing: 0.05em;
+        line-height: 1.5;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+}
