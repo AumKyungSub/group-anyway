@@ -1,0 +1,324 @@
+@charset "utf-8";
+
+/* 공통(common) */
+html {
+    background-color: #fff;
+    font-size: 62.5%;
+    -webkit-text-size-adjust: none;
+}
+
+
+/* 모바일 스타일 (767px 이하) */
+.products_wrap {
+  padding: 0;
+  letter-spacing: -.07em;
+  word-spacing: 0.05em;
+}
+
+/* 배너 */
+.products_banner {
+    padding: 0;
+    text-align: center;
+}
+.products_banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* 메뉴탭 */
+.products_sort {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    height: auto;
+}
+.products_sort .selectbox {
+    width: 100%;
+    position: relative;
+}
+.products_sort .selectbox select {
+    width: 100%;
+    height: 40px;
+    padding: 0 25px;
+    line-height: 40px;
+    font-size: 13px;
+    border: none;
+    -webkit-appearance: none; /* 웹킷 브라우저 스타일링 제거 */
+    -moz-appearance: none; /* 파이어폭스 브라우저 스타일링 제거 */
+    appearance: none; /* 논리적으로 스타일링을 제거 */
+}
+.products_sort .selectbox span {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* 화살표를 클릭 이벤트에서 제외 */
+}
+.products_sort select span .fas {
+    font-size: 20px;
+    color: #ccc;
+}
+
+.products_sort .swiper {
+    width: 100%;
+    height: 46px;
+    padding: 0 20px;
+    background-color: #fbfbfa;
+    border-bottom: 1px solid #ddd;
+}
+.products_sort .swiper .swiper-slide {
+    width: auto !important;
+    padding: 0 10px;
+    color: #767676;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 46px;
+}
+.products_sort .swiper .selected {
+    color: #222;
+}
+
+
+/* 제품 목록 */
+.product_list_wrap {
+    padding: 0 10px;
+}
+.product_list {
+    font-size: 1em;
+    line-height: 1.5;
+    letter-spacing: -.07em;
+    word-spacing: 0.05em;
+    color: #767676;
+    margin-top: 26px;
+}
+.product_list li {
+    width: 50%;
+    padding: 5px;
+    float: left;
+}
+.product_list li .product {
+    background-color: #eee;
+    position: relative;
+}
+.product_list li .badge_wrap {
+    position: absolute;
+    top: 0;
+    right: 6px;
+}
+.product_list li .badge_wrap .badge {
+    text-align: right;
+}
+.product_list li .badge_wrap .badge span {
+    background-color: #000;
+    color: #fff;
+    width: 18px;
+    padding: 6px 0 6px 1px;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'NotoSans',sans-serif;
+    letter-spacing: 0;
+    font-weight: 500;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-transform: uppercase;
+}
+.product_list li .badge_wrap .badge .exclusive {
+    background-color: #ebe1cc;
+    color: #222;
+}
+.product_list li .product_info {
+    overflow: hidden;
+    padding: 18px 30px 0 15px;
+    background-color: #eee;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+.product_list li .product_info h1{
+    height: 20px;
+    margin-bottom: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #222;
+}
+.product_list li .product_info h2{
+    height: 30px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    -webkit-line-clamp: 2;
+    
+}
+.product_list li .product_info h3{
+    margin-bottom: 3px;
+    font-size: 14px;
+    height: 18px;
+    line-height: 1;
+    color: #222;
+    font-weight: 700;
+}
+.product_list li .product_info h3 span{
+    font-size: 11px;
+    color: #222;
+    font-weight: 700;
+}
+.product_list li .product_info h4{
+    font-size: 12px;
+    height: 13px;
+    line-height: 1.1;
+    color: #444;
+}
+.product_list li figure {
+    width: 100%;
+}
+.product_list li figure img{
+    width: 100%;
+}
+
+/* 페이징 */
+.paging {
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 36px;
+    margin-bottom: 43px;
+    text-align: right;
+    font-size: 1.6em;
+    color: #767676;
+}
+.paging strong {
+    color: #333;
+}
+.paging .paging_next {
+    width: 40px;
+    height: 40px;
+    background-color: #dbdbda;
+    color: white;
+}
+
+/* 태블릿 스타일 (768px ~ 1023px) */
+@media screen and (min-width: 768px){
+  .products_wrap {
+    padding: 0 30px;
+    font-family: 'Noto Sans', 'Malgun Gothic', '맑은 고딕', 'Nanum Gothic', '나눔 고딕', '돋움', 'dotum', sans-serif;
+  }
+
+  /* 메뉴탭 */
+.products_sort {
+    width: 100%;
+    margin-top: 40px;
+    height: 56px;
+    line-height: 58px;
+    position: initial;
+}
+.products_sort .selectbox {
+    width: 140px;
+    position: relative;
+    float: left;
+}
+.products_sort .selectbox select {
+    width: 100%;
+    padding: 0 0 0 22px;
+    font-size: 17px;
+    height: 56px;
+    line-height: 56px;
+    color: #222;
+    font-weight: 500;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.products_sort .selectbox span {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    width: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* 화살표를 클릭 이벤트에서 제외 */
+}
+.products_sort select span .fas {
+    font-size: 20px;
+    color: #ccc;
+}
+
+.products_sort .swiper {
+    float: left;
+    width: calc(100% - 140px);
+    height: 56px;
+    line-height: 58px;
+    padding: 0 26px;
+    background-color: #fbfbfa;
+    border-bottom: 1px solid #ddd;
+}
+.products_sort .swiper .swiper-slide {
+    width: 100%;
+    padding: 0 10px;
+    color: #767676;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 56px;
+}
+.products_sort .swiper .selected {
+    color: #222;
+}
+
+/* 제품 목록 */
+.product_list_wrap {
+    margin: 0 -30px;
+    padding: 0 22px;
+}
+.product_list {
+    font-size: 1em;
+    line-height: 1.5;
+    letter-spacing: -.07em;
+    word-spacing: 0.05em;
+    color: #767676;
+    margin-top: 26px;
+}
+.product_list li {
+    width: 33.33333333333333%;
+    padding: 8px;
+    float: left;
+}
+
+/* 페이징 */
+.paging {
+    padding: 0;
+}
+
+}
+
+/* PC 스타일 (1024px 이상) */
+@media screen and (min-width: 1024px) {
+  .products_wrap {
+    padding: 0 7%;
+  }
+
+  /* 제품 목록 */
+.product_list_wrap {
+    margin: 0 -8px;
+    padding: 0;
+}
+.product_list {
+    font-size: 1em;
+    line-height: 1.5;
+    letter-spacing: -.07em;
+    word-spacing: 0.05em;
+    color: #767676;
+    margin-top: 26px;
+}
+.product_list li {
+    width: 25%;
+    padding: 8px;
+    float: left;
+}
+}

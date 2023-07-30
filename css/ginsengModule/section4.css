@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/* Section 4 */
+.ginseng-section4 {
+    background: url("/images/ginseng/ginseng_cream_img_03_mo_kr.jpg") no-repeat;
+    background-size: cover;
+    margin-top: -1px;
+}
+.ginseng-section4 .text-wrap {
+    color: #fff;
+    padding: 56px 0 90% 31px;
+    /* (56/360)*100 = 15.555555555555555 */
+    /* (31/360)*100 = 8.61111111111111 */
+    padding: 15.5555% 0 90% 8.6111%;
+
+    font-family: Theinhardt,NotoSans,"Malgun Gothic","맑은 고딕","Nanum Gothic","나눔 고딕","돋움",dotum,sans-serif;
+}
+.ginseng-section4 .text-wrap h3 {
+    /* (52/750)*100 = 6.933333333333333*/
+    font-size: max(11px,6.933333333333333vw);
+    font-weight: 600;
+    /* (22/360)*100 = 6.111111111111111 */
+    margin-bottom: 6.111111111111111%;
+    letter-spacing: -0.1em;
+}
+.ginseng-section4 .text-wrap h4 {
+    /* (13/360)*100 = 3.6111111111111107 */
+    font-size: max(11px,3.6111111111111107vw);
+    font-weight: 700;
+    /* (10/360)*100 = 2.7777777777777777 */
+    margin-bottom: 2.7777777777777777%;
+    letter-spacing: -0.1em;
+}
+.ginseng-section4 .text-wrap p {
+    /* (12.48/360)*100 = 3.4666666666666663 */
+    font-size: max(11px,3.4666666666666663vw);
+    line-height: 1.58;
+    font-weight: 300;
+    letter-spacing: -0.1em;
+}
+.ginseng-section4 .text-wrap p:first-of-type {
+    margin-bottom: 2%;
+}
+
+/* 태블릿 750px이상 : 1920기준 */
+
+@media screen and (min-width:751px) {
+    /* 수정 */
+    .ginseng-section4 {
+        background: url("/images/ginseng/ginseng_cream_img_03_pc_kr.jpg") no-repeat;
+        background-size: 100%;
+    }
+
+    .ginseng-section4 .text-wrap {
+        padding: 15.52083% 0 15.104166667% 58.33333%;
+        letter-spacing: -0.45em;
+    }
+    .ginseng-section4 .text-wrap h3 {
+        /* 수정 */
+        /* (48/1920)*100 = 2.5 */
+        font-size: max(11px,2.5vw);
+    }
+    .ginseng-section4 .text-wrap h4 {
+        /* 수정 */
+        /* (24/1920)*100 = 1.25 */
+        font-size: max(11px,1.25vw);
+    }
+    .ginseng-section4 .text-wrap p {
+        /* 수정 */
+        font-size: max(11px,1.25vw);
+    }
+
+}

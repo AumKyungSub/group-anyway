@@ -1,0 +1,311 @@
+@charset "utf-8";
+/* 전체 공통 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/* header 임시 */
+header{
+    width: 100%;
+    height: 60px;
+}
+/* Main */
+.main_dosan {
+    width: 100%;
+    overflow-x: hidden;
+    /* Font Common */
+    color: #fff;
+}
+.sec_1 div,
+.sec_2 div {
+    padding-top: 0;
+}
+/* section1 */
+.sec_1 {
+    width: 100%;
+    height: 120vw;
+    /* Position */
+    position: relative;
+    z-index: 0;
+}
+.sec_1::before {
+    height: calc(100% + 60px);
+    /* Background */
+    background-image: url('../images/flagship/dosan/section1_dosan_mobile.jpg');
+    background-position: center;
+    transform: scale(1.1);
+    /* Position */
+    top: -60px;
+    animation: pageDosanAni 1.5s forwards;
+}
+@keyframes pageDosanAni {
+    from{
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.sec_1 h2 {
+    padding-bottom: 23.333vw;
+    /* Font */
+    font-size: 6.667vw;
+    text-shadow: #222 0.267vw 0 2vw;
+    letter-spacing: 0.667vw;
+    line-height: 1.5;    
+}
+.sec_1 span {
+    /* Font */
+    font-size: 16px;
+    font-family: 'Theinhardt';
+    letter-spacing: 1px;
+    /* Position */
+    position: absolute;
+    left: 50%;
+    bottom: 7.237vw;
+}
+.sec_1 span::before {
+    content: " ";
+    width: 5.067vw;
+    height: 5.067vw;
+    background-color: transparent;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: rotate(45deg);
+    /* Position */
+    position: absolute;
+    left: -2.5335vw;
+    top: -2.5335vw;
+}
+.sec_1 span i {   
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden;
+    /* Position */
+    position: absolute;
+    z-index: -1; 
+}
+
+/* Section2 */
+.sec_2 {
+    display: block;
+}
+.sec_2::before {
+    content: none;
+}
+
+/* Section2 1st */
+.sec_2_first {
+    width: 100%;
+    height: 48vw;
+    /* Background */
+    background-image: url('../images/flagship/dosan/section2_1st_bgc.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* Font */
+    font-size: 3.733vw;
+    color: #5a443b;
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec_2_first p:first-child {
+    display: none;
+}
+.sec_2_first p:nth-child(2),
+.sec_2_first p:last-child {
+    padding-top: 1vw;
+}
+.sec_2_first p:last-child {
+    font-weight: 300;
+}
+
+/* Section2 2nd */
+.sec_2_second {
+    background-color: #fcf5ef;
+}
+.sec_2_second>h3 {
+    padding-top: 9.867vw;
+    margin-bottom: 7.333vw;
+    opacity: 0;
+}
+.video_play_btn {
+    width: 100%;
+    height: 56.267vw;
+    cursor: pointer;
+    opacity: 0;
+    /* Background */
+    background-image: url('../images/flagship/dosan/video_thumbnail_dosan.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* Position */
+    position: relative;
+}
+.video_play_btn::after {
+    content: " ";
+    width: 10.667vw;
+    height: 10.667vw;
+    box-shadow: 0px 0px 0.515vw 0px rgb(0 0 0 / 40%);
+    border-radius: 50%;
+    /* Background */
+    background-image: url('../images/flagship/icon/play_white.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* Position */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.iframe_video {
+    height: 56.267vw;
+    /* Display None First than Diaply Block After Click video_play_btn */
+    display: none;
+}
+.explanation {
+    height: 28vw;
+    padding: 4vw !important;
+    background-color: #fcf5ef;
+    overflow-y: scroll;
+    /* Font */
+    font-size: 3.2vw;
+    color: #74675e;
+    text-align-last: left;
+}
+.explanation>.explanation_text>h4 {
+    /* Font */
+    font-weight: 700;
+}
+
+/* Section2 3rd */
+.sec_2_third h3 {
+    padding-top: 9.867vw;
+}
+.slide_imgs {
+    padding-top: 7.333vw !important;
+}
+.swiper {
+    /* Position */
+    position: relative;
+}
+.swiper-wrapper {
+    
+}
+.swiper-slide {
+    width: 93.067vw !important;
+    margin-right: 1.867vw !important;
+    border: 1px solid #f1ede9;
+}
+.swiper-slide img {
+    width: 100%;
+}
+.swiper-text {
+    background-color: #f6f4f1;
+    padding: 5.333vw 5.5vw 9.333vw 8.8vw !important;
+    text-align-last: left;
+    /* Position */
+    position: relative;
+}
+.floor {
+    width: 10.8vw;
+    height: 6vw;
+    background-color: #a29789;
+    /* Font */
+    font-family: "Theinhardt";
+    font-size: 4.267vw;
+    font-weight: 500;
+    color: #fff;
+    /* Flex */
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    /* Position */
+    position: absolute;
+    left: 8.8vw;
+    top: -3.666vw;
+}
+.swiper-text strong {
+    /* Font */
+    font-size: 5.067vw;
+    color: #3f3832;
+}
+.swiper-text strong span,
+.swiper-text p {
+    /* Font */
+    font-size: 4vw;
+    color: #70675f;
+    font-weight: 500;
+}
+.swiper-text p {
+    padding-top: 1.333vw !important;
+    /* Font */
+    font-weight: 400 !important;
+    line-height: 1.4;
+    letter-spacing: -0.267vw;
+}
+.play_bar {
+    width: 75.733vw !important;
+    height: 2.667vw;
+    /* Flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Position */
+    position: absolute;
+    left: 8.8vw !important;
+    bottom: 4.665vw !important;
+    z-index: 99;
+}
+.paging1 {
+    width: 70.667vw !important;
+    height: 0.533vw !important;
+    margin-right: 3.333vw !important;
+    position: relative;
+}
+.swiper-pagination-progressbar-fill {
+    width: 70.667vw !important;
+    height: 0.533vw !important;
+    background-color: #64544a !important;
+    border: 0 !important;
+}
+.start {
+    /* Loading */
+    display: none;
+
+    width: 0 !important;
+    height: 0 !important;
+    font-size: 0;
+    border-color: transparent transparent transparent #64544a;
+    border-style:  solid;
+    border-width: 1.3335vw 0 1.3335vw 2.667vw !important;
+}
+.stop {
+    width: 1.6vw;
+    height: 2.667vw;
+    font-size: 0;
+    border: 2px solid #64544a;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+/* Section2 4th */
+.sec_2_fourth {
+    padding: 9.867vw 0 14vw !important;
+    background-color: #f2eeec;
+}
+.sec_2_fourth h3 {
+    padding-bottom: 2.1649vw !important;
+}
+.sec_2_4th_content {
+    width: 86.4vw !important;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.sec_2_4th_content img {
+    width: 100%;
+}
