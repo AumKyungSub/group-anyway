@@ -6,9 +6,10 @@
     margin: 0 auto;
 }
 .ginseng-section3 .text-wrap {
+    font-family: Theinhardt,NotoSans,"Malgun Gothic","맑은 고딕","Nanum Gothic","나눔 고딕","돋움",dotum,sans-serif;
     text-align: center;
     /* (58/360)*100 = 16.11111111111111  */
-    padding: 16.11111111111111% 0;
+    padding: 16.555% 0;
 }
 .ginseng-section3 .text-wrap .ginsengName-kr {
     /* (22/360)*100 = 6.111111111111111  */
@@ -16,7 +17,6 @@
     font-weight: 600;
 }
 .ginseng-section3 .text-wrap .ginsengName-en {
-    font-family: Theinhardt,NotoSans,"Malgun Gothic","맑은 고딕","Nanum Gothic","나눔 고딕","돋움",dotum,sans-serif;
     /* (12.48/360)*100 = 3.4666666666666663   */
     font-size: 3.4666666666666663vw;
     letter-spacing: 0.5px;
