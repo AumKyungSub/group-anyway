@@ -2,7 +2,6 @@
 /* 0. 탑다운 공식상 항상 위에 있어야 하는 것들 */
 let windWidth = $(window).width();
 
-
 /* 1. 스클롤 애니메이션 */
 // 스크롤 애니메이션 해당 태그 선택 (main에서 특정 클래스와 br빼고 전부 선택)
 let scrollAni = $('main *:not(.no_animate, .no_animate_all *, br)');
