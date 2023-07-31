@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* 전체 공통 */
 body {
+    height: 100%;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 62.5%;
     word-spacing: 0.05em;
@@ -21,7 +22,6 @@ h3 {
     color: #4d3a2d;
     letter-spacing: 0.267vw;
     line-height: 1.3;
-
 }
 
 /* Show Up (Fade-up) Animation */
