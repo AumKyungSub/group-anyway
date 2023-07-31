@@ -2,6 +2,7 @@
 /* 0. 탑다운 공식상 항상 위에 있어야 하는 것들 */
 let windWidth = $(window).width();
 
+
 /* 1. 스클롤 애니메이션 */
 // 스크롤 애니메이션 해당 태그 선택 (main에서 특정 클래스와 br빼고 전부 선택)
 let scrollAni = $('main *:not(.no_animate, .no_animate_all *, br)');
@@ -71,15 +72,6 @@ for (let i = 0; i < scrollAni.length;  i++) {
         }
     });
 }
-
-/* 1-1. 위 스트롤 애니메이션으로 못한 구간은 AOS Library로 대체 */
-if(windWidth > 1023) {
-    $('.sec_2_fifth ul li').addClass('aos-ini').addClass('aos-animate').attr('data-aos','fade-up');
-}else if(windWidth <1024) {
-    $('.sec_2_fifth ul li').removeClassClass('aos-ini').removeClassClass('aos-animate').removeAttr('data-aos');
-
-}
-
 /* 2. Flagship Dosan Section 2 (비디오 기능) */
 // explanation 클래스 숨기기
 $('.explanation').hide();
@@ -93,7 +85,6 @@ $('.video_play_btn').click(function(){
     $('.iframe_video').css({'display':'block'});
     $('.explanation').stop().slideDown();
 });
-
 
 /* 3. Swiper 사용한 슬라이드 효과 */
 // 슬라이드 이동 범위 동적 계산
@@ -197,6 +188,13 @@ $('.start').on('click',function(){
   })
 
   
+/* 1-1. 위 스트롤 애니메이션으로 못한 구간은 AOS Library로 대체 */
+if(windWidth > 1023) {
+    $('.sec_2_fifth ul li').addClass('aos-ini').addClass('aos-animate').attr('data-aos','fade-up');
+}
+if(windWidth <1024) {
+    $('.sec_2_fifth ul li').removeClassClass('aos-ini').removeClassClass('aos-animate').removeAttr('data-aos');
+}
 /* 비고 */
 // 1. jQuery로 IntersectionObserver 사용해서 스크롤 애니메이션 하려 했지만 못하겠음....
 // const Observer = new IntersectionObserver((entries, observer) => {
