@@ -29,6 +29,10 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- AOS Library CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- 기본 코딩 CSS -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/notosans_kr_CDN.css" />
@@ -66,13 +70,11 @@
       <!-- 해당 페이지 코딩 영역 -->
       <!-- Section1 -->
       <section class="sec_1 no_animate no_animate_all">
-        <div class="text_cover">
-          <h2>
-            Sulwhasoo Dosan
-            <br />
-            Flagship Store
-          </h2>
-        </div>
+        <h2>
+          Sulwhasoo Dosan
+          <br />
+          Flagship Store
+        </h2>
         <span class="arrow_down">
           <i>SCROLL</i>
         </span>
@@ -109,7 +111,7 @@
         <!-- Section2 2nd -->
         <div class="sec_2_second no_animate">
           <h3>DOSAN DESIGN STORY</h3>
-          <div class="video_area_cover no_animate">
+          <div class="video_area_cover no_animate_all">
             <button class="video_play_btn">플레이버튼</button>
             <div class="iframe_video no_animate">
               <iframe
@@ -167,19 +169,148 @@
           </h3>
           <div class="slide_imgs no_animate_all">
             <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img
-                    src="./images/flagship/dosan/slide1.jpg"
-                    alt="슬라이드1"
-                  />
-                  <div class="swiper-text">
+              <div
+                class="swiper_text_pc swiper-pagination no_animate_all no_animate"
+              >
+                <ul class="text_spot_unordered">
+                  <li class="text_list01">
+                    <span class="floor">B1F</span>
+                    <strong
+                      >프리미엄 한방 안티에이징 스파 <span>SPA</span></strong
+                    >
+                    <p>
+                      뛰어난 안티에이징 효능을 선사하는 설화수의<br />
+                      스킨케어 상품들과 오랜 지혜가 담긴 비법으로,<br />
+                      안티에이징 케어를 경험하실 수 있습니다
+                    </p>
+                  </li>
+                  <li class="text_list02">
+                    <span class="floor">B1F</span>
+                    <strong
+                      >프리미엄 한방 안티에이징 스파 <span>SPA</span></strong
+                    >
+                    <p>
+                      아시아의 전통에서 영감을 받은 독창적인 리추얼과 <br />
+                      전통 소재의 옥, 호박, 백자, 자음단 볼 등의 특별한<br />
+                      트리트먼트 도구들은 효능을 배가시킵니다
+                    </p>
+                  </li>
+                  <li class="text_list03">
                     <span class="floor">1F</span>
                     <strong>헤리티지 룸 <span>HERITAGE ROOM</span></strong>
                     <p>
                       과거에서 현재로 이어지는 설화수의 세계로 <br />
                       초대하는 공간으로 1966년부터 이어져온 <br />
                       설화수의 헤리티지를 느낄실 수 있습니다
+                    </p>
+                  </li>
+                  <li class="text_list04">
+                    >
+                    <span class="floor">2F</span>
+                    <strong>부띠끄 <span>BOUTIQUE ROOM</span></strong>
+                    <p>
+                      설화수 도산 플래그십 스토어 전용상품과 <br />
+                      신상품, 시즌별 추천 상품을 만나보실 수 있습니다
+                    </p>
+                  </li>
+                  <li class="text_list05">
+                    <span class="floor">2F</span>
+                    <strong>부띠끄 <span>BOUTIQUE ROOM</span></strong>
+                    <p>
+                      설화수의 모든 상품을 자유롭게 경험하며 <br />
+                      편안하게 카운셀링을 받으실 수 있습니다
+                    </p>
+                  </li>
+                  <li class="text_list06">
+                    <span class="floor">2F</span>
+                    <strong>기프트 서비스 <span>GIFT SERVICE</span></strong>
+                    <p>
+                      정중하게 예를 다하여 마음 깊이 복을 전하는 <br />
+                      포장서비스 '지함보(智函褓)' 를 통해 설화수의 <br />
+                      특별한 정성과 품격을 경험하실 수 있습니다
+                    </p>
+                  </li>
+                  <li class="text_list07">
+                    <span class="floor">3F</span>
+                    <strong>vip 라운지 <span>VIP LOUNGE</span></strong>
+                    <p>
+                      설화수의 우수고객님을 위한 <br />
+                      공간으로 차와 다과를 즐기며 <br />
+                      편안하게 휴식하실 수 있습니다
+                    </p>
+                  </li>
+                  <li class="text_list08">
+                    <span class="floor">3F</span>
+                    <strong>컬처 라운지 <span>CULTURE LOUNGE</span></strong>
+                    <p>
+                      설화수만의 문화와 향기를 느끼는 <br />
+                      공간으로 정기적으로 다채로운 <br />
+                      클래스를 만나보실 수 있습니다
+                    </p>
+                  </li>
+                  <li class="text_list09">
+                    <span class="floor">4F</span>
+                    <strong
+                      >컨템포러리 한방 밸런스 스파 <span>SPA</span></strong
+                    >
+                    <p>
+                      설화수만의 한방 테크닉, 자연 채광이 가득한 <br />
+                      트리트먼트 룸, 바쁜 일상에서 흐트러진 균형을 <br />
+                      회복시키고 재충전을 선사합니다
+                    </p>
+                  </li>
+                  <li class="text_list010">
+                    <span class="floor">4F</span>
+                    <strong
+                      >컨템포러리 한방 밸런스 스파 <span>SPA</span></strong
+                    >
+                    <p>
+                      도산공원을 바라보는 파크뷰 룸, <br />
+                      릴렉세이션 라운지는 설화수 밸런스 <br />
+                      스파만의 특화된 서비스를 제공합니다
+                    </p>
+                  </li>
+                  <li class="text_list011">
+                    <span class="floor">5F</span>
+                    <strong>야외 라운지 <span>ROOFTOP</span></strong>
+                    <p>
+                      오감으로 자연을 만나는 야외 라운지로 <br />
+                      따스한 바람과 청명한 하늘 아래서 <br />
+                      진정한 휴식을 경험할 수 있습니다
+                    </p>
+                  </li>
+                </ul>
+                <div class="play_bar_pc">
+                  <div class="progress_spot_cover">
+                    <div class="paging2"></div>
+                    <button class="start">시작 테스트</button>
+                    <button class="stop">정지 테스트</button>
+                  </div>
+                  <div class="next_prev_spot_cover">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./images/flagship/dosan/slide1.jpg"
+                    alt="슬라이드1"
+                  />
+                  <img
+                    src="./images/flagship/dosan/slide1_pc.jpg"
+                    alt="슬라이드1"
+                  />
+                  <div class="swiper-text">
+                    <span class="floor">B1F</span>
+                    <strong
+                      >프리미엄 한방 안티에이징 스파 <span>SPA</span></strong
+                    >
+                    <p>
+                      뛰어난 안티에이징 효능을 선사하는 설화수의<br />
+                      스킨케어 상품들과 오랜 지혜가 담긴 비법으로,<br />
+                      안티에이징 케어를 경험하실 수 있습니다
                     </p>
                   </div>
                 </div>
@@ -188,19 +319,29 @@
                     src="./images/flagship/dosan/slide2.jpg"
                     alt="슬라이드2"
                   />
+                  <img
+                    src="./images/flagship/dosan/slide2_pc.jpg"
+                    alt="슬라이드2"
+                  />
                   <div class="swiper-text">
-                    <span class="floor">1F</span>
-                    <strong>헤리티지 룸 <span>HERITAGE ROOM</span></strong>
+                    <span class="floor">B1F</span>
+                    <strong
+                      >프리미엄 한방 안티에이징 스파 <span>SPA</span></strong
+                    >
                     <p>
-                      과거에서 현재로 이어지는 설화수의 세계로 <br />
-                      초대하는 공간으로 1966년부터 이어져온 <br />
-                      설화수의 헤리티지를 느낄실 수 있습니다
+                      아시아의 전통에서 영감을 받은 독창적인 리추얼과 <br />
+                      전통 소재의 옥, 호박, 백자, 자음단 볼 등의 특별한<br />
+                      트리트먼트 도구들은 효능을 배가시킵니다
                     </p>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <img
                     src="./images/flagship/dosan/slide3.jpg"
+                    alt="슬라이드3"
+                  />
+                  <img
+                    src="./images/flagship/dosan/slide3_pc.jpg"
                     alt="슬라이드3"
                   />
                   <div class="swiper-text">
@@ -210,6 +351,158 @@
                       과거에서 현재로 이어지는 설화수의 세계로 <br />
                       초대하는 공간으로 1966년부터 이어져온 <br />
                       설화수의 헤리티지를 느낄실 수 있습니다
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/flagship/dosan/slide4.jpg"
+                    alt="슬라이드4"
+                  />
+                  <img
+                    src="./images/flagship/dosan/slide4_pc.jpg"
+                    alt="슬라이드4"
+                  />
+                  <div class="swiper-text">
+                    <span class="floor">2F</span>
+                    <strong>부띠끄 <span>BOUTIQUE ROOM</span></strong>
+                    <p>
+                      설화수 도산 플래그십 스토어 전용상품과 <br />
+                      신상품, 시즌별 추천 상품을 만나보실 수 있습니다
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/flagship/dosan/slide5.jpg"
+                    alt="슬라이드5"
+                  />
+                  <img
+                    src="./images/flagship/dosan/slide5_pc.jpg"
+                    alt="슬라이드5"
+                  />
+                  <div class="swiper-text">
+                    <span class="floor">2F</span>
+                    <strong>부띠끄 <span>BOUTIQUE ROOM</span></strong>
+                    <p>
+                      설화수의 모든 상품을 자유롭게 경험하며 <br />
+                      편안하게 카운셀링을 받으실 수 있습니다
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/flagship/dosan/slide6.jpg"
+                    alt="슬라이드6"
+                  />
+                  <img
+                    src="./images/flagship/dosan/slide6_pc.jpg"
+                    alt="슬라이드6"
+                  />
+                  <div class="swiper-text">
+                    <span class="floor">2F</span>
+                    <strong>기프트 서비스 <span>GIFT SERVICE</span></strong>
+                    <p>
+                      정중하게 예를 다하여 마음 깊이 복을 전하는 <br />
+                      포장서비스 '지함보(智函褓)' 를 통해 설화수의 <br />
+                      특별한 정성과 품격을 경험하실 수 있습니다
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/flagship/dosan/slide7.jpg"
+                    alt="슬라이드7"
+                  />
+                  <img
+                    src="./images/flagship/dosan/slide7_pc.jpg"
+                    alt="슬라이드7"
+                  />
+                  <div class="swiper-text">
+                    <span class="floor">3F</span>
+                    <strong>vip 라운지 <span>VIP LOUNGE</span></strong>
+                    <p>
+                      설화수의 우수고객님을 위한 공간으로 <br />
+                      차와 다과를 즐기며 편안하게 휴식하실 수 있습니다
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/flagship/dosan/slide8.jpg"
+                    alt="슬라이드8"
+                  />
+                  <img
+                    src="./images/flagship/dosan/slide8_pc.jpg"
+                    alt="슬라이드8"
+                  />
+                  <div class="swiper-text">
+                    <span class="floor">3F</span>
+                    <strong>컬처 라운지 <span>CULTURE LOUNGE</span></strong>
+                    <p>
+                      설화수만의 문화와 향기를 느끼는 공간으로 <br />
+                      다채로운 클래스를 만나보실 수 있습니다
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/flagship/dosan/slide9.jpg"
+                    alt="슬라이드9"
+                  />
+                  <img
+                    src="./images/flagship/dosan/slide9_pc.jpg"
+                    alt="슬라이드9"
+                  />
+                  <div class="swiper-text">
+                    <span class="floor">4F</span>
+                    <strong
+                      >컨템포러리 한방 밸런스 스파 <span>SPA</span></strong
+                    >
+                    <p>
+                      설화수만의 한방 테크닉, 자연 채광이 가득한 <br />
+                      트리트먼트 룸, 바쁜 일상에서 흐트러진 균형을 <br />
+                      회복시키고 재충전을 선사합니다
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/flagship/dosan/slide10.jpg"
+                    alt="슬라이드10"
+                  />
+                  <img
+                    src="./images/flagship/dosan/slide10_pc.jpg"
+                    alt="슬라이드10"
+                  />
+                  <div class="swiper-text">
+                    <span class="floor">4F</span>
+                    <strong
+                      >컨템포러리 한방 밸런스 스파 <span>SPA</span></strong
+                    >
+                    <p>
+                      도산공원을 바라보는 파크뷰 룸, <br />
+                      릴렉세이션 라운지는 설화수 밸런스 <br />
+                      스파만의 특화된 서비스를 제공합니다
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/flagship/dosan/slide11.jpg"
+                    alt="슬라이드11"
+                  />
+                  <img
+                    src="./images/flagship/dosan/slide11_pc.jpg"
+                    alt="슬라이드11"
+                  />
+                  <div class="swiper-text">
+                    <span class="floor">5F</span>
+                    <strong>야외 라운지 <span>ROOFTOP</span></strong>
+                    <p>
+                      오감으로 자연을 만나는 야외 라운지로 <br />
+                      따스한 바람과 청명한 하늘 아래서 <br />
+                      진정한 휴식을 경험할 수 있습니다
                     </p>
                   </div>
                 </div>
@@ -227,24 +520,92 @@
         <!-- Section2 4th -->
         <section class="sec_2_fourth no_animate">
           <h3>SERVICE INFORMATION</h3>
-          <div class="sec_2_4th_content no_animate_all">
-            <img
-              src="./images/flagship/dosan/section2_4th_dosan_mobile.jpg"
-              alt="서비스인포"
-            />
-            <div class="4th_text_cover">
-              <p>피부 자생력을 높여주는</p>
-              <h4>진생&제이드 터치</h4>
+          <div class="sec_2_4th_content">
+            <div class="sec_2_4th_img_cover no_animate_all no_animate">
+              <img
+                src="./images/flagship/dosan/section2_4th_dosan_pc.jpg"
+                alt="서비스인포"
+              />
+            </div>
+            <div class="sec_2_4th_text_cover no_animate_all no_animate">
+              <h4>
+                피부 자생력을 높여주는 <br />
+                <span>진생&제이드 터치</span>
+              </h4>
               <p>
-                피부 자생력을 높이는 인삼과 옥 어플리케어터의 시너지,
-                진생&제이드 터치. 몸의 반사구인 손부위에 피부 자생력을 높이는
-                자음생크림과 연옥 어플리케어터를 이용하여 지친 피부와 일상에
-                활력을 전달하는 핸드 케어 서비스 입니다.
+                피부 자생력을 높이는 인삼과 옥 어플리케어터의 시너지, <br />
+                진생&제이드 터치. 몸의 반사구인 손부위에 피부 자생력을 <br />
+                높이는 자음생크림과 연옥 어플리케어터를 이용하여 <br />
+                지친 피부와 일상에 활력을 전달하는 핸드 케어 서비스 입니다.
+              </p>
+              <p class="time">
+                <span>소요시간&nbsp;:&nbsp;30분</span>
               </p>
             </div>
+            <div class="sec_2_4th_reservation no_animate_all no_animate">
+              <a href="#">
+                <span>예약 바로가기</span>
+              </a>
+            </div>
           </div>
+          <div class="empty_bottom"></div>
         </section>
         <!-- /Section2 4th -->
+        <!-- Section2 5th -->
+        <section class="sec_2_fifth no_animate">
+          <h3>
+            SULWHASOO DOSAN <br />
+            FLAGSHIP STORE
+          </h3>
+          <div class="sec_2_fifth_content_cover no_animate">
+            <div class="map_dosan no_animate_all">
+              <img
+                src="./images/flagship/dosan/map_dosan_pc.jpg"
+                alt="도산 구글맵"
+              />
+            </div>
+            <ul class="no_animate">
+              <li class="li_top"></li>
+              <li class="no_animate_all animate_pc">
+                <span>LOCATION</span>
+                <div class="contact_cover_01">
+                  <p>서울시 강남구 도산대로 45길 18</p>
+                  <p>설화수 도산 플래그십 스토어</p>
+                </div>
+              </li>
+              <li class="no_animate_all animate_pc">
+                <span>HOURS</span>
+                <dl class="contact_cover_02">
+                  <dt class="no_mt">부띠끄</dt>
+                  <dd>
+                    - 운영시간 : 매일, AM 10:00 - PM 7:00<br />
+                    - 휴무일 : 매주 첫 번째 월요일, 1월1일, 설/추석 당일 휴무
+                  </dd>
+                  <dt class="dtPadding">설화수 스파, 발란스 스파</dt>
+                  <dd class="no_pb">
+                    - 운영시간 : 매일, AM 10:00 - PM 8:00 <br />
+                    - 휴무일 : 매주 첫 번째 월요일, 1월1일, 설/추석 당일 휴무
+                  </dd>
+                </dl>
+              </li>
+              <li class="no_animate_all animate_pc">
+                <span>CONTACT</span>
+                <div class="contact_cover_03">
+                  <p class="contact">02-541-9270</p>
+                </div>
+              </li>
+              <li class="no_animate_all animate_pc">
+                <span>SPA RESERVATION</span>
+                <div class="contact_cover_04">
+                  <p class="p_pt">Sulwhasoo Spa(B1) 02-541-9272</p>
+                  <p>Sulwhasoo Balance Spa(4F) 02-541-9273</p>
+                </div>
+              </li>
+              <li class="li_top"></li>
+            </ul>
+          </div>
+        </section>
+        <!-- /Section2 5th -->
       </section>
       <!-- /Section2 -->
     </main>
@@ -258,5 +619,20 @@
 
     <!-- 페이지 JS -->
     <script src="./js/flagship.js"></script>
+    <!-- AOS INIT SCRIPT -->
+    <script>
+      AOS.init();
+      /* 주석부분과 같이 AOS API - Global Setting 가능
+      AOS.init({
+        offset: 120,
+        delay: 0,
+        duration: 400,
+        easing: 'ease',
+        once: false,
+        mirror: false,
+        anchorPlacement: 'top-bottom'
+      });    
+      */
+    </script>
   </body>
 </html>
