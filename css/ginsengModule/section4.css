@@ -17,7 +17,7 @@
 }
 .ginseng-section4 .text-wrap h3 {
     /* (52/750)*100 = 6.933333333333333*/
-    font-size: max(11px,6.933333333333333vw);
+    font-size: max(var(--font-size),6.933333333333333vw);
     font-weight: 600;
     /* (22/360)*100 = 6.111111111111111 */
     margin-bottom: 6.111111111111111%;
@@ -25,7 +25,7 @@
 }
 .ginseng-section4 .text-wrap h4 {
     /* (13/360)*100 = 3.6111111111111107 */
-    font-size: max(11px,3.6111111111111107vw);
+    font-size: max(var(--font-size),3.6111111111111107vw);
     font-weight: 700;
     /* (10/360)*100 = 2.7777777777777777 */
     margin-bottom: 2.7777777777777777%;
@@ -33,7 +33,7 @@
 }
 .ginseng-section4 .text-wrap p {
     /* (12.48/360)*100 = 3.4666666666666663 */
-    font-size: max(11px,3.4666666666666663vw);
+    font-size: max(var(--font-size),3.4666666666666663vw);
     line-height: 1.58;
     font-weight: 300;
     letter-spacing: -0.1em;
@@ -58,16 +58,16 @@
     .ginseng-section4 .text-wrap h3 {
         /* 수정 */
         /* (48/1920)*100 = 2.5 */
-        font-size: max(11px,2.5vw);
+        font-size: max(var(--font-size),2.5vw);
     }
     .ginseng-section4 .text-wrap h4 {
         /* 수정 */
         /* (24/1920)*100 = 1.25 */
-        font-size: max(11px,1.25vw);
+        font-size: max(var(--font-size),1.25vw);
     }
     .ginseng-section4 .text-wrap p {
         /* 수정 */
-        font-size: max(11px,1.25vw);
+        font-size: max(var(--font-size),1.25vw);
     }
 
 }

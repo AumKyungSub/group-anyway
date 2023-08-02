@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Group Anyway" />
+    <meta name="description" content="Portfolio, Sulwhasoo clone coding" />
+    <title>Portfolio, Sulhwasoo</title>
+    <!-- Font Awesome 5.15.4 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon/favicon32.png" />
+    <link
+      rel="apple-touch-icon=precomposed"
+      href="./images/favicon/favicon144.png"
+    />
+    <!-- jQuery -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+
+    
+    <!-- 기본 코딩 CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css" />
+    <link rel="stylesheet" href="./css/display_none_scrollbar.css" />
+    
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/swiper_custom.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <link rel="stylesheet" href="./css/style.css" />
+
+
+
+
+    <!-- 내부 스타일 영역 -->
+    <style>
+
+    </style>
+
+    <!-- 내부 스크립트 영역 -->
+    <script>
+      window.onload = function () {
+      };
+    </script>
+
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- Header -->
+      <header id="header">
+        <!-- 모바일/태블릿 버전 header -->
+        <div class="moblie_header_inner">
+          <div class="hamburger">
+            <button type="button" id="sideBar_open"><i class="icon_menu"></i></button>
+          </div>
+          <div class="logo">
+            <a href="index.html" class="logo_a">
+              <img src="./images/main/sulwhasoo_white_logo.png" alt="설화수로고">
+            </a>
+          </div>
+          <div class="search"><img src="./images/main/icon/search_white_icon.png" alt="서치아이콘"></div>
+        </div>
+        <!-- /모바일/태블릿 버전 header -->
+        <!-- PC버전 header -->
+        <div class="pc_header_inner">
+          <div class="pc_lnb w1100">
+            <div class="language_select">한국/한국어 <img src="./images/main/icon/language_arrow_white.png" alt="언어선택탭" id="language_icon"></div>
+            <div class="pc_logo"><a href="index.html"><img src="./images/main/sulwhasoo_white_logo.png" alt="설화수로고" id="pc_orange_logo"></a></div>
+            <div class="search_area">
+              <span>매장찾기</span>
+              <span>구매하기</span>
+              <span><img src="./images/main/icon/search_white_icon.png" alt="서치아이콘" id="search_icon"></span>
+            </div>
+          </div>
+          <div class="pc_nav">
+            <ul class="pc_gnb_menu">
+              <!-- a 링크 추후 각 페이지로 수정 -->
+              <li class="pc_nav_d1"><a href="#" class="d1_menu">윤조</a></li>
+              <li class="pc_nav_d1"><a href="#" class="d1_menu">자음생</a></li>
+              <li class="pc_nav_d1"><a href="gift.html" class="d1_menu">기프트</a></li>
+              <li class="pc_nav_d1"><a href="#" class="d1_menu">제품</a>
+                <ul class="pc_nav_d2_box">
+                  <div class="pc_nav_d2_container d2_box1">
+                    <li class="pc_nav_d2"><a href="#" class="d2_hover">스킨케어</a></li>
+                    <li class="pc_nav_d2"><a href="#" class="d2_hover">메이크업</a></li>
+                    <li class="pc_nav_d2"><a href="#" class="d2_hover">남성</a></li>
+                  </div>
+                </ul>
+              </li>
+              <li class="pc_nav_d1"><a href="#" class="d1_menu">스파</a>
+                <ul class="pc_nav_d2_box">
+                  <div class="pc_nav_d2_container d2_box2">
+                    <li class="pc_nav_d2"><a href="#" class="d2_hover">소개</a></li>
+                    <li class="pc_nav_d2"><a href="#" class="d2_hover">스파 프로그램</a></li>
+                    <li class="pc_nav_d2"><a href="#" class="d2_hover">예약</a></li>
+                    <li class="pc_nav_d2"><a href="#" class="d2_hover">매장 찾기</a></li>
+                  </div>
+                </ul>
+              </li>
+              <li class="pc_nav_d1"><a href="#" class="d1_menu">플래그십 스토어</a>
+                <ul class="pc_nav_d2_box">
+                  <div class="pc_nav_d2_container d2_box3">
+                    <li class="pc_nav_d2"><a href="#" class="d2_hover">설화수 북촌</a></li>
+                    <li class="pc_nav_d2"><a href="#" class="d2_hover">설화수 도산</a></li>
+                  </div>
+                </ul>
+              </li>
+              <li class="pc_nav_d1"><a href="#" class="d1_menu">ABOUT 설화수</a>
+                <ul class="pc_nav_d2_box">
+                  <div class="pc_nav_d2_container d2_box4">
+                    <li class="pc_nav_d2"><a href="#" class="d2_menu">브랜드 스토리</a>
+                      <ul class="pc_nav_d3_box">
+                        <li class="pc_nav_d3"><a href="#">브랜드 빌리프</a></li>
+                        <li class="pc_nav_d3"><a href="#">브랜드 캠페인</a></li>
+                      </ul>
+                    </li>
+                    <li class="pc_nav_d2"><a href="#" class="d2_menu">브랜드 앰버서더</a>
+                      <ul class="pc_nav_d3_box">
+                        <li class="pc_nav_d3"><a href="#">로제</a></li>
+                        <li class="pc_nav_d3"><a href="#">틸다 스윈튼</a></li>
+                      </ul>
+                    </li>
+                    <li class="pc_nav_d2"><a href="#" class="d2_menu">ART</a>
+                      <ul class="pc_nav_d3_box">
+                        <li class="pc_nav_d3"><a href="#">MET</a></li>
+                        <li class="pc_nav_d3"><a href="#">설화문학전</a></li>
+                      </ul>
+                    </li>
+                    <li class="pc_nav_d2"><a href="#" class="d2_menu">HERITAGE</a>
+                      <ul class="pc_nav_d3_box">
+                        <li class="pc_nav_d3"><a href="#">SINCE 1932</a></li>
+                        <li class="pc_nav_d3"><a href="#">명작컬렉션</a></li>
+                      </ul>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /PC버전 header -->
+      </header>
+      <!-- /Header -->
+      
+      <!-- Side MENU -->
+      <div class="side_cover">
+        <div class="side_header">
+          <a href="#" class="orange_logo"></a>
+          <button type="button" class="close_btn"></button>
+        </div>
+        <nav id="side_bar" class="side_bar">
+          <div class="sideBox">
+            <div class="side_content">
+              <ul id="global_nav" class="nav_list">
+                <li class="nav_d1"><a href="#" class="no_depth_menu">윤조</a></li>
+                <li class="nav_d1"><a href="#" class="no_depth_menu">자음생</a></li>
+                <li class="nav_d1"><a href="gift.html" class="no_depth_menu">기프트</a></li>
+                <li class="nav_d1"><a href="#" class="depth_toggle">제품</a>
+                  <ul class="nav_d2_box">
+                    <li class="nav_d2"><a href="#" class="nav_d2_menu">스킨케어</a></li>
+                    <li class="nav_d2"><a href="#" class="nav_d2_menu">메이크업</a></li>
+                    <li class="nav_d2"><a href="#">남성</a></li>
+                  </ul>
+                </li>
+                <li class="nav_d1"><a href="#" class="depth_toggle">스파</a>
+                  <ul class="nav_d2_box">
+                    <li class="nav_d2"><a href="#" class="nav_d2_menu">소개</a></li>
+                    <li class="nav_d2"><a href="#" class="nav_d2_menu">스파 프로그램</a></li>
+                    <li class="nav_d2"><a href="#" class="nav_d2_menu">예약</a></li>
+                    <li class="nav_d2"><a href="#">매장 찾기</a></li>
+                  </ul>
+                </li>
+                <li class="nav_d1"><a href="#" class="depth_toggle">플래그십 스토어</a>
+                  <ul class="nav_d2_box">
+                    <li class="nav_d2"><a href="#" class="nav_d2_menu">플래그십 스토어</a></li>
+                    <li class="nav_d2"><a href="#" class="nav_d2_menu">설화수 북촌</a></li>
+                    <li class="nav_d2"><a href="#">설화수 도산</a></li>
+                  </ul>
+                </li>
+                <li class="nav_d1"><a href="#" class="depth_toggle">ABOUT 설화수</a>
+                  <ul class="nav_d2_box">
+                    <li class="nav_d2"><a href="#" class="nav_d2_menu nav_d3_menu">브랜드 스토리</a>
+                      <ul class="nav_d3_box">
+                        <li class="nav_d3"><a href="#">브랜드 빌리프</a></li>
+                        <li class="nav_d3"><a href="#">브랜드 캠페인</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav_d2"><a href="#" class="nav_d2_menu nav_d3_menu">브랜드 앰버서더</a>
+                      <ul class="nav_d3_box">
+                        <li class="nav_d3"><a href="#">로제</a></li>
+                        <ul class="nav_d4_box">
+                          <li class="nav_d4"><a href="#">PART 1 SULWHASOO REBLOOM</a></li>
+                          <li class="nav_d4"><a href="#">PART 2 ROSÉ IN BUKCHON</a></li>
+                        </ul>
+                        <li class="nav_d3"><a href="#" class="nav_d2_menu">틸다 스윈튼</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav_d2 b500"><a href="#" class="nav_d2_menu nav_d3_menu">ART</a>
+                      <ul class="nav_d3_box">
+                        <li class="nav_d3 b500"><a href="#">MET</a></li>
+                        <li class="nav_d3"><a href="#" class="nav_d2_menu">설화문화전</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav_d2 b500"><a href="#" class="nav_d2_menu nav_d3_menu">HERITAGE</a>
+                      <ul class="nav_d3_box">
+                        <li class="nav_d3 b500"><a href="#">SINCE 1932</a></li>
+                        <li class="nav_d3"><a href="#">명작컬렉션</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="other_info">
+                <ul>
+                  <li><a href="#">로그인</li>
+                  <li>매장찾기</li>
+                </ul>
+                <button type="button" class="mobile_select_language">
+                  <span>LANGUAGE</span>
+                  <span class="language_select">한국/한국어 <img src="/images/main/icon/plus.png" alt="플러스아이콘"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- /Side MENU -->
+
+      
+      <!-- Content -->
+      <main>
+        <!-- 스와이퍼 영역 -->
+        <section class="main_slide_sections">
+          <div class="swiper mySwiper swiper-container">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <picture>
+                  <source srcset="./images/main/slide01_1920.jpg" media="(min-width: 768px)">
+                  <img src="./images/main/slide01_768.jpg" alt="슬라이드01">
+                </picture>
+                <div class="slide_text_wrap w1440">
+                  <p>NEW BRAND FILM</p>
+                  <h2>인삼, 아름다움 그리고 설화수</h2>
+                </div>
+              </li>
+              <li class="swiper-slide main_slide">
+                <picture>
+                  <source srcset="./images/main/slide02_1920.jpg" media="(min-width: 768px)">
+                  <img src="./images/main/slide02_768.jpg" alt="슬라이드02">
+                </picture>
+                <div class="slide_text_wrap">
+                  <p>NEW GLOBAL AMBASSADOR</p>
+                  <h2>설화수, 그리고 <span>TILDA</span></h2>
+                </div>
+              </li>
+              <li class="swiper-slide main_slide">
+                <picture>
+                  <source srcset="./images/main/slide03_1920.jpg" media="(min-width: 768px)">
+                  <img src="./images/main/slide03_768.jpg" alt="슬라이드03">
+                </picture>
+                <div class="slide_text_wrap">
+                  <p>Sulwhasoo Flagship Store</p>
+                  <h2><span>ROSÉ in BUKCHON</span></h2>
+                </div>
+              </li>
+              <li class="swiper-slide main_slide">
+                <picture>
+                  <source srcset="./images/main/slide04_1920.jpg" media="(min-width: 768px)">
+                  <img src="./images/main/slide04_768.jpg" alt="슬라이드04">
+                </picture>
+                <div class="slide_text_wrap">
+                  <p>Concentrated Ginseng Renewing Cream EX</p>
+                  <h2>자음생크림</h2>
+                </div>
+              </li>
+              <li class="swiper-slide main_slide">
+                <picture>
+                  <source srcset="./images/main/slide05_1920.jpg" media="(min-width: 768px)">
+                  <img src="./images/main/slide05_768.jpg" alt="슬라이드05">
+                </picture>
+                <div class="slide_text_wrap">
+                  <p>SULWHASOO FIRST CARE ACTIVATING SERUM VI</p>
+                  <h2>윤조에센스 <span>6</span>세대</h2>
+                </div>
+              </li>
+              <li class="swiper-slide main_slide">
+                <picture>
+                  <source srcset="./images/main/slide06_1920.jpg" media="(min-width: 768px)">
+                  <img src="./images/main/slide06_768.jpg" alt="슬라이드06">
+                </picture>
+                <div class="slide_text_wrap last_slide_text">
+                  <p>Amore mall (7.24-7.30)</p>
+                  <h2><span>BRAND WEEK</span></h2>
+                </div>
+              </li>
+            </ul>
+            <button type="button" class="swiper-button pc_swiper_prev"></button>
+            <button type="button" class="swiper-button pc_swiper_next"></button>
+            <div class="pagination_container">
+              <div class="pagination_container_inner">
+                <div class="swiper-pagination progressbar"></div>
+                <button type="button" class="pause">
+                  <span class="stop"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /스와이퍼 영역 -->
+
+        <!-- Recommend Area -->
+        <section class="recommend w1440">
+          <h1>설화수 추천</h1>
+          <div class="swiper recommend_card">
+            <ul class="swiper-wrapper recommend_card_swiper">
+              <li class="swiper-slide">
+                <img src="./images/main/recommend_slide01.jpg" alt="설화수추천제품">
+                <div class="recommend_txt">
+                  <h2>윤조에센스 <span>6</span>세대</h2>
+                  <p>First Care Activating Serum VI</p>
+                  <p class="price">140,000원</p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/main/recommend_slide02.jpg" alt="설화수추천제품">
+                <div class="recommend_txt">
+                  <h2>자음생크림</h2>
+                  <p>Concentrated Ginseng Renewing Cream EX</p>
+                  <p class="price">270,000원</p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/main/recommend_slide03.jpg" alt="설화수추천제품">
+                <div class="recommend_txt">
+                  <h2>자음생세럼</h2>
+                  <p>Concentrated Ginseng Renewing Serum EX</p>
+                  <p class="price">220,000원</p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/main/recommend_slide04.jpg" alt="설화수추천제품">
+                <div class="recommend_txt">
+                  <h2>순행클렌징오일</h2>
+                  <p>Gentle Cleansing Oil</p>
+                  <p class="price">47,000원</p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/main/recommend_slide05.jpg" alt="설화수추천제품">
+                <div class="recommend_txt">
+                  <h2>순행클렌징폼</h2>
+                  <p>Gentle Cleansing Foam</p>
+                  <p class="price">42,000원</p>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="./images/main/recommend_slide06.jpg" alt="설화수추천제품">
+                <div class="recommend_txt">
+                  <h2>백삼팩</h2>
+                  <p>White Ginseng Radiance Refining Mask</p>
+                  <p class="price">72,000원</p>
+                </div>
+              </li>
+            </ul>
+            <button type="button" class="swiper-button swiper-button-sec2 swiper_button_prev"></button>
+            <button type="button" class="swiper-button swiper-button-sec2 swiper_button_next"></button>
+            <div class="pagination_container recommend_container">
+              <div class="recommend_container_inner">
+                <div class="swiper-pagination recommend_progressbar"></div>
+                <button type="button" class="recommend_pause">
+                  <span class="recommend_stop"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /Recommend Area -->
+
+        <!-- Bestseller Area -->
+        <section class="bestseller w1440">
+          <picture>
+            <source srcset="./images/main/bestseller_1440.jpg" media="(min-width: 768px)">
+            <!-- <source srcset="./images/main/bestseller_640.jpg" media="(min-width: 768px)"> -->
+            <img src="./images/main/bestseller_640.jpg" alt="베스트셀러">
+          </picture>
+          <div class="bestseller_txt">
+            <h2>베스트 셀러</h2>
+            <p>건강하게 빛나고 힘 있게 채우는 <br> 설화수의 시그니처 케어</p>
+            <button>자세히 보기</button>
+          </div>
+        </section>
+        <!-- /Bestseller Area -->
+
+        <!-- Season recommend Area -->
+        <section class="season_recommend w1440">
+          <h2>설화수 시즌추천</h2>
+          <div class="card_section">
+            <div class="card_section_container">
+              <div class="card01 cardBox">
+                <article><img src="./images/main/season01.png" alt="시즌제품1"></article>
+                <div class="card01_txt">
+                  <h3>자음생세럼</h3>
+                  <p class="detail_info">Concentrated Ginseng Renewing Serum EX</p>
+                  <p class="price">220,000원</p>
+                </div>
+              </div>
+              <div class="card02 cardBox">
+                <article>
+                  <picture>
+                    <source srcset="./images/main/season_640.jpg" media="(max-width: 767px)">
+                    <source srcset="./images/main/season_708.jpg" media="(min-width: 768px)">
+                    <img src="./images/main/season_708.jpg" alt="시즌제품2">
+                  </picture>
+                </article>
+                <div class="card02_txt">
+                  <h3>자음생 듀오</h3>
+                  <p>안티에이징의 결정체, 진세노믹스™ <br> 자음생듀오로 피부 자생력을 키워주세요.</p>
+                </div>
+              </div>
+              <div class="card03 cardBox">
+                <article><img src="./images/main/season03.jpg" alt="시즌제품3"></article>
+                <div class="card03_txt">
+                  <h3>자음생크림</h3>
+                  <p class="detail_info">Concentrated Ginseng Renewing Cream EX</p>
+                  <p class="price">270,000원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /Season recommend Area -->
+
+        <!-- Flagship Area -->
+        <section class="flagship w1440">
+          <!-- 연결할 때 플래그십으로 넘어가도록 링크 수정 -->
+          <div class="flagship_container">
+            <div class="bukchon_box">
+              <a href="#" class="bukchon">
+                <article><img src="./images/main/bukchon.jpg" alt="북촌"></article>
+                <h2>설화수 북촌 플래그십 스토어</h2>
+                <button>자세히 보기</button>
+              </a>
+            </div>
+            <!-- 연결할 때 플래그십으로 넘어가도록 링크 수정 -->
+            <div class="dosan_box">
+              <a href="#" class="dosan">
+                <article><img src="./images/main/dosan.jpg" alt="도산"></article>
+                <h2>설화수 도산 플래그십 스토어</h2>
+                <button>자세히 보기</button>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- /Flagship Area -->
+
+        <!-- #With Sulwhasoo Area -->
+        <section class="sns_review w1440">
+          <div class="with_sulwhasoo">
+            <h2>#With Sulwhasoo</h2>
+            <!-- Slider main container -->
+            <div class="swiper withSwiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper with_img_container">
+                <!-- Slides -->
+                <div class="swiper-slide with_img">
+                  <div class="img_section">
+                    <img src="./images/main/sns01.webp" alt="sns">
+                    <i class="fa-solid fa-bag-shopping circle_icon"></i>
+                  </div>
+                  <div class="hover_content">
+                    <div class="sns_info">
+                    </div>
+                    <div class="sns_txt">
+                      <p class="user_id">@m_m_korea</p>
+                      <p class="user_caption">・
+                        もらった洗顔のサンプルが良すぎて
+                        メガ割りで 現品購入した sulwhasoo.official が届きました🗃️
+                        
+                        ジェルクレンザーだし
+                        とくにもちもちの泡🫧が!とかじゃないんですが、
+                        これで洗顔すると、小鼻のザラつきもお肌のゴワつきも一瞬で無かったことになったのてビックリしました😳 
+                        
+                        なのに洗い上がりのお肌はしっとり保湿されていて
+                        スーパー乾燥肌な私でも
+                        すぐに「化粧水、化粧水、」とならなかったのが本当に不思議✨
+                        
+                        漢方特有の匂いは好みが別れますが、わたしは逆にリラックスできる
+                        この香りがすきです🌿 
+                        ・
+                        ・
+                        #スキンケア #洗顔 #ジェルクレンザー #sulwhasoo #漢方 #エイジングケア #毛穴ケア #乾燥肌 #乾燥肌にオススメ #アラフォー美容 #韓国コスメ #韓国スキンケア
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide with_img">
+                  <div class="img_section">
+                    <img src="./images/main/sns02.webp" alt="sns">
+                    <i class="fa-solid fa-bag-shopping circle_icon"></i>
+                  </div>
+                  <div class="hover_content">
+                    <div class="sns_info">
+                    </div>
+                    <div class="sns_txt">
+                      <p class="user_id">@b0.ri</p>
+                      <p class="user_caption">
+                        #유료광고 sulwhasoo.official
+                        저의 첫 안티에이징을 함께한 설화수를 소개할게요!🧡
+                        이제껏 두껍고 텁텁한 제형을 좋아하지 않아 안티에이징을 멀리 했었는데요..😔
+                        저처럼 가볍고 산뜻한 제형을 좋아하는 분들에게 설화수 윤조에센스와 자음생 듀오를 추천합니다.
+                        긴 시간 사랑받아온 클래식한 브랜드이자 개인적으로 오랜 기간 좋아한 브랜드라 큰 기대감을 안고 써봤는데요. 
+                        일단 제형 자체가 촉촉하고 산뜻해 부담 없이 매일 아침저녁으로 사용하기 좋아요. 눈에 띄게 좋았던 점은 피부 결 개선이었어요. 마치 푹 자고 일어난 듯 촘촘하게 차오른 피부 컨디션이랄까?
+                        더위에 지쳐있던 피부가 건강함을 되찾은 느낌이더라구요.
+                        설화수에서 인삼 연구만 50년을 넘게 했다고 하는데, 그 인삼 성분이 들어간 윤조에센스, 자음생세럼, 자음생크림 루틴으로 데일리 안티에이징 루틴을 만들어 힘이 넘치는 피부로 관리해 보세요! *✲゚*。⋆♡ོ
+                        #설화수 #sulwhasoo #윤조에센스 #자음생세럼 #자음생크림
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide with_img">
+                  <div class="img_section">
+                    <img src="./images/main/sns03.webp" alt="sns">
+                    <i class="fa-solid fa-bag-shopping circle_icon"></i>
+                  </div>
+                  <div class="hover_content">
+                    <div class="sns_info">
+                    </div>
+                    <div class="sns_txt">
+                      <p class="user_id">@b0.ri</p>
+                      <p class="user_caption">
+                        #유료광고 sulwhasoo.official
+                        저의 첫 안티에이징을 함께한 설화수를 소개할게요!🧡
+                        이제껏 두껍고 텁텁한 제형을 좋아하지 않아 안티에이징을 멀리 했었는데요..😔
+                        저처럼 가볍고 산뜻한 제형을 좋아하는 분들에게 설화수 윤조에센스와 자음생 듀오를 추천합니다.
+                        긴 시간 사랑받아온 클래식한 브랜드이자 개인적으로 오랜 기간 좋아한 브랜드라 큰 기대감을 안고 써봤는데요. 
+                        일단 제형 자체가 촉촉하고 산뜻해 부담 없이 매일 아침저녁으로 사용하기 좋아요. 눈에 띄게 좋았던 점은 피부 결 개선이었어요. 마치 푹 자고 일어난 듯 촘촘하게 차오른 피부 컨디션이랄까?
+                        더위에 지쳐있던 피부가 건강함을 되찾은 느낌이더라구요.
+                        설화수에서 인삼 연구만 50년을 넘게 했다고 하는데, 그 인삼 성분이 들어간 윤조에센스, 자음생세럼, 자음생크림 루틴으로 데일리 안티에이징 루틴을 만들어 힘이 넘치는 피부로 관리해 보세요! *✲゚*。⋆♡ོ
+                        #설화수 #sulwhasoo #윤조에센스 #자음생세럼 #자음생크림
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide with_img">
+                  <div class="img_section">
+                    <img src="./images/main/sns04.webp" alt="sns">
+                    <i class="fa-solid fa-bag-shopping circle_icon"></i>
+                  </div>
+                  <div class="hover_content">
+                    <div class="sns_info">
+                    </div>
+                    <div class="sns_txt">
+                      <p class="user_id">@mimi__hye</p>
+                      <p class="user_caption">
+                        #광고 
+                        “그 시절 우리가 사랑했던 유행화장”
+                        신라면세점X아모레퍼시픽 유행화장展
+                        팝업 다녀왔어요 🧵
+                        유행화장전은 1980년대를 재현한
+                        하나의 공간안에서 화장대, 옷장, 서재, 응접실,
+                        영사실, 굿즈샵으로 구성되어 있었는데요 !
+
+                        제가 태어나기도 전인 아모레퍼시픽의
+                        역대 화장품들도 구경해볼 수 있었고 💄
+                        옛날에 유행했던 레트로 느낌의
+                        메이크업 쇼도 볼 수 있었답니다 '◡'
+                        여러분들도 방문하셔서 직접 느껴보시고
+                        함께 설화수 제품들도 만나보세요 '◡'
+
+                        📻
+                        행사 기간 : 5/20(토) ~ 6/15(목)
+                        팝업 장소 : 서울특별시 중구 동호로 249 신라면세점 카페 '라'
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide with_img">
+                  <div class="img_section">
+                    <img src="./images/main/sns05.webp" alt="sns">
+                    <i class="fa-solid fa-bag-shopping circle_icon"></i>
+                  </div>
+                  <div class="hover_content">
+                    <div class="sns_info">
+                    </div>
+                    <div class="sns_txt">
+                      <p class="user_id">@ddoyeon2_e</p>
+                      <p class="user_caption">
+                        #유료광고 
+ 
+                        뜨거운 햇살, 자외선 아래에서 가장 힘들어하는 건 피부탄력일거에요. ☀ 특히나 야외촬영이 있을때면 피부가 푸석해지지 않을까 걱정인데요, 그럴 때 설화수 자음생라인으로 채워주면 다시금 힘있는 피부로 만들어준답니다. 
+                         
+                        캡슐이 들어있어 높은 흡수율로 기분 좋은 메이크업을 완성시켜줄 #자음생세럼 은 아침에, 하루종일 지쳤을 피부를 밤 사이 촉촉하고 탄탄하게 케어 해 줄 #자음생크림 은 밤에 관리해주면 수면패턴 달라지는 여행지, 그리고 호캉스에서도 탄력 있게 건강한 피부를 유지하실 수 있어요. ˇܫˇ 이날 몇시간 못 잤는데도 피부 컨디션은 최고였답니다. 
+                        인삼의 귀한 성분으로 만들어져 충분한 영양감을 전달해주면서도 부담스럽지 않게 마무리되서 데일리로 쓰기 딱 좋아요! 
+                         
+                        안티에이징이 무겁다는 말은 이젠 옛말, 
+                        설화수 자음생듀오로 가볍고 산뜻하게 안티에이징 시작하세요.🧡
+                         
+                        sulwhasoo.official 
+                        #설화수 #sulwhasoo #자음생세럼 #자음생크림
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide with_img">
+                  <div class="img_section">
+                    <img src="./images/main/sns06.webp" alt="sns">
+                    <i class="fa-solid fa-bag-shopping circle_icon"></i>
+                  </div>
+                  <div class="hover_content">
+                    <div class="sns_info">
+                    </div>
+                    <div class="sns_txt">
+                      <p class="user_id">@ddoyeon2_e</p>
+                      <p class="user_caption">
+                        #유료광고 
+ 
+                        뜨거운 햇살, 자외선 아래에서 가장 힘들어하는 건 피부탄력일거에요. ☀ 특히나 야외촬영이 있을때면 피부가 푸석해지지 않을까 걱정인데요, 그럴 때 설화수 자음생라인으로 채워주면 다시금 힘있는 피부로 만들어준답니다. 
+                         
+                        캡슐이 들어있어 높은 흡수율로 기분 좋은 메이크업을 완성시켜줄 #자음생세럼 은 아침에, 하루종일 지쳤을 피부를 밤 사이 촉촉하고 탄탄하게 케어 해 줄 #자음생크림 은 밤에 관리해주면 수면패턴 달라지는 여행지, 그리고 호캉스에서도 탄력 있게 건강한 피부를 유지하실 수 있어요. ˇܫˇ 이날 몇시간 못 잤는데도 피부 컨디션은 최고였답니다. 
+                        인삼의 귀한 성분으로 만들어져 충분한 영양감을 전달해주면서도 부담스럽지 않게 마무리되서 데일리로 쓰기 딱 좋아요! 
+                         
+                        안티에이징이 무겁다는 말은 이젠 옛말, 
+                        설화수 자음생듀오로 가볍고 산뜻하게 안티에이징 시작하세요.🧡
+                         
+                        sulwhasoo.official 
+                        #설화수 #sulwhasoo #자음생세럼 #자음생크림
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide with_img">
+                  <div class="img_section">
+                    <img src="./images/main/sns07.webp" alt="sns">
+                    <i class="fa-solid fa-bag-shopping circle_icon"></i>
+                  </div>
+                  <div class="hover_content">
+                    <div class="sns_info">
+                    </div>
+                    <div class="sns_txt">
+                      <p class="user_id">@ddoyeon2_e</p>
+                      <p class="user_caption">
+                        #유료광고 
+ 
+                        뜨거운 햇살, 자외선 아래에서 가장 힘들어하는 건 피부탄력일거에요. ☀ 특히나 야외촬영이 있을때면 피부가 푸석해지지 않을까 걱정인데요, 그럴 때 설화수 자음생라인으로 채워주면 다시금 힘있는 피부로 만들어준답니다. 
+                         
+                        캡슐이 들어있어 높은 흡수율로 기분 좋은 메이크업을 완성시켜줄 #자음생세럼 은 아침에, 하루종일 지쳤을 피부를 밤 사이 촉촉하고 탄탄하게 케어 해 줄 #자음생크림 은 밤에 관리해주면 수면패턴 달라지는 여행지, 그리고 호캉스에서도 탄력 있게 건강한 피부를 유지하실 수 있어요. ˇܫˇ 이날 몇시간 못 잤는데도 피부 컨디션은 최고였답니다. 
+                        인삼의 귀한 성분으로 만들어져 충분한 영양감을 전달해주면서도 부담스럽지 않게 마무리되서 데일리로 쓰기 딱 좋아요! 
+                         
+                        안티에이징이 무겁다는 말은 이젠 옛말, 
+                        설화수 자음생듀오로 가볍고 산뜻하게 안티에이징 시작하세요.🧡
+                         
+                        sulwhasoo.official 
+                        #설화수 #sulwhasoo #자음생세럼 #자음생크림
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide with_img">
+                  <div class="img_section">
+                    <img src="./images/main/sns08.webp" alt="sns">
+                    <i class="fa-solid fa-bag-shopping circle_icon"></i>
+                  </div>
+                  <div class="hover_content">
+                    <div class="sns_info">
+                    </div>
+                    <div class="sns_txt">
+                      <p class="user_id">@yezi_mong</p>
+                      <p class="user_caption">
+                        #유료광고 @sulwhasoo.official 
+                        이번에 리뉴얼된 #설화수 윤조에센스를 한 달 넘게 꾸준히 사용하고 있어요🤍🥚 세안 직후 바르는 #퍼스트세럼 이라서 세안 후, 스킨케어 첫 단계에 발라줬더니🧖🏻‍♀️ 확실히 피부 속 수분감이 오래 가는 느낌! 윤조에센스만의 고유한 텍스처를 참 좋아하는데 순간 흡수 포뮬러가 피부에 사악 발리면서 흡수가 빨라서 집중 케어가 필요한 부분엔
+                        3-4번 레이어링 해주고 있어요 확실히 피부결도 부드러워지고 자연스럽게 생기있는 피부가 된 거 같아요! 스킨케어에 윤조에센스만 추가해도 하루가 다르게 변화하는 피부상태를 느끼실 수 있으니까 여러분의 루틴에 #윤조에센스 를 더해보시길🫶🏻🫶🏻
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide with_img">
+                  <div class="img_section">
+                    <img src="./images/main/sns09.webp" alt="sns">
+                    <i class="fa-solid fa-bag-shopping circle_icon"></i>
+                  </div>
+                  <div class="hover_content">
+                    <div class="sns_info">
+                    </div>
+                    <div class="sns_txt">
+                      <p class="user_id">@yezi_mong</p>
+                      <p class="user_caption">
+                        #유료광고 @sulwhasoo.official 
+                        이번에 리뉴얼된 #설화수 윤조에센스를 한 달 넘게 꾸준히 사용하고 있어요🤍🥚 세안 직후 바르는 #퍼스트세럼 이라서 세안 후, 스킨케어 첫 단계에 발라줬더니🧖🏻‍♀️ 확실히 피부 속 수분감이 오래 가는 느낌! 윤조에센스만의 고유한 텍스처를 참 좋아하는데 순간 흡수 포뮬러가 피부에 사악 발리면서 흡수가 빨라서 집중 케어가 필요한 부분엔
+                        3-4번 레이어링 해주고 있어요 확실히 피부결도 부드러워지고 자연스럽게 생기있는 피부가 된 거 같아요! 스킨케어에 윤조에센스만 추가해도 하루가 다르게 변화하는 피부상태를 느끼실 수 있으니까 여러분의 루틴에 #윤조에센스 를 더해보시길🫶🏻🫶🏻
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide with_img">
+                  <div class="img_section">
+                    <img src="./images/main/sns10.webp" alt="sns">
+                    <i class="fa-solid fa-bag-shopping circle_icon"></i>
+                  </div>
+                  <div class="hover_content">
+                    <div class="sns_info">
+                    </div>
+                    <div class="sns_txt">
+                      <p class="user_id">@yezi_mong</p>
+                      <p class="user_caption">
+                        #유료광고 @sulwhasoo.official 
+                        이번에 리뉴얼된 #설화수 윤조에센스를 한 달 넘게 꾸준히 사용하고 있어요🤍🥚 세안 직후 바르는 #퍼스트세럼 이라서 세안 후, 스킨케어 첫 단계에 발라줬더니🧖🏻‍♀️ 확실히 피부 속 수분감이 오래 가는 느낌! 윤조에센스만의 고유한 텍스처를 참 좋아하는데 순간 흡수 포뮬러가 피부에 사악 발리면서 흡수가 빨라서 집중 케어가 필요한 부분엔
+                        3-4번 레이어링 해주고 있어요 확실히 피부결도 부드러워지고 자연스럽게 생기있는 피부가 된 거 같아요! 스킨케어에 윤조에센스만 추가해도 하루가 다르게 변화하는 피부상태를 느끼실 수 있으니까 여러분의 루틴에 #윤조에센스 를 더해보시길🫶🏻🫶🏻
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide with_img">
+                  <div class="img_section">
+                    <img src="./images/main/sns11.webp" alt="sns">
+                    <i class="fa-solid fa-bag-shopping circle_icon"></i>
+                  </div>
+                  <div class="hover_content">
+                    <div class="sns_info">
+                    </div>
+                    <div class="hover_content">
+                      <div class="sns_info">
+                      </div>
+                      <div class="sns_txt">
+                        <p class="user_id">@leey.zin</p>
+                        <p class="user_caption">
+                          #유료광고 @sulwhasoo.official 
+                          설화수의 리뉴얼 된 윤조에센스를 한달간 사용해 봤어요
+                          세안후 첫 단계로 매일 아침, 저녁에 사용했는데
+                          속건조를 잡아주고 피부결이 촘촘해지는게 윤조에센스가 유명한 이유를 알겠더라구요.
+  
+                          사실 처음 테스트를 해봤을 때 제형이 가벼워서 이거 하나 추가한다고 피부가 변할까? 싶었는데
+                          3일 정도 지나니 맨 얼굴에서도 속광이 올라오는 걸 보고 꾸준히 써야겠다 생각했답니다..! 
+                          단순히 수분만 채워주는게 아니라 피부에 활기가 돋고 안정감을 되찾는 느낌이었어요.
+  
+                          기존 스킨케어 루틴 첫 단계에 윤조에센스 만 추가했을 뿐인데 하루가 다르게 변하는 내 피부를 보며 윤조에센스의 진가를 느껴봅니다.
+                          #설화수 #suhwhasoo #윤조에센스 #퍼스트에센스 #퍼스트세럼
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide with_img">
+                  <div class="img_section">
+                    <img src="./images/main/sns12.webp" alt="sns">
+                    <i class="fa-solid fa-bag-shopping circle_icon"></i>
+                  </div>
+                  <div class="hover_content">
+                    <div class="sns_info">
+                    </div>
+                    <div class="sns_txt">
+                      <p class="user_id">@leey.zin</p>
+                      <p class="user_caption">
+                        #유료광고 @sulwhasoo.official 
+                        설화수의 리뉴얼 된 윤조에센스를 한달간 사용해 봤어요
+                        세안후 첫 단계로 매일 아침, 저녁에 사용했는데
+                        속건조를 잡아주고 피부결이 촘촘해지는게 윤조에센스가 유명한 이유를 알겠더라구요.
+
+                        사실 처음 테스트를 해봤을 때 제형이 가벼워서 이거 하나 추가한다고 피부가 변할까? 싶었는데
+                        3일 정도 지나니 맨 얼굴에서도 속광이 올라오는 걸 보고 꾸준히 써야겠다 생각했답니다..! 
+                        단순히 수분만 채워주는게 아니라 피부에 활기가 돋고 안정감을 되찾는 느낌이었어요.
+
+                        기존 스킨케어 루틴 첫 단계에 윤조에센스 만 추가했을 뿐인데 하루가 다르게 변하는 내 피부를 보며 윤조에센스의 진가를 느껴봅니다.
+                        #설화수 #suhwhasoo #윤조에센스 #퍼스트에센스 #퍼스트세럼
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide with_img">
+                  <div class="img_section">
+                    <img src="./images/main/sns13.webp" alt="sns">
+                    <i class="fa-solid fa-bag-shopping circle_icon"></i>
+                  </div>
+                  <div class="hover_content">
+                    <div class="sns_info">
+                    </div>
+                    <div class="sns_txt">
+                      <p class="user_id">@geumdami</p>
+                      <p class="user_caption">
+                          🕰️설화수의 제품력은 오랜시간 그 자리를 공고히하고 있는 만큼 잘 알려져 있지요📜 이를 대표하는 제품은 바로 ‘윤조에센스’🤎 벌써
+                          신제품으로 '윤조에센스 6세대'까지 출시되었다는게 그 반증📚 세안 직후 바르면 피부를 건강하고 윤기있게 가꿔주죠🫧 진화를 거듭하는 동안
+                          달항아리를 닮은 패키지도 정말 모던해졌어요🥚 이제 함께 사용하면 좋은 클렌저(이미 너무 유명한 순행클렌징 오일과 폼)와 팩까지 있으니 퍼스트
+                          케어 루틴을 시작!🧡 sulwhasoo.official #설화수 #sulwhasoo #윤조에센스 #윤조에센스6세대 #퍼스트에센스
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide with_img">
+                  <div class="img_section">
+                    <img src="./images/main/sns14.webp" alt="sns">
+                    <i class="fa-solid fa-bag-shopping circle_icon"></i>
+                  </div>
+                  <div class="hover_content">
+                    <div class="sns_info">
+                    </div>
+                    <div class="sns_txt">
+                      <p class="user_id">@shanai.porras</p>
+                      <p class="user_caption">
+                        beauty and history in the house of @sulwhasoo.official roses_are_rosie 🩷
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide with_img">
+                  <div class="img_section">
+                    <img src="./images/main/sns15.webp" alt="sns">
+                    <i class="fa-solid fa-bag-shopping circle_icon"></i>
+                  </div>
+                  <div class="hover_content">
+                    <div class="sns_info">
+                    </div>
+                    <div class="sns_txt">
+                      <p class="user_id">@daze_motd</p>
+                      <p class="user_caption">
+                          #유료광고 @sulwhasoo.official 우아함과 고급미가 넘치는 오브제로 화장대를 더 빛나게 만들어주는 #설화수 의 윤조에센스 6세대를
+                          만나보았어요🤍 세안 후 첫 단계에 바르는 최초의 #퍼스트에센스 로 피부능력을 깨워주는 #설화수윤조에센스 는 윤조에센스의 핵심성분을 부스팅해주고
+                          피부 본연의 능력을 활성화시켜주는 인삼독점기술이 적용된 에센스에요! 인삼의 힘으로 더욱 강력해진 제형감이 가벼우면서도 촉촉하게 피부에 영양감있게
+                          빠르게 흡수되어 손상된 피부 장벽과 피부노화징후를 개선시켜주기 때문에 #안티에이징 케어에도 도움을 주는 윤조에센스 랍니다✨ 프로필 링크에 있는
+                          #아모레퍼시픽 데이즈 스토어에서 증정하는 설화수 안티에이징 베스트셀러 키트와 함께 설화수 윤조에센스를 합리적인 가격으로 만나보세요🥰
+                          #sulwhasoo #설화수에센스 #안티에이징에센스 #에센스추천 #에센스 #기초화장품 #스킨케어
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="swiper-button swiper-button-sns sns_button_prev"></button>
+              <button type="button" class="swiper-button swiper-button-sns sns_button_next"></button>
+            </div>
+          </div>
+        </section>
+        <!-- /#With Sulwhasoo Area -->
+      </main>
+      <!-- /Content -->
+
+      <!-- Footer -->
+      <footer id="footer">
+        <!-- Moblie/Tablet Footer -->
+        <!-- SNS Area -->
+        <section class="sns_area">
+          <article><img src="./images/main/icon/sns_facebook.png" alt="페이스북"></article>
+          <article><img src="./images/main/icon/sns_instagram.png" alt="인스타그램"></article>
+          <article><img src="./images/main/icon/sns_youtube.png" alt="유튜브"></article>
+          <article><img src="./images/main/icon/sns_kakao.png" alt="카카오채널"></article>
+        </section>
+        <!-- /SNS Area -->
+        <div class="footer_info">
+          <div class="footer_toggle">
+            <span class="copyright">
+              <i class="copy">©</i>
+              <strong>AMOREPACIFIC</strong>
+              CORPORATION. All rights reserved.
+            </span>
+            <div class="toggle_btn"></div>
+          </div>
+          <div class="toggle_info">
+            <div class="inner_info_container">
+              <div class="inner_info">
+                <span>회사소개</span>
+                <span>서비스이용약관</span>
+                <span>UGC이용약관</span>
+                <span><strong>개인정보처리방침</strong></span>
+                <span>영상정보처리방침</span>
+                <span>사이트맵</span>
+              </div>
+              <div class="inner_info">
+                <p>고객서비스센터(수신자요금부담) : 080-023-5454</p>
+                <span>(월~금: AM 09:00~PM 06:00)</span>
+              </div>
+              <div class="footer_mark">
+                <article><img src="./images/main/accessibility.png" alt="웹접근성마크"></article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Moblie/Tablet Footer -->
+
+        <!-- PC Footer -->
+        <div class="footer_container">
+          <div class="footer_links">
+            <div class="footer_links_txt">
+              <p>회사소개</p>
+              <p>서비스이용약관</p>
+              <p>UGC이용약관</p>
+              <p><strong>개인정보처리방침</strong></p>
+              <p>영상정보처리방침</p>
+              <p>사이트맵</p>
+              <p>로그인</p>
+            </div>
+            <div class="footer_img">
+              <article class="access_icon"><img src="./images/main/accessibility.png" alt="웹접근성마크"></article>
+              <div class="footer_sns">
+                <article><img src="./images/main/icon/sns_facebook.png" alt="페이스북"></article>
+                <article><img src="./images/main/icon/sns_instagram.png" alt="인스타그램"></article>
+                <article><img src="./images/main/icon/sns_youtube.png" alt="유튜브"></article>
+                <article><img src="./images/main/icon/sns_kakao.png" alt="카카오채널"></article>
+              </div>
+            </div>
+          </div>
+          <div class="pc_footer_info">
+            <div class="pc_cs_info">
+              <span>고객서비스센터(수신자요금부담) : 080-023-5454 </span>
+              <span>(월~금: AM 09:00~PM 06:00)</span>
+            </div>
+            <div class="footer_copyright">
+              <p>
+                <i class="copy_icon">©</i>
+                <strong>AMOREPACIFIC</strong>
+                 CORPORATION. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /PC Footer -->
+
+      </footer>
+      <!-- /Footer -->
+
+
+    </div>
+
+    <!-- 페이지 JS -->
+    <script src="./js/swiper_custom.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

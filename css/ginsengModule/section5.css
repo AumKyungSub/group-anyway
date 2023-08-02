@@ -30,7 +30,7 @@
 
         /* 수정 */
         /* (22/1920)*100 = 1.1458333333333333 */
-        font-size: max(11px,1.1458333333333333vw);
+        font-size: max(var(--font-size),1.1458333333333333vw);
     }
     .movie-wrap {
         padding-right: 12.5%;
