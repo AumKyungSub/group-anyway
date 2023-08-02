@@ -32,3 +32,8 @@ article {
     margin: 0 auto;
     padding: 0 12.5%;
 }
+
+:root {
+    /* px size */
+    --font-size : 11px;
+}

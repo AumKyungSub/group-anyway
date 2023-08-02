@@ -96,21 +96,21 @@
     .ginseng-section3 .text-wrap .ginsengName-kr {
         /* 수정 */
         /* (42/1920)*100 = 2.1875 */
-        font-size: max(11px,2.1875vw);
+        font-size: max(var(--font-size),2.1875vw);
         letter-spacing: -0.05em;
     }
     .ginseng-section3 .text-wrap .ginsengName-en {
         /* (24/1920)*100 = 1.25 */
-        font-size: max(11px,1.25vw);
+        font-size: max(var(--font-size),1.25vw);
     }
     .ginseng-section3 .text-wrap > p:nth-of-type(2) {
         /* 수정 */
-        font-size: max(11px,1.25vw);
+        font-size: max(var(--font-size),1.25vw);
     }
     .ginseng-section3 .text-wrap .price-part {
         /* 수정 */
         /* (26/1920)*100 = 1.3541666666666667 */
-        font-size: max(11px,1.3541666666666667vw);
+        font-size: max(var(--font-size),1.3541666666666667vw);
     }
     .ginseng-section3 .price-part p {
         /* 수정 */
@@ -118,7 +118,7 @@
     }
     .ginseng-section3 .btn-wrap a {
         /* 수정 */
-        font-size: max(11px,1.25vw);
+        font-size: max(var(--font-size),1.25vw);
     }
 
 }
