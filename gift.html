@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Group Anyway" />
+    <meta name="description" content="Portfolio, Sulwhasoo clone coding" />
+    <title>Portfolio, Sulhwasoo</title>
+    <!-- Font Awesome 5.15.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon/favicon32.png" />
+    <link rel="apple-touch-icon=precomposed" href="./images/favicon/favicon144.png"/>
+    <!-- jQuery -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <!-- 기본 코딩 CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css" />
+    <link rel="stylesheet" href="./css/display_none_scrollbar.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/gift.css" />
+    <!-- 내부 스타일 영역 -->
+    <style>
+
+    </style>
+
+    <!-- 내부 스크립트 영역 -->
+    <script>
+      window.onload = function () {};
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- /Header -->
+      <header id="header">
+        <!-- 모바일/태블릿 버전 header -->
+        <div class="moblie_header_inner">
+          <div class="hamburger">
+            <button type="button" id="sideBar_open"><i class="icon_menu"></i></button>
+          </div>
+          <div class="logo">
+            <a href="index.html" class="logo_a">
+              <img src="./images/main/sulwhasoo_orange_logo_220902.png" alt="설화수로고">
+            </a>
+          </div>
+          <div class="search"><img src="./images/main/icon/search_black_icon.png" alt="서치아이콘"></div>
+        </div>
+        <!-- /모바일/태블릿 버전 header -->
+
+        <!-- PC버전 header -->
+        <div class="pc_header_inner">
+          <div class="pc_lnb w1100">
+            <div class="language_select">한국/한국어 <img src="./images/main/icon/language_arrow_black.png" alt="언어선택탭" id="language_icon"></div>
+            <div class="pc_logo"><a href="index.html"><img src="./images/main/sulwhasoo_orange_logo_220902.png" alt="설화수로고" id="pc_orange_logo"></a></div>
+            <div class="search_area">
+              <span>매장찾기</span>
+              <span>구매하기</span>
+              <span><img src="./images/main/icon/search_black_icon.png" alt="서치아이콘" id="search_icon"></span>
+            </div>
+          </div>
+          <div class="pc_nav">
+            <ul class="pc_gnb_menu">
+              <!-- a 링크 추후 각 페이지로 수정 -->
+              <li class="pc_nav_d1"><a href="#" class="d1_menu">윤조</a></li>
+              <li class="pc_nav_d1"><a href="#" class="d1_menu">자음생</a></li>
+              <li class="pc_nav_d1"><a href="gift.html" class="d1_menu">기프트</a></li>
+              <li class="pc_nav_d1"><a href="#" class="d1_menu">제품</a>
+                <ul class="pc_nav_d2_box">
+                  <div class="pc_nav_d2_container d2_box1">
+                    <li class="pc_nav_d2"><a href="#" class="d2_hover">스킨케어</a></li>
+                    <li class="pc_nav_d2"><a href="#" class="d2_hover">메이크업</a></li>
+                    <li class="pc_nav_d2"><a href="#" class="d2_hover">남성</a></li>
+                  </div>
+                </ul>
+              </li>
+              <li class="pc_nav_d1"><a href="#" class="d1_menu">스파</a>
+                <ul class="pc_nav_d2_box">
+                  <div class="pc_nav_d2_container d2_box2">
+                    <li class="pc_nav_d2"><a href="#" class="d2_hover">소개</a></li>
+                    <li class="pc_nav_d2"><a href="#" class="d2_hover">스파 프로그램</a></li>
+                    <li class="pc_nav_d2"><a href="#" class="d2_hover">예약</a></li>
+                    <li class="pc_nav_d2"><a href="#" class="d2_hover">매장 찾기</a></li>
+                  </div>
+                </ul>
+              </li>
+              <li class="pc_nav_d1"><a href="#" class="d1_menu">플래그십 스토어</a>
+                <ul class="pc_nav_d2_box">
+                  <div class="pc_nav_d2_container d2_box3">
+                    <li class="pc_nav_d2"><a href="#" class="d2_hover">설화수 북촌</a></li>
+                    <li class="pc_nav_d2"><a href="#" class="d2_hover">설화수 도산</a></li>
+                  </div>
+                </ul>
+              </li>
+              <li class="pc_nav_d1"><a href="#" class="d1_menu">ABOUT 설화수</a>
+                <ul class="pc_nav_d2_box">
+                  <div class="pc_nav_d2_container d2_box4">
+                    <li class="pc_nav_d2"><a href="#" class="d2_menu">브랜드 스토리</a>
+                      <ul class="pc_nav_d3_box">
+                        <li class="pc_nav_d3"><a href="#">브랜드 빌리프</a></li>
+                        <li class="pc_nav_d3"><a href="#">브랜드 캠페인</a></li>
+                      </ul>
+                    </li>
+                    <li class="pc_nav_d2"><a href="#" class="d2_menu">브랜드 앰버서더</a>
+                      <ul class="pc_nav_d3_box">
+                        <li class="pc_nav_d3"><a href="#">로제</a></li>
+                        <li class="pc_nav_d3"><a href="#">틸다 스윈튼</a></li>
+                      </ul>
+                    </li>
+                    <li class="pc_nav_d2"><a href="#" class="d2_menu">ART</a>
+                      <ul class="pc_nav_d3_box">
+                        <li class="pc_nav_d3"><a href="#">MET</a></li>
+                        <li class="pc_nav_d3"><a href="#">설화문학전</a></li>
+                      </ul>
+                    </li>
+                    <li class="pc_nav_d2"><a href="#" class="d2_menu">HERITAGE</a>
+                      <ul class="pc_nav_d3_box">
+                        <li class="pc_nav_d3"><a href="#">SINCE 1932</a></li>
+                        <li class="pc_nav_d3"><a href="#">명작컬렉션</a></li>
+                      </ul>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="hover_border"></div>
+        </div>
+        <!-- /PC버전 header -->
+
+      </header>
+      <!-- /Header -->
+
+      <!-- Side MENU -->
+      <div class="side_cover">
+        <div class="side_header">
+          <a href="#" class="orange_logo"></a>
+          <button type="button" class="close_btn"></button>
+        </div>
+        <nav id="side_bar" class="side_bar">
+          <div class="sideBox">
+            <div class="side_content">
+              <ul id="global_nav" class="nav_list">
+                <li class="nav_d1"><a href="#" class="no_depth_menu">윤조</a></li>
+                <li class="nav_d1"><a href="#" class="no_depth_menu">자음생</a></li>
+                <li class="nav_d1"><a href="gift.html" class="no_depth_menu">기프트</a></li>
+                <li class="nav_d1"><a href="#" class="depth_toggle">제품</a>
+                  <ul class="nav_d2_box">
+                    <li class="nav_d2"><a href="#" class="nav_d2_menu">스킨케어</a></li>
+                    <li class="nav_d2"><a href="#" class="nav_d2_menu">메이크업</a></li>
+                    <li class="nav_d2"><a href="#">남성</a></li>
+                  </ul>
+                </li>
+                <li class="nav_d1"><a href="#" class="depth_toggle">스파</a>
+                  <ul class="nav_d2_box">
+                    <li class="nav_d2"><a href="#" class="nav_d2_menu">소개</a></li>
+                    <li class="nav_d2"><a href="#" class="nav_d2_menu">스파 프로그램</a></li>
+                    <li class="nav_d2"><a href="#" class="nav_d2_menu">예약</a></li>
+                    <li class="nav_d2"><a href="#">매장 찾기</a></li>
+                  </ul>
+                </li>
+                <li class="nav_d1"><a href="#" class="depth_toggle">플래그십 스토어</a>
+                  <ul class="nav_d2_box">
+                    <li class="nav_d2"><a href="#" class="nav_d2_menu">플래그십 스토어</a></li>
+                    <li class="nav_d2"><a href="#" class="nav_d2_menu">설화수 북촌</a></li>
+                    <li class="nav_d2"><a href="#">설화수 도산</a></li>
+                  </ul>
+                </li>
+                <li class="nav_d1"><a href="#" class="depth_toggle">ABOUT 설화수</a>
+                  <ul class="nav_d2_box">
+                    <li class="nav_d2"><a href="#" class="nav_d2_menu nav_d3_menu">브랜드 스토리</a>
+                      <ul class="nav_d3_box">
+                        <li class="nav_d3"><a href="#">브랜드 빌리프</a></li>
+                        <li class="nav_d3"><a href="#">브랜드 캠페인</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav_d2"><a href="#" class="nav_d2_menu nav_d3_menu">브랜드 앰버서더</a>
+                      <ul class="nav_d3_box">
+                        <li class="nav_d3"><a href="#">로제</a></li>
+                        <ul class="nav_d4_box">
+                          <li class="nav_d4"><a href="#">PART 1 SULWHASOO REBLOOM</a></li>
+                          <li class="nav_d4"><a href="#">PART 2 ROSÉ IN BUKCHON</a></li>
+                        </ul>
+                        <li class="nav_d3"><a href="#" class="nav_d2_menu">틸다 스윈튼</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav_d2 b500"><a href="#" class="nav_d2_menu nav_d3_menu">ART</a>
+                      <ul class="nav_d3_box">
+                        <li class="nav_d3 b500"><a href="#">MET</a></li>
+                        <li class="nav_d3"><a href="#" class="nav_d2_menu">설화문화전</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav_d2 b500"><a href="#" class="nav_d2_menu nav_d3_menu">HERITAGE</a>
+                      <ul class="nav_d3_box">
+                        <li class="nav_d3 b500"><a href="#">SINCE 1932</a></li>
+                        <li class="nav_d3"><a href="#">명작컬렉션</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="other_info">
+                <ul>
+                  <li><a href="#">로그인</li>
+                  <li>매장찾기</li>
+                </ul>
+                <button type="button" class="mobile_select_language">
+                  <span>LANGUAGE</span>
+                  <span class="language_select">한국/한국어 <img src="/images/main/icon/plus.png" alt="플러스아이콘"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- /Side MENU -->
+
+      <!-- Content Area -->
+      <main>
+        
+        <!-- Gift Jihambo Area -->
+        <section class="gift">
+          <div class="gift_txt" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
+            <p>SULWHASOO GIFT</p>
+            <h2>설화수의 특별한 선물</h2>
+            <p class="tab_pc_only">설화수가 진심을 담아 준비한 포장 서비스, 지함보를 만나보세요.</p>
+          </div>
+          <div class="video_container" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1500">
+            <div class="content_box">
+              <div class="video_section">
+                <video id="video" src="./media/gift_video.mp4" loop muted preload="auto" controls></video>
+              </div>
+              <div class="poster_img"><img src="./images/gift/sulwhasoo_gift_intro_img_01_pc_kr_230705.jpg" alt="포스터이미지"></div>
+              <div class="video_poster_txt">
+                <p>손쉽게 재활용이 가능한</p>
+                <h2>파우치 지함보</h2>
+              </div>
+              <button type="button" class="more_info">자세히 보기</button>
+            </div>
+            <div class="content_box">
+              <div class="video_section">
+                <video id="video" src="./media/gift_video02.mp4" loop muted preload="auto" controls></video>
+              </div>
+              <div class="poster_img"><img src="./images/gift/sulwhasoo_gift_intro_img_02_pc_kr_230705.jpg" alt="포스터이미지"></div>
+              <div class="video_poster_txt">
+                <p>예와 정성을 보여주는</p>
+                <h2>사각보자기 지함보</h2>
+              </div>
+              <button type="button" class="more_info">자세히 보기</button>
+            </div>
+          </div>
+        </section>
+        <!-- /Gift Jihambo Area -->
+
+        <section class="jihambo">
+          <div class="jihambo_mo_img" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
+            <img src="./images/gift/sulwhasoo_gift_jihambo_img_pc_kr_230705.jpg" alt="지함보">
+          </div>
+          <div class="jihambo_txt">
+            <h3 data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">지함보 <span>JIHAMBO</span></h3>
+            <p class="mo_txt" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
+              전통의 지혜와 정성의 함을 담은 보자기라는 뜻의 지함보는 <br>
+              과하지 않은 설화수만의 기품을 보여주는 섬세한 포장 요소 <br>
+              하나 하나를 통해 주는 이의 마음과 받는 이의 기쁨도 담아낸 <br>
+              설화수만의 시그니처 서비스입니다
+            </p>
+            <p class="pc_txt" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
+              전통의 지혜와 정성의 함을 담은 보자기라는 뜻의 지함보는 <br>
+              과하지 않은 설화수만의 기품을 보여주는 섬세한 포장 요소 하나 하나를 통해 <br>
+              주는 이의 마음과 받는 이의 기쁨도 담아낸 설화수만의 시그니처 서비스입니다
+            </p>
+          </div>
+          <div class="jihambo_pc_img" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1500">
+            <img src="./images/gift/sulwhasoo_gift_jihambo_img_pc_kr_230705_pc.jpg" alt="지함보">
+          </div>
+        </section>
+
+        <section class="gift_outro" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1500">
+          <div class="outro_img">
+            <picture>
+              <source srcset="./images/gift/sulwhasoo_gift_outro_img_pc_kr_230705.jpg" media="(min-width: 768px)">
+              <img src="./images/gift/sulwhasoo_gift_outro_img_mo_kr_230705_360.jpg" alt="기프트배너">
+            </picture>
+          </div>
+        </section>
+        
+        
+        
+      </main>
+      <!-- /Content Area -->
+      
+
+
+      <!-- Footer -->
+      <footer id="footer">
+        <!-- Moblie/Tablet Footer -->
+        <!-- SNS Area -->
+        <section class="sns_area">
+          <article><img src="./images/main/icon/sns_facebook.png" alt="페이스북"></article>
+          <article><img src="./images/main/icon/sns_instagram.png" alt="인스타그램"></article>
+          <article><img src="./images/main/icon/sns_youtube.png" alt="유튜브"></article>
+          <article><img src="./images/main/icon/sns_kakao.png" alt="카카오채널"></article>
+        </section>
+        <!-- /SNS Area -->
+        <div class="footer_info">
+          <div class="footer_toggle">
+            <span class="copyright">
+              <i class="copy">©</i>
+              <strong>AMOREPACIFIC</strong>
+              CORPORATION. All rights reserved.
+            </span>
+            <div class="toggle_btn"></div>
+          </div>
+          <div class="toggle_info">
+            <div class="inner_info_container">
+              <div class="inner_info">
+                <span>회사소개</span>
+                <span>서비스이용약관</span>
+                <span>UGC이용약관</span>
+                <span><strong>개인정보처리방침</strong></span>
+                <span>영상정보처리방침</span>
+                <span>사이트맵</span>
+              </div>
+              <div class="inner_info">
+                <p>고객서비스센터(수신자요금부담) : 080-023-5454</p>
+                <span>(월~금: AM 09:00~PM 06:00)</span>
+              </div>
+              <div class="footer_mark">
+                <article><img src="./images/main/accessibility.png" alt="웹접근성마크"></article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Moblie/Tablet Footer -->
+
+        <!-- PC Footer -->
+        <div class="footer_container">
+          <div class="footer_links">
+            <div class="footer_links_txt">
+              <p>회사소개</p>
+              <p>서비스이용약관</p>
+              <p>UGC이용약관</p>
+              <p><strong>개인정보처리방침</strong></p>
+              <p>영상정보처리방침</p>
+              <p>사이트맵</p>
+              <p>로그인</p>
+            </div>
+            <div class="footer_img">
+              <article class="access_icon"><img src="./images/main/accessibility.png" alt="웹접근성마크"></article>
+              <div class="footer_sns">
+                <article><img src="./images/main/icon/sns_facebook.png" alt="페이스북"></article>
+                <article><img src="./images/main/icon/sns_instagram.png" alt="인스타그램"></article>
+                <article><img src="./images/main/icon/sns_youtube.png" alt="유튜브"></article>
+                <article><img src="./images/main/icon/sns_kakao.png" alt="카카오채널"></article>
+              </div>
+            </div>
+          </div>
+          <div class="pc_footer_info">
+            <div class="pc_cs_info">
+              <span>고객서비스센터(수신자요금부담) : 080-023-5454 </span>
+              <span>(월~금: AM 09:00~PM 06:00)</span>
+            </div>
+            <div class="footer_copyright">
+              <p>
+                <i class="copy_icon">©</i>
+                <strong>AMOREPACIFIC</strong>
+                 CORPORATION. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /PC Footer -->
+
+      </footer>
+      <!-- /Footer -->
+    </div>
+
+
+
+    <!-- 페이지 JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/gift.js"></script>
+  </body>
+
+  </html>
