@@ -17,18 +17,18 @@
 }
 .ginseng-section8 > div .text-wrap h4 {
     /* (14.4/360)*100 = 4 */
-    font-size: max(11px, 4vw);
+    font-size: max(var(--font-size), 4vw);
     font-weight: 600;
 }
 .ginseng-section8 > div .text-wrap h2 {
     /* (24.96/360)*100 = 6.933333333333333 */
-    font-size: max(11px,6.933333333333333vw);
+    font-size: max(var(--font-size),6.933333333333333vw);
     font-weight: 700;
     margin: 4% 0 4.6666666667%;
 }
 .ginseng-section8 > div .text-wrap ul li {
     /* (12.48/360)*100 = 3.4666666666666663 */
-    font-size: max(11px,3.4666666666666663vw);
+    font-size: max(var(--font-size),3.4666666666666663vw);
     line-height: 1.5384615385;
     padding-left: 3.6764705882%;
     letter-spacing: -0.1em;
@@ -70,19 +70,19 @@
     .ginseng-section8 > div .text-wrap h4 {
         /* 수정  */
         /* (28/1920)*100 = 1.4583333333333333 */
-        font-size: max(11px, 1.4583333333333333vw);
+        font-size: max(var(--font-size), 1.4583333333333333vw);
     }
     .ginseng-section8 > div .text-wrap h2 {
         /* 수정  */
         /* (48/1920)*100 = 2.5  */
-        font-size: max(11px,2.5vw);
+        font-size: max(var(--font-size),2.5vw);
         /* 수정  */
         margin: 3% 0 3.6666666667%;
     }
     .ginseng-section8 > div .text-wrap ul li {
         /* 수정  */
         /* (24/1440)*100 = 1.25*/
-        font-size: max(11px,1.25vw);
+        font-size: max(var(--font-size),1.25vw);
     }
     .ginseng-section8 > div .text-wrap ul li .list-dot::before {
         /* 수정  */

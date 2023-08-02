@@ -76,11 +76,11 @@
     .ginseng-section6 .text-wrap h3 {
         /* 수정 */
         /* (48/1920)*100 = 2.5 */
-        font-size: max(11px,2.5vw);
+        font-size: max(var(--font-size),2.5vw);
     }
     .ginseng-section6 .text-wrap p {
         /* 수정 */
         /* (24/1920)*100 = 1.25 */
-        font-size: max(11px,1.25vw);
+        font-size: max(var(--font-size),1.25vw);
     }
 }
