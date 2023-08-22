@@ -1,0 +1,163 @@
+/* section1 */
+.main_dosan .sec_1 {
+    width: 100%;
+    height: 120vw;
+    /* Position */
+    position: relative;
+    z-index: 0;
+  }
+  .main_dosan .sec_1::before {
+    height: calc(100% + 60px);
+    /* Background */
+    background-image: url("../../images/flagship/dosan/section1_dosan_mobile.jpg");
+    background-position: center;
+    transform: scale(1.1);
+    /* Position */
+    top: -60px;
+    animation: pageDosanAni 1.5s forwards;
+  }
+  @keyframes pageDosanAni {
+    from {
+      transform: scale(1.1);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  .main_dosan .sec_1 h2 {
+    padding-bottom: 23.333vw;
+    /* Font */
+    font-size: 6.667vw;
+    text-shadow: #222 0.267vw 0 2vw;
+    letter-spacing: 0.667vw;
+    line-height: 1.5;
+  }
+  .main_dosan .sec_1 span {
+    /* Font */
+    font-size: 16px;
+    font-family: "Theinhardt";
+    letter-spacing: 1px;
+    /* Position */
+    position: absolute;
+    left: 50%;
+    bottom: 7.237vw;
+  }
+  .main_dosan .sec_1 span::before {
+    content: " ";
+    width: 5.067vw;
+    height: 5.067vw;
+    background-color: transparent;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: rotate(45deg);
+    /* Position */
+    position: absolute;
+    left: -2.5335vw;
+    top: -2.5335vw;
+  }
+  .main_dosan .sec_1 span i {
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden;
+    /* Position */
+    position: absolute;
+    z-index: -1;
+  }
+
+/******************** PC 1024px ************************/
+@media only all and (min-width: 1024px) {
+    /* section1 */
+    .main_dosan .sec_1 {
+      height: calc(100vh - 160px);
+      padding: 0;
+      overflow: hidden;
+      text-align: left;
+      /* Position */
+      left: 0;
+      top: 0;
+    }
+    .main_dosan .sec_1::before {
+      width: 100%;
+      height: 100%;
+      /* Background */
+      background-image: url("../../images/flagship/dosan/section1_dosan_pc.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: scale(1.2);
+      /* Position */
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: -999;
+      animation: pageDosanAni 2s forwards;
+    }
+    @keyframes pageDosanAni {
+      from {
+        transform: scale(1.1);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+    .main_dosan .sec_1::after {
+      content: none;
+    }
+    .main_dosan .sec_1 h2 {
+      padding-bottom: 14.433vw;
+      /* Font */
+      font-size: 3.093vw;
+      text-shadow: #222 0.103vw 0 0.773vw;
+      letter-spacing: 0.258vw;
+      /* Position */
+      position: relative;
+      z-index: 0;
+    }
+    .main_dosan .sec_1 > span {
+      width: auto;
+      height: auto;
+      /* Font */
+      /* Position */
+      bottom: 2.737vw;
+      z-index: 10;
+      animation: movingScroll 1s ease-out infinite;
+    }
+    @keyframes movingScroll {
+      from {
+        bottom: 2.737vw;
+      }
+      50% {
+        bottom: 3.237vw;
+      }
+      to {
+        bottom: 2.737vw;
+      }
+    }
+    .main_dosan .sec_1 > span::before {
+      width: 1px;
+      height: 2.887vw;
+      background-color: #fff;
+      border-right: none;
+      border-bottom: none;
+      transform: translateY(-100%);
+      /* Position */
+      left: 2vw;
+      top: -1.546vw;
+      z-index: 10;
+    }
+    .main_dosan .sec_1 > span i {
+      width: auto !important;
+      height: auto !important;
+      overflow: visible;
+      /* Font */
+      font-family: "Theinhardt";
+      font-size: 0.825vw;
+      letter-spacing: 1px;
+      font-style: normal;
+      text-align: left;
+      /* Position */
+      z-index: 0;
+    }
+  
+
+}

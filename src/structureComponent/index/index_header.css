@@ -1,0 +1,508 @@
+@charset "utf-8";
+
+/* 공통 코드 */
+body {
+    font-family: 'Theinhardt','Noto Sans KR', 'Nanum Gothic', '나눔고딕', sans-serif;
+    font-size: 62.5%;
+}
+
+/* Header */
+#index_header  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+}
+#index_header .moblie_header_inner {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+#index_header .moblie_header_inner .logo {
+    margin: 0 80px 0 106px;
+}
+#index_header .moblie_header_inner .logo img {
+    width: 112px;
+}
+#index_header .moblie_header_inner .search img {
+    width: 20px;
+    height: 100%;
+}
+
+/* ================== 햄버거 아이콘 ==================== */
+#index_header .header_line .hamburger {
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+}
+#index_header .hamburger #sideBar_open {
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    margin-top: -15px;
+    padding: 5px;
+    z-index: 2;
+    cursor: pointer;
+}
+#index_header .hamburger #sideBar_open .icon_menu {
+    position: relative;
+    width: 23px;
+    height: 18px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    background: 0;
+    display: inline-block;
+}
+#index_header .hamburger #sideBar_open .icon_menu::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: -1px;
+    border-top: 2px solid white;
+}
+/* ================== /햄버거 아이콘 ==================== */
+
+
+/* ================== 사이드 메뉴 ==================== */
+/* Side MENU */
+#index_header .side_cover {
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    z-index: 10;
+    transition: all .4s;
+}
+
+#index_header .side_bar {
+    width: 100vw;
+    height: 100%;
+    background-color: #333;
+    padding-top: 60px;
+    overflow-y: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+#index_header .side_header {
+    transition: all .4s;
+    padding: 0 20px;
+    width: 100vw;
+    height: 60px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    z-index: 10;
+
+}
+#index_header .side_bar::before {
+    transition: all .3s cubic-bezier(.56, .06, 0, .97);
+}
+#index_header .sideBox {
+    height: 100%;
+}
+#index_header .side_header .orange_logo {
+    display: inline-block;
+    background: url('../../images/main/sulwhasoo_orange_logo_220902.png') no-repeat center;
+    background-size: contain;
+    width: 112px;
+    height: 40px;
+    margin-top: 10px;
+}
+#index_header .side_header .close_btn {
+    width: 24px;
+    height: 24px;
+    background-image: url('../../images/main/icon/gnb_close.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    cursor: pointer;
+}
+#index_header .side_header::after {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 59px;
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+}
+#index_header .side_content {
+    height: calc(100% - 60px);
+    overflow-y: auto;
+}
+#index_header .nav_list {
+    padding: 16px 0;
+    letter-spacing: -1px;
+    background-color: #fff;
+}
+#index_header .nav_list .nav_d1 {
+    position: relative;
+    z-index: 1;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+/* depth 메뉴가 없는 메뉴 */
+#index_header .nav_list .nav_d1 .no_depth_menu,
+#index_header .nav_list .nav_d1 .depth_toggle {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0 12px 20px;
+    color: #333;
+}
+/* depth 메뉴가 있는 메뉴 */
+#index_header .nav_list .nav_d1 .depth_toggle {
+    /* + 이미지 */
+    background: url('https://cdn-icons-png.flaticon.com/512/1828/1828925.png') no-repeat center right 20px/14px auto;
+}
+#index_header .nav_list .nav_d1.on .depth_toggle {
+    /* - 이미지 */
+    background: url('https://cdn-icons-png.flaticon.com/512/860/860821.png') no-repeat center right 20px/14px auto;
+}
+
+/* 2depth menu */
+#index_header .nav_d1 .nav_d2_box {
+    color: #333;
+    font-size: 19px;
+    background: #faf9f5;
+    padding: 0 20px;
+}
+#index_header .nav_d1 .nav_d2_box .nav_d2 {
+    position: relative;
+    z-index: 10;
+    line-height: 1.6;
+}
+#index_header .nav_d1 .nav_d2_box .nav_d2 a{
+    position: relative;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#index_header .nav_d1 .nav_d2_box .nav_d2 .nav_d2_menu {
+    border-bottom: 1px solid #eceae3;
+}
+#index_header .nav_d1 .nav_d2 .nav_d3_menu {
+    /* + 이미지 */
+    background: url('https://cdn-icons-png.flaticon.com/512/1828/1828925.png') no-repeat center right 0/14px auto;
+}
+#index_header .nav_d1 .nav_d2.on .nav_d3_menu {
+    /* - 이미지 */
+    background: url('https://cdn-icons-png.flaticon.com/512/860/860821.png') no-repeat center right 0/14px auto;
+}
+
+/* 3depth menu */
+#index_header .nav_d2 .nav_d3_box {
+    position: relative;
+}
+#index_header .nav_d2 .nav_d3_box .nav_d3 {
+    position: relative;
+    z-index: 10;
+    line-height: 1.6;
+    font-size: 16px;
+}
+#index_header .nav_d2 .nav_d3_box .nav_d3 a {
+    position: relative;
+    display: block;
+    padding: 8px 0 8px 25px;
+    color: #333;
+}
+/* 4depth menu */
+#index_header .nav_d4_box .nav_d4 {
+    position: relative;
+    z-index: 10;
+    line-height: 1.6;
+    font-size: 15px;
+}
+#index_header .nav_d4_box .nav_d4 a {
+    position: relative;
+    display: block;
+    padding: 2px 0 2px 33px;
+    color: #888;
+}
+#index_header .nav_list>li.noDepth a {
+    background-image: none;
+}
+#index_header .b500 {
+    /* 영문 글자 두께 */
+    font-weight: 600;
+}
+
+/* 사이드메뉴 하단 */
+#index_header .other_info {
+    padding-top: 12px;
+    background: #333;
+}
+#index_header .other_info ul {
+    padding-bottom: 13px;
+}
+#index_header .other_info ul li {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 20px;
+    line-height: 1.4;
+}
+#index_header .other_info ul li:first-child a {
+    border-bottom: 1px solid #fff;
+}
+#index_header .other_info .mobile_select_language {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 18px 20px;
+    border-top: 1px solid #424242;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+#index_header .other_info .mobile_select_language .language_select img {
+    padding: 4px 0px 0px 4px;
+}
+#index_header .pc_swiper_prev {
+    display: none;
+}
+#index_header .pc_swiper_next {
+    display: none;
+}
+#index_header .pc_header_inner {
+    display: none;
+}
+
+/* PC 미디어 쿼리 1024px 이상 */
+@media screen and (min-width:1024px){
+    /* Side MENU */
+    #index_header .side_cover {
+        display: none;
+    }
+    #index_header .moblie_header_inner {
+        display: none;
+    }
+
+    /* ======== PC Header ======== */
+    #index_header .pc_header_inner  {
+        display: block;
+    }
+    #index_header  {
+        /* padding: 20px 0 0 0; */
+        padding-top: 20px;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0);
+        transition: all .3s;
+        cursor: pointer;
+    }
+    /* GNB 호버 시 배경색 변경 */
+    #index_header:hover {
+        background: rgba(255, 255, 255, 1);
+    }
+    /* GNB 호버 시 글자색 변경 */
+    #index_header:hover div {
+        color: black;
+    }
+    /* GNB 호버 시 이미지 변경 */
+    #index_header:hover #language_icon {
+        content: url('../../images/main/icon/language_arrow_black.png');
+    }
+
+    #index_header:hover #pc_orange_logo {
+        content: url('../../images/main/sulwhasoo_orange_logo_220902.png');
+    }
+
+    #index_header:hover #search_icon {
+        content: url('../../images/main/icon/search_black_icon.png');
+    }
+    #index_header .w1440 {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    #index_header .w1100 {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    #index_header .pc_lnb {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        max-width: 1100px;
+        height: 78px;
+        justify-content: space-between;
+        color: white;
+        font-size: 15px;
+    }
+    #index_header .pc_lnb .language_select img {
+        padding: 3px 0 0 6px;
+    }
+    #index_header .pc_lnb .pc_logo {
+        position: absolute;
+        top: 0;
+        left: 35%;
+        z-index: 5;
+        display: table;
+        height: 60%;
+        width: 30%;
+        margin: 0 auto;
+        text-align: center;
+        vertical-align: top;
+    }
+    #index_header .pc_lnb .pc_logo a {
+        display: table-cell;
+        width: 100%;
+        padding-top: 1px;
+        vertical-align: middle;
+    }
+    #index_header .pc_lnb .pc_logo img {
+        width: 166px;
+    }
+    #index_header .search_area span {
+        padding: 0 15px;
+        font-size: 15px;
+        line-height: 1.5;
+        position: relative;
+    }
+    #index_header .search_area span:nth-child(2):after {
+        content: '|';
+        display: inline-block;
+        position: absolute;
+        top: 42%;
+        left: -2px;
+        transform: translateY(-50%);
+    }
+    #index_header .search_area span:nth-child(3):before {
+        content: '|';
+        display: inline-block;
+        position: absolute;
+        top: 42%;
+        left: -2px;
+        transform: translateY(-50%);
+    }
+    #index_header .search_area span img {
+        margin-top: 3px;
+        width: 17px;
+        height: 17px;
+    }
+
+    /* ========= GNB MENU ========= */
+    #index_header .pc_nav {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 7%;
+    }
+    #index_header .pc_gnb_menu {
+        display: flex;
+        justify-content: space-between;
+        max-width: 772px;
+        margin: 0 auto;
+    }
+
+    #index_header .pc_gnb_menu .pc_nav_d1 {
+        color: white;
+        font-size: 16px;
+    }
+
+    #index_header:hover .d1_menu {
+        color: black;
+    }
+
+    /* ===== 1depth MENU 호버시 css ===== */
+    #index_header .pc_nav_d1 .d1_menu {
+        position: relative;
+        display: inline-block;
+        padding-bottom: 12px;
+    }
+    #index_header .pc_nav_d1 .d1_menu::after {
+        position: absolute;   
+        left: -2px;
+        right: -2px;
+        bottom: -1px;
+        content: '';
+        height: 2px;
+        background: #000;
+        opacity: 0;
+        transition: opacity .3s linear;
+    }
+    #index_header .pc_nav_d1:hover .d1_menu::after {
+        opacity: 1;
+    }
+
+    /* ===== 2depth MENU css ===== */
+    #index_header .pc_nav_d2_box {
+        display: none; 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 3px 0;
+        background-color: #fff;
+        border-top: 1px solid #eaeaea;
+    }
+    #index_header .pc_nav_d2_container {
+        max-width: 772px;
+        margin: 0 auto;
+        display: flex;
+        text-align: left;
+    }
+    #index_header .pc_nav_d2_container .pc_nav_d2 {
+        color: #888;
+        font-size: 15px;
+    }
+    #index_header .d2_box1, #index_header .d2_box2, #index_header .d2_box3, #index_header .d2_box4  {
+        justify-content: center;
+    }
+    #index_header .d2_box1 li, #index_header .d2_box2 li, #index_header .d2_box3 li, #index_header .d2_box4>.pc_nav_d2  {
+        padding: 9px 15px 6px;
+    }
+    #index_header .d2_box2 {
+        width: 400px;
+        transform: translateX(34%);
+    }
+    #index_header .d2_box3 {
+        width: 500px;
+        transform: translateX(37.5%);
+    }
+    #index_header .d2_box4 {
+        padding-top: 22px;
+        padding-bottom: 30px;
+        width: 100%;
+        justify-content: space-between;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    #index_header .d2_box4 .pc_nav_d2 {
+        font-size: 15px;
+        line-height: 2.5;
+        font-weight: 600;
+        color: black;
+    }
+    #index_header .pc_nav_d3_box .pc_nav_d3 a {
+        padding: 9px 15px 6px 0;
+        color: #888;
+    }
+    #index_header .pc_nav_d2:hover .d2_hover,
+    #index_header .pc_nav_d3 a:hover {
+        font-weight: bold;
+        color: black;
+    }
+    
+    /* PC단 호버시 서브메뉴 오픈 */
+    #index_header .pc_nav_d1:hover .pc_nav_d2_box {
+        display: block;
+    }
+}

@@ -1,0 +1,52 @@
+/* Section2 1st */
+.main_dosan .sec_2_first {
+    width: 100%;
+    height: 48vw;
+    /* Background */
+    background-image: url("../../images/flagship/dosan/section2_1st_bgc.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* Font */
+    font-size: 3.733vw;
+    color: #5a443b;
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_dosan .sec_2_first p:first-child {
+    display: none;
+  }
+  .main_dosan .sec_2_first p:nth-child(2),
+  .main_dosan .sec_2_first p:last-child {
+    padding-top: 1vw;
+  }
+  .main_dosan .sec_2_first p:nth-child(2) strong {
+    font-weight: 500;
+  }
+  .main_dosan .sec_2_first p:last-child {
+    font-weight: 300;
+  }
+
+/******************** PC 1024px ************************/
+@media only all and (min-width: 1024px) {
+    /* Section2 1st */
+    .main_dosan .sec_2_first {
+      height: 11.959vw;
+      /* Background */
+      background-image: url("../../images/flagship/dosan/section2_1st_bgc_pc.jpg");
+      /* Font */
+      font-size: 1.34vw;
+    }
+    .main_dosan .sec_2_first p:first-child {
+      display: block;
+      font-weight: 300;
+    }
+    .main_dosan .sec_2_first p:nth-child(2),
+    .main_dosan .sec_2_first p:last-child {
+      display: none;
+    }
+
+}

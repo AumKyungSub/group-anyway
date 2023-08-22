@@ -1,0 +1,51 @@
+export const JourneyData = [
+    {
+        class: "list_item_01",
+        img: "./images/about/brand_belief_content02_item01_kr_230511.jpg",
+        year: "1932",
+        mainText: "설화수의 시작",
+        description: "윤독정 여사의 동백기름",
+    },
+    {
+        class: "list_item_02",
+        img: "./images/about/brand_belief_content02_item02_kr_230511.jpg",
+        year: "1954",
+        mainText: "인삼 연구의 시작",
+        description: "국내 최초 화장품 연구실 설립",
+    },
+    {
+        class: "list_item_03",
+        img: "./images/about/brand_belief_content02_item03_kr_230511.jpg",
+        year: "1966",
+        mainText: "ABC 인삼 크림 출시",
+        description: "최초의 인삼 화장품",
+    },
+    {
+        class: "list_item_04",
+        img: "./images/about/brand_belief_content02_item04_kr_230511.jpg",
+        year: "1973",
+        mainText: "K-뷰티의 시작",
+        description: "진생삼미 해외 수출",
+    },
+    {
+        class: "list_item_05",
+        img: "./images/about/brand_belief_content02_item05_kr_230511.jpg",
+        year: "1997",
+        mainText: "윤조에센스 출시",
+        description: "최초의 퍼스트 에센스",
+    },
+    {
+        class: "list_item_06",
+        img: "./images/about/brand_belief_content02_item06_kr_230511.jpg",
+        year: "2021",
+        mainText: "설화수의 집",
+        description: "북촌 플래그십 스토어 오픈",
+    },
+    {
+        class: "list_item_07",
+        img: "./images/about/brand_belief_content02_item07_kr_230511.jpg",
+        year: "2022",
+        mainText: "설화, 다시 피어나다",
+        description: "SULWHASOO REBLOOM",
+    },
+];

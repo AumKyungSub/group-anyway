@@ -1,0 +1,94 @@
+/* Section2 4th */
+.main_bukchon .sec_2_fourth {
+    padding: 13.3333vw 0 6.1856vw !important;
+    background-color: #f8f5f3;
+  }
+  .main_bukchon .sec_2_fourth h3::before {
+    content: none;
+  }
+  .main_bukchon .sec_2_fourth h3 {
+    padding-bottom: 3.4667vw !important;
+  }
+  .main_bukchon .sec_2_4th_text_cover {
+    padding: 3.4667vw 4.444vw 20vw 5.333vw !important;
+    /* Font */
+    font-size: 3.733vw;
+    color: #74675e;
+    font-weight: 500;
+  }
+  .main_bukchon .sec_2_4th_text_cover p {
+    padding-top: 2.933vw;
+    word-break: keep-all;
+    /* Font */
+    font-size: 3.2vw;
+    font-weight: 500 !important;
+    letter-spacing: -0.8px;
+    text-align: left;
+  }
+  .main_bukchon .time {
+    font-weight: 400 !important;
+  }
+
+/******************** PC 1024px ************************/
+@media only all and (min-width: 1024px) {
+    /* Section2 4th */
+    .main_bukchon .sec_2_fourth {
+      padding: 5.0515vw 0 6.1856vw !important;
+      background-color: #f8f5f3;
+    }
+    .main_bukchon .sec_2_fourth h3::before {
+      content: none;
+    }
+    .main_bukchon .sec_2_fourth h3 {
+      padding-bottom: 2.1649vw !important;
+    }
+    .main_bukchon .sec_2_4th_img_cover {
+      width: 58.333% !important;
+    }
+    .main_bukchon .sec_2_4th_img_cover img {
+      max-width: 100% !important;
+      height: 100% !important;
+    }
+    .main_bukchon .infor_text_cover {
+      width: calc(100% - 58.333%) !important;
+      padding: 1.701vw 0 1.289vw 2.165vw !important;
+      /* Font */
+      font-size: 3.733vw;
+      color: #74675e;
+      font-weight: 500;
+    }
+    .main_bukchon .infor_text_cover p {
+      padding-top: 1.134vw;
+      padding-bottom: 0.515vw !important;
+      word-break: keep-all;
+      /* Font */
+      font-size: 1.031vw;
+      font-weight: 500 !important;
+      letter-spacing: -0.8px;
+      text-align: left;
+    }
+    .main_bukchon .sec_2_4th_text_cover {
+      width: 100% !important;
+      padding: 0 !important;
+    }
+    .main_bukchon .time > span {
+      padding-bottom: 0.515vw !important;
+    }
+    .main_bukchon .sec_2_4th_reservation {
+      display: block !important;
+  
+      padding-top: 1.7526vw !important;
+  
+      /* Position */
+      position: static;
+    }
+    .main_bukchon .sec_2_4th_reservation a {
+      width: 10.309vw !important;
+      height: 2.68vw !important;
+      font-size: 1.031vw !important;
+    }
+    .main_bukchon .time {
+      font-weight: 400 !important;
+    }
+
+}

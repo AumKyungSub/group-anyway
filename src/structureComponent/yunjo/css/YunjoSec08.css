@@ -1,0 +1,81 @@
+/* section08 */
+.essence_cover {
+    margin-top: -1px;
+    /* 포지션 기준값 */
+    position: relative;
+}
+.cover_img img{
+    width: 100%;
+}
+.cover_text {
+    width: 100%;
+    padding-top: 16%;
+    padding-right: 6.9333%;
+    text-align: right;
+    color: #ffffff;
+    font-size: 6.9333vw;
+    font-weight: 700;
+    /* 포지션 */
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9999999;
+}
+.cover_text h2 {
+    line-height: 1.3;
+    font-weight: 600;
+}
+.cover_text p {
+    margin-top: 8%;
+    padding-right: 0.8%;
+    font-size: 3.4667vw;
+    line-height: 1.5;
+}
+/* video03 */
+.yunjo_video03 figure video{
+    margin-top: -1px;
+    width: 100%;
+}
+
+
+/* 태블릿 768단 */
+@media screen and (min-width:768px){
+    /* section08 */
+    .yunjo_sec08 br.mo {
+        display: none;
+    }
+        /* 속성 추가 */
+    .yunjo_sec08 {
+        /* 플렉스 */
+        display: flex;
+    }
+    .essence_cover .cover_img img{
+        max-width: 100%;
+        width: 100%;
+    }
+    /* 속성값 수정 */
+    .cover_text {
+        padding-top: 14.6875%;
+        padding-right: 10.9375%;
+    }
+    /* 속성값 수정 */
+    .cover_text h2 {
+        font-size: 2.5vw;
+    }
+    /* 속성값 수정 */
+    .cover_text p {
+        margin-top: 3.9063%;
+        font-size: 1.25vw;
+        font-weight: 300;
+    }
+    /* 속성값 수정 */
+    .yunjo_video03 figure video {
+        height: 100%;
+    }
+}
+
+
+/* PC 1024단 */
+@media screen and (min-width:1024px){
+    /* 수정 사항 없음 */
+}

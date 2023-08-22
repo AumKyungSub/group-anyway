@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/* Section 2 */
+.ginseng-section2 {
+  margin-top: -2px;
+  /* 위치기준값 */
+  position: relative;
+}
+.ginseng-section2 img {
+  width: 100%;
+}
+.ginseng-section2 .text-wrap {
+  color: #fff;
+  width: 100%;
+  max-width: 1920px;
+  text-align: left;
+  padding: 16.4% 0 0 8%;
+  /* 포지션 */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ginseng-section2 .text-wrap h4 {
+  font-size: max(var(--font-size), 3.888888888888889vw);
+  font-weight: 700;
+}
+.ginseng-section2 .text-wrap h2 {
+  margin-top: 2.41vh;
+  font-size: max(var(--font-size), 6.9333333333vw);
+  font-weight: 600;
+  line-height: 1.3;
+}
+.ginseng-section2 .text-wrap p {
+  font-size: max(var(--font-size), 3.4666666667vw);
+  line-height: 1.5;
+  letter-spacing: -0.14em;
+  font-weight: 300;
+}
+.ginseng-section2 .text-wrap p:nth-of-type(1) {
+  margin-top: 5.4%;
+}
+.ginseng-section2 .text-wrap p:nth-of-type(2) {
+  margin-top: 8px;
+}
+.ginseng-section2 .text-wrap p:nth-of-type(3) {
+  font-size: max(var(--font-size), 2.9333333333vw);
+  margin-top: 7.3%;
+  color: #f6cebd;
+}
+
+/* 태블릿 750px이상 : 1920기준 */
+@media screen and (min-width: 751px) {
+  .ginseng-section2 .text-wrap {
+    /* 수정 */
+    padding: 13.5416666667% 0 0 57.2916666667%;
+  }
+  .ginseng-section2 .text-wrap h4 {
+    font-size: max(var(--font-size), 1.4583333333333333vw);
+  }
+  .ginseng-section2 .text-wrap h2 {
+    font-size: max(var(--font-size), 2.5vw);
+    font-weight: 500;
+  }
+  .ginseng-section2 .text-wrap p {
+    font-size: max(var(--font-size), 1.25vw);
+    font-weight: 300;
+  }
+  .ginseng-section2 .text-wrap p:nth-of-type(2) {
+    margin-top: 13.875px;
+  }
+  .ginseng-section2 .text-wrap p:nth-of-type(3) {
+    margin-top: 2.9166666666666665%;
+    font-size: max(var(--font-size), 0.9375vw);
+  }
+  .mo_only {
+    display: none;
+  }
+}

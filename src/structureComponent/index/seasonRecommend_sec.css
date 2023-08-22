@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+/* Season recommend Area */
+.season_recommend {
+    margin-top: 78px;
+    padding: 0 20px;
+}
+.season_recommend h2 {
+    font-size: 22px;
+    letter-spacing: -.025em;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 24px;
+}
+.card_section {
+    padding-bottom: 15px;
+}
+.card_section_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-flow: row wrap;
+}
+.cardBox {
+    position: relative;
+    flex: 1 1 auto;
+    width: 23.75%;
+    height: 100%;
+    padding-bottom: 3.4722222222%;
+}
+.card02 {
+    order: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+.card02 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card02_txt {
+    margin-top: 3.8709677419%;
+}
+.card02_txt h3 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -.025em;
+    padding-bottom: 10px;
+}
+.card02_txt p {
+    font-size: 13px;
+    line-height: 1.3;
+    letter-spacing: -.025em;
+    color: #666;
+    font-weight: 400;
+}
+.card01 {
+    order: 2;
+    width: 48%;
+    height: 100%;
+    background-color: #ededed;
+    margin-right: 5px;
+    line-height: 1.5;
+    padding-bottom: 6.25%;
+}
+.card01 article, .card03 article {
+    padding: 6.25%;
+}
+.card01 img, .card03 img {
+    width: 135px;
+}
+.card03 {
+    order: 3;
+    width: 48%;
+    height: 100%;
+    background-color: #ededed;
+    margin-left: 5px;
+    line-height: 1.5;
+    padding-bottom: 6.25%;
+}
+.card01_txt h3, .card03_txt h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+.card01_txt .detail_info, .card03_txt .detail_info {
+    padding: .6451612903% 10.9677419355% 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    color: #888;
+    letter-spacing: -.025em;
+    font-weight: 400;
+}
+.card01_txt .price, .card03_txt .price {
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+}
+
+/* 태블릿 미디어 쿼리 768px 이상 */
+@media screen and (min-width:768px){
+    /* Season recommend Area */
+    .season_recommend h2 {
+        text-align: left;
+    }
+    .cardBox {
+        padding-bottom: 3.4552845528%;
+    }
+    .card_section {
+        padding-bottom: 15px;
+    }
+    .card_section_container {
+        flex-flow: row nowrap;
+    }
+    .card01 {
+        order: 1;
+        margin-right: 5px;
+    }
+    .card02 {
+        width: 100%;
+        margin: 0 10px;
+        padding-bottom: 37.689333%;
+        height: 0;
+        position: relative;
+    }
+    .card03 {
+        order: 3;
+        margin-left: 5px;
+    }
+    .card01 article, .card03 article {
+        padding: 3.4552845528%;
+    }
+    .card01 img, .card03 img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card02 img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .card02_txt {
+        width: 100%;
+        position: absolute;
+        margin-top: 10.3448275862%;
+        left: 0;
+        bottom: 0;
+        text-align: left;
+    }
+    .card02_txt h3 {
+        padding-left: 5.6497175141%;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .card02_txt p {
+        font-size: 12px;
+        line-height: 1.8;
+        padding-top: 1.4124293785%;
+        padding-left: 5.6497175141%;
+        padding-bottom: 2.9574468085%;
+    }
+
+    .card01_txt .detail_info,
+    .card03_txt .detail_info {
+        padding: 0 1.7708333333% 12px;
+        white-space: wrap;
+        overflow: auto;
+        text-overflow: clip;
+    }
+}
+
+/* PC 미디어 쿼리 1024px 이상 */
+@media screen and (min-width:1024px){
+    .season_recommend
+    {
+        margin-top: 85px !important;
+    }
+
+    /* Season recommend Area */
+    .season_recommend h2 {
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+    .card_section {
+       justify-content: space-between;
+       margin-bottom: 52px;
+       margin-top: -45px;
+    }
+    .card01, .card03 {
+        width: 23.75%;
+        height: 100%;
+        padding-bottom: 3.4722222222%;
+    }
+    .card01 article, .card03 article {
+        margin: 0 auto;
+        padding: 3.4722222222%;
+    }
+    .card01 img, .card03 img {
+        width: 100%;
+    }
+    .card02 {
+        margin: 0 24px;
+        width: 49.1666666667%;
+        height: 0;
+        height: 0;
+        padding-bottom: 40%;
+        position: relative;
+    }
+    .card02 img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: none;
+    }
+    /* 텍스트 크기 수정 */
+    .card01_txt h3, .card03_txt h3 {
+        font-size: 20px;
+        padding-bottom: 3px;
+    }
+    .card01_txt .detail_info, .card03_txt .detail_info {
+        font-size: 16px;
+        padding: 0 1.7708333333% 15px;
+    }
+    .card01_txt .price, .card03_txt .price {
+        font-size: 16px;
+    }
+    .card02_txt {
+        bottom: 6%;
+    }
+    .card02_txt h3 {
+        font-size: 24px;
+        padding-left: 8.7570621469%;
+    }
+    .card02_txt p {
+        font-size: 16px;
+        padding-top: 1.0638297872%;
+        padding-left: 8.7570621469%;
+        padding-bottom: 6.8085106383%;
+    }
+}

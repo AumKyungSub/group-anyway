@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/* Section 7 */
+.ginseng-section7 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.ginseng-section7 .inner-wrap {
+  width: 100%;
+  padding: 26.7% 0;
+}
+.ginseng-section7 img {
+  width: 100%;
+}
+.ginseng-section7 .text-wrap {
+  text-align: center;
+  padding: 20% 0;
+}
+.ginseng-section7 .text-wrap > p:first-of-type {
+  font-size: max(var(--font-size), 6.933333333333333vw);
+  font-weight: 700;
+}
+.ginseng-section7 .percentage {
+  margin: 4.6666666667% 0 8.3333333333%;
+  display: flex;
+  justify-content: center;
+}
+.ginseng-section7 .percentage .list-num {
+  color: #e86e25;
+  font-size: max(var(--font-size), 6.666666666666667vw);
+}
+.ginseng-section7 .percentage .list-desc {
+  margin-top: 10%;
+  font-size: max(var(--font-size), 3.2vw);
+}
+.percentage-list-02 {
+  margin: 0 5.208333333333334%;
+}
+.ginseng-section7 .detail-desc {
+  color: #888;
+  font-size: max(var(--font-size), 3.0555555555555554vw);
+  line-height: 1.5;
+  font-weight: 300;
+  letter-spacing: -0.05em;
+}
+
+/* 태블릿 750px이상 : 1920기준 */
+@media screen and (min-width: 751px) {
+  .ginseng-section7 {
+    background-repeat: no-repeat;
+  }
+  .ginseng-section7 .inner-wrap {
+    width: 100%;
+    padding: 0;
+  }
+  .ginseng-section7 .text-wrap {
+    padding: 11.1145833333% 0;
+  }
+  .ginseng-section7 .text-wrap > p:first-of-type {
+    font-size: max(var(--font-size), 2.5vw);
+  }
+  .ginseng-section7 .percentage {
+    margin: 4% 0px 6.2%;
+  }
+  .ginseng-section7 .percentage .list-num {
+    font-size: max(var(--font-size), 3.0208333333333335vw);
+  }
+  .ginseng-section7 .percentage .list-desc {
+    font-size: max(var(--font-size), 1.25vw);
+  }
+  .ginseng-section7 .detail-desc {
+    font-size: max(var(--font-size), 0.9375vw);
+  }
+}

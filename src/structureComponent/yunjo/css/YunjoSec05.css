@@ -1,0 +1,108 @@
+/* section05 */
+.yunjo_sec05 {
+    margin-top: 23.2%;
+    padding: 0 5.3333333333%;
+}
+.yunjo_sec05 .detail_sec01 {
+    /* animation: fadeIn60 1s ease-in-out; */
+    text-align: right;
+    color: #222;
+}
+.yunjo_sec05 div h2 {
+    font-size: 6.1333vw;
+    font-weight: 600;
+    line-height: 1.3333;
+    letter-spacing: -.04em;
+    word-spacing: 0.05em;
+}
+.yunjo_sec05 p {
+    margin-top: 2.2388059701%;
+    line-height: 1.5;
+    font-size: 3.4667vw;
+    color: #222;
+    
+}
+.yunjo_sec05 .detail_sec01>img {
+    /* (264/320)*100 = 82.5 */
+    width: 82.5%;
+    margin-top: 4.1666666667%;
+    /* animation: fadeIn60 1.2s ease-in-out; */
+}
+.yunjo_sec05 .detail_sec02 {
+    margin-top: 14.9253731343%;
+    text-align: left;
+    /* animation: fadeIn60 1s ease-in-out; */
+}
+.yunjo_sec05 .detail_sec02>h2.pc {
+    display: none;
+}
+.yunjo_sec05 .detail_sec02>img {
+    margin-top: 2.9851%;
+    width: 82.5%;
+}
+
+/* 태블릿 768단 */
+@media screen and (min-width:768px){
+    /* section05 */
+    .yunjo_sec05 br.mo {
+        display: none;
+    }
+    /* 속성값 추가 */
+    .yunjo_sec05 {
+        width: 100%;
+        /* (39/343)*100 = 11.370262390670554 */
+        padding: 0 11.370262390670554%;
+        /* 플렉스 */
+        display: flex;
+        justify-content: space-between;
+    }
+    /* 속성값 추가 */
+    .yunjo_sec05 .detail_sec01 {
+        width: 50%;
+    }
+    /* 속성값 추가 */
+    .yunjo_sec05 .detail_sec02 {
+        width: 50%;
+        padding-left: 10%;
+        margin-top: 7.688%;
+    }
+    /* 속성값 추가 */
+    .yunjo_sec05 .detail_sec02>h2.mo {
+        display: none;
+    }
+    /* 속성값 추가 */
+    .yunjo_sec05 .detail_sec02>h2.pc {
+        display: block;
+        margin-top: 4.1666666667%;
+    }
+    /* 속성값 수정 */
+    .yunjo_sec05 div h2 {
+        font-size: 2.1875vw;
+    }
+    /* 속성값 수정 */
+    .yunjo_sec05 p {
+        padding-right: 1.3333%;
+        font-size: 1.25vw;
+    }
+}
+
+
+/* PC 1024단 */
+@media screen and (min-width:1024px){
+    /* section05 */
+    .yunjo_sec05 {
+        margin-top: 7.2917%;
+        padding: 0 6.8055555556%;
+        margin-right: 11.1111%;
+    }
+    .yunjo_sec05 div h2 {
+        font-size: 2.1875vw;
+        line-height: 1.3333;
+
+    }
+    .yunjo_sec05 p {
+        line-height: 1.5833;
+        margin-top: 2.8333%;
+        padding-right: 1.3333%;
+    }
+}

@@ -1,0 +1,20 @@
+/* Section1 */
+.main_bukchon .sec_1 {
+    overflow: hidden;
+  }
+  .main_bukchon .sec_1::before {
+    /* Background */
+    background-image: url("../../images/flagship/bukchon/section1_bukchon_mobile.jpg");
+  }
+  
+
+/******************** PC 1024px ************************/
+@media only all and (min-width: 1024px) {
+
+    /* Section1 */
+    .main_bukchon .sec_1::before {
+      /* Background */
+      background-image: url("../../images/flagship/bukchon/section1_bukchon_pc.jpg");
+    }
+
+}

@@ -1,5 +1,6 @@
-# group-anyway
+# Getting Started with Create React App
 
+=======
 수정은 develop 브렌치 readme에서 훗날 main으로 업데이트 하겠음  <br/>
 
 어쨌든 시작했조 <br/>

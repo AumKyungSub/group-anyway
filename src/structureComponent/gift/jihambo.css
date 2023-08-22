@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+.jihambo {
+    margin-top: 46.6666666667%;
+    cursor: default;
+}
+.jihambo_mo_img img {
+    width: 100%;
+    display: block;
+}
+.jihambo_pc_img {
+    display: none;
+}
+.jihambo_txt {
+    margin-top: 14.9333333333%;
+    padding-left: 6.1333333333%;
+    text-align: left;
+    color: black;
+}
+.jihambo_txt h3 {
+    font-weight: 600;
+    font-size: max(11px,3.4666666667vw);
+} 
+.jihambo_txt h3 span {
+    font-weight: 500;
+}
+.jihambo_txt .mo_txt {
+    line-height: 1.6923076923;
+    text-align: left;
+    margin-top: 2.1333333333%;
+    font-size: max(11px,3.4666666667vw);
+    font-weight: 400;
+}
+.jihambo_txt .pc_txt {
+    display: none;
+}
+
+/* 태블릿 미디어 쿼리 768px 이상 */
+@media screen and (min-width:768px){
+    /* Section02 */
+    .jihambo {
+        margin-top: 11.6145833333%;
+    }
+
+    /* 지함보 모바일 버전 이미지 */
+    .jihambo_mo_img img {
+        display: none;
+    }
+    /* 지함보 태블릿/PC버전 이미지 */
+    .jihambo_pc_img {
+        display: block;
+        width: 100%;
+        margin-top: 5%;
+        padding: 0 20.3125% 0 25%;
+    }
+    .jihambo_pc_img img {
+        display: block;
+        width: 100%;
+    }
+    .jihambo_txt {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .jihambo_txt h3 {
+        font-size: max(11px,1.25vw);
+    } 
+    .jihambo_txt h3 span {
+        font-weight: 500;
+        margin-top: .4166666667%;
+        display: block;
+    }
+    .jihambo_txt .mo_txt {
+        display: none;
+    }
+    .jihambo_txt .pc_txt {
+        display: block;
+        font-size: max(11px,.9375vw);
+        line-height: 1.6666666667;
+        font-weight: 400;
+        color: #000;
+        margin-top: 1.1458333333%;
+    }
+}
+
+@media screen and (min-width:1024px){
+    /* Section02 */
+    .jihambo {
+        margin-top: 11.6145833333%;
+    }
+
+    /* 지함보 모바일 버전 이미지 */
+    .jihambo_mo_img img {
+        display: none;
+    }
+    /* 지함보 태블릿/PC버전 이미지 */
+    .jihambo_pc_img {
+        display: block;
+        width: 100%;
+        margin-top: 5%;
+        padding: 0 20.3125% 0 25%;
+    }
+    .jihambo_pc_img img {
+        display: block;
+        width: 100%;
+    }
+    .jihambo_txt {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .jihambo_txt h3 {
+        font-size: max(11px,1.25vw);
+    } 
+    .jihambo_txt h3 span {
+        font-weight: 500;
+        margin-top: .4166666667%;
+        display: block;
+    }
+    .jihambo_txt .mo_txt {
+        display: none;
+    }
+    .jihambo_txt .pc_txt {
+        display: block;
+        font-size: max(11px,.9375vw);
+        line-height: 1.6666666667;
+        font-weight: 400;
+        color: #000;
+        margin-top: 1.1458333333%;
+    }
+}

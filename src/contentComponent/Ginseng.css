@@ -1,0 +1,37 @@
+@charset "utf-8";
+@import url(../structureComponent/ginseng/Section1.css);
+@import url(../structureComponent/ginseng/Section2.css);
+@import url(../structureComponent/ginseng/Section3.css);
+@import url(../structureComponent/ginseng/Section4.css);
+@import url(../structureComponent/ginseng/Section5.css);
+@import url(../structureComponent/ginseng/Section6.css);
+@import url(../structureComponent/ginseng/Section7.css);
+@import url(../structureComponent/ginseng/Section8.css);
+@import url(../structureComponent/ginseng/Section9.css);
+
+body,
+html {
+  font-family: NotoSans, "Malgun Gothic", "맑은 고딕", "Nanum Gothic",
+    "나눔 고딕", "돋움", dotum, sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  min-width: 320px;
+  letter-spacing: -0.07em;
+}
+#ginseng-container article {
+  font-family: Theinhardt, NotoSans, "Malgun Gothic", "맑은 고딕",
+    "Nanum Gothic", "나눔 고딕", "돋움", dotum, sans-serif;
+}
+#ginseng-container .inner-wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 12.5%;
+}
+
+:root {
+  /* px size */
+  --font-size: 11px;
+}

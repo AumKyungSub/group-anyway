@@ -1,0 +1,97 @@
+/* section06 */
+.yunjo_sec06 {
+    margin-top: 24%;
+    /* 포지션 기준값 */
+    position: relative;
+}
+.yunjo_sec06 .ginseng_img img {
+    width: 100%;
+}
+.yunjo_sec06 .ginseng_text {
+    padding-top: 16.9333%;
+    padding-left: 8%;
+    line-height: 1.58;
+    color: #fff;
+    /* 포지션 */   
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+}
+.ginseng_text h2 {
+    padding-left: 0.178%;
+    font-size: 6.9333vw;
+    font-weight: 700;
+    /* animation: fadeIn60 1s ease-in-out; */
+}
+.ginseng_text h3 {
+    padding-left: 0.178%;
+    font-size: 3.4667vw;
+    font-weight: 500;
+    margin-top: 5.2173913043%;
+    margin-bottom: 1.1594202899%;
+    /* animation: fadeIn60 1.1s ease-in-out; */
+}
+.ginseng_text .ginseng_p01 {
+    padding-left: 0.178%;
+    font-size: 3.4vw;
+    font-weight: 300;
+    letter-spacing: -0.04em;
+    /* animation: fadeIn60 1.2s ease-in-out; */
+}
+.ginseng_text .ginseng_p02 {
+    font-size: 2.9333333333vw;
+    font-weight: 300;
+    margin-top: 7.8261%;
+    color: #ffffffb3;
+    /* animation: fadeIn60 1.3s ease-in-out; */
+}
+.ginseng_text .ginseng_p02 span {
+    /* 포지션 */
+    position: relative;
+    top: 0.2em;
+}
+
+
+
+
+/* 태블릿 768단 */
+@media screen and (min-width:768px){
+    /* section06 */
+    .yunjo_sec06 br.mo {
+        display: none;
+    }
+        /* 속성값 수정 */
+    .yunjo_sec06 {
+        margin-top: 9.5833%;
+    }
+    /* 속성값 수정 */
+    .yunjo_sec06 .ginseng_text  {
+        padding-top: 13.0208%;
+        padding-left: 12.2396%;
+    }
+    /* 속성값 수정 */
+    .ginseng_text h2 {
+        font-size: 2.5vw;
+    }
+    .ginseng_text h3 {
+        margin-top: 2.0772%;
+        margin-bottom: 0.5341%;
+        font-size: 1.25vw;
+    }
+    /* 속성값 수정 */
+    .ginseng_text .ginseng_p01 {
+        font-size: 1.25vw;
+    }
+    /* 속성값 수정 */
+    .ginseng_text .ginseng_p02 {
+        font-size: .9375vw;
+        margin-top: 3.0861%;
+    }
+}
+
+
+/* PC 1024단 */
+@media screen and (min-width:1024px){
+    /* 수정 사항 없음 */
+}
