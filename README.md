@@ -1,70 +1,34 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+=======
+수정은 develop 브렌치 readme에서 훗날 main으로 업데이트 하겠음  <br/>
 
-## Available Scripts
+어쨌든 시작했조 <br/>
+그룹 프로젝트 <br/>
+ <br/>
+주제: 설화수 웹 사이트 클론 코딩 <br/>
+ <br/>
+----------(경섭 진행 상황)---------- <br/>
+플래그십 링크 <br/>
+: https://qnzldmad.cafe24.com/sulwhasoo/flagshipMain.html <br/>
+ <br/>
+23.07.22(토) 플래그십 메인 완 <br/>
+23.07.23(일) 스크롤 애니메이션 및 도산 페이지 일부 (모바일 및 테블릿) (PC는 아직 안함) <br/>
+스크롤 애니메이션 <br/>
+: 해당 페이지에서 사용한 AOS 사용하지 않음 <br/>
+jQuery + css로 구현 했음 (리엑트에서도 jQuery 사용 가능하다 하여 난.... js 못해....) <br/>
 
-In the project directory, you can run:
+----------(효진 진행 상황)---------- <br/>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+----------(현연 진행 상황)---------- <br/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+----------(수정 진행 상황)---------- <br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+----------(원배 진행 상황)---------- <br/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+----------------------------------- <br/>
+진행 상황은 내가 기억하려고 적는 겁니다. 적지 않아도 됩니다. (경섭) <br/>
