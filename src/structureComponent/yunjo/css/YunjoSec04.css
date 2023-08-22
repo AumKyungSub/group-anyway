@@ -1,0 +1,41 @@
+/* yunjo video02 */
+.yunjo_sec04 {
+    padding: 0 5.3333333333%;
+}
+.yunjo_sec04 h2 {
+    font-size: 3.2vw;
+    color: #e86e25;
+    text-align: center;
+    letter-spacing: .1em;
+    word-spacing: 0.05em;
+    padding-bottom: 4.375%;
+    font-weight: 300;
+    /* animation: fadeIn80 1s ease-in-out; */
+}
+#video02 {
+    width: 100%;
+    /* animation: fadeIn80 1.1s ease-in-out; */
+}
+
+/* 태블릿 768단 */
+@media screen and (min-width:768px){
+    /* section04 */
+    .yunjo_sec04 br.mo {
+        display: none;
+    }
+    /* 속성값 수정 */
+    .yunjo_sec04 {
+        margin: 0 auto;
+        padding: 0 12.5%;
+    }
+    /* 속성값 수정 */
+    .yunjo_sec04 h2 {
+        font-size: 1.1458vw;
+    }
+}
+
+
+/* PC 1024단 */
+@media screen and (min-width:1024px){
+    /* 수정 사항 없음 */
+}

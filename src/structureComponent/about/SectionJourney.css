@@ -1,0 +1,324 @@
+/* journey */
+
+.content_wrap .journey {
+    position: relative;
+    margin-top: 32vw;
+    width: 100%;
+    background-color: #333;
+}
+
+.content_wrap .journey .sticky {
+    min-height: 100vh;
+}
+.content_wrap .journey .section_contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.content_wrap .journey .section_header{
+    text-align: left;
+    margin: 0 2.5544703231vh;
+}
+.content_wrap .journey p {
+    font-size: 6.4815vh;
+    margin-top: 0;
+    color: #fff;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1;
+}
+.content_wrap .journey .section_body {
+    margin-right: 0;
+    margin-left: 0;
+}
+.content_wrap .journey .section_body::before {
+    content: none;
+    display: block;
+    width: 32.1354166667vw;
+    height: 100%;
+    background-image: url(https://amc.apglobal.com/image/384224417642/image_j63lk3qthd5f19oc8nvjlamg5o/-FPNG/brand_belief_journey_item_pc_kr_230511.png);
+    background-position: left top;
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    margin-left: 0;
+}
+
+.content_wrap .journey .horizontal_scroll {
+    overflow: hidden;
+}
+
+.content_wrap .journey .swiper_list {
+    margin-left: 0;
+    padding-bottom: 5.2083333333vw;
+    will-change: transform;
+    display: flex;
+}
+.content_wrap .journey .swiper_list .swiper_list_item {
+    height: 65.4395191585vh;
+    margin-left: 3.0052592036vh;
+    padding-right: 5.2592036063vh;
+    position: relative;
+    width: auto;
+    flex: 0 0 auto;
+}
+.content_wrap .journey .swiper_list .swiper_list_item img {
+    width: 100%;
+    margin-top: -1px;
+}
+
+.content_wrap .journey .swiper_list .swiper_list_item .journey_img{
+    margin-left: 0;
+    margin-top: 8.8vw;
+}
+.content_wrap .journey .swiper_list .swiper_list_item .text_wrap {
+
+    bottom: 0;
+    width: 100%;
+    position: relative;
+}
+.content_wrap .journey .swiper_list .swiper_list_item .text_wrap .text_y {
+    font-size: 5.860255447vh;
+    color: #fff;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+.content_wrap .journey .swiper_list .swiper_list_item .text_wrap .text_m {
+    letter-spacing: -.02em;
+    color: #fff;
+    font-weight: 800;
+    font-size: 2.8549962434vh;
+    margin-top: 1.5026296018vh;
+}
+.content_wrap .journey .swiper_list .swiper_list_item .text_wrap .text_s {
+    font-size: 1.9534184823vh;
+    margin-top: 0.3005259204vh;
+    margin-left: 0;
+    line-height: 1.634;
+    letter-spacing: -.02em;
+    color: #fff;
+}
+
+.content_wrap .journey .swiper_list .list_item_01 .journey_img{
+    width: 26.5965439519vh;
+    margin-top: 18.9331329827vh;
+    padding-left: 0;
+}
+.content_wrap .journey .swiper_list .list_item_01 .text_wrap {
+    left: 17.7310293013vh;
+    top: -3.1555221638vh;
+    right: 0;
+}
+.content_wrap .journey .swiper_list .list_item_02 {
+    text-align: right;
+}
+.content_wrap .journey .swiper_list .list_item_02 .journey_img{
+    width: 28.5499624343vh;
+}
+.content_wrap .journey .swiper_list .list_item_02 .text_wrap{
+    width: 100%;
+    top: 2.6296018032vh;
+    right: 0;
+    left: auto;
+    bottom: 0;
+}
+.content_wrap .journey .swiper_list .list_item_03 .journey_img{
+    width: 35.4620586026vh;
+    margin-top: 24.192336589vh;
+}
+.content_wrap .journey .swiper_list .list_item_03 .text_wrap{
+    top: -1.8031555222vh;
+    left: 9.3163035312vh;
+}
+.content_wrap .journey .swiper_list .list_item_04 .journey_img{
+    width: 43.4259954921vh;
+    margin-top: 10.2178812923vh;
+}
+.content_wrap .journey .swiper_list .list_item_04 .text_wrap{
+    top: 2.7798647633vh;
+}
+.content_wrap .journey .swiper_list .list_item_05 .journey_img{
+    width: 26.5965439519vh;
+    margin-top: 14.9511645379vh;
+}
+.content_wrap .journey .swiper_list .list_item_05 .text_wrap{
+    top: 3.0803906837vh;
+}
+.content_wrap .journey .swiper_list .list_item_06 .journey_img{
+    width: 35.4620586026vh;
+    margin-top: 5.9353869271vh;
+}
+.content_wrap .journey .swiper_list .list_item_06 .text_wrap{
+    top: -2.4042073629vh;
+    left: 7.2126220887vh;
+}
+
+.content_wrap .journey .swiper_list .list_item_07 .journey_img{
+    width: 26.5965439519vh;
+    margin-top: 16.5289256198vh;
+}
+.content_wrap .journey .swiper_list .list_item_07 .text_wrap{
+    top: -6.8369646882vh;
+    left: 22.0886551465vh;
+}
+.content_wrap .journey .indicator {
+    margin-left: 3.0052592036vh;
+    margin-top: 3.0052592036vh;
+    width: 89.3333333333vw;
+    height: 0.4507888805vh;
+    background: #5c5c5c;
+}
+.content_wrap .journey .indicator_bar {
+    height: 0.4507888805vh;
+    background: #fff;
+}
+
+@media screen and (min-width:751px) {
+    /* journey */
+    .content_wrap .journey {
+        margin-top: 13.5416666667vw;
+    }
+
+    .content_wrap .journey .section_header {
+        margin-right: 12.5vw;
+        margin-left: 29.8958333333vw;
+    }
+    .content_wrap .journey p {
+        font-size: max(11px,3.6458333333vw);
+        margin-top: 0;
+    }
+    .content_wrap .journey .section_body {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .content_wrap .journey .section_body::before {
+        content: "";
+        margin-left: 0;
+        width: 32.1354166667vw;
+    }
+    
+    .content_wrap .journey .swiper_list {
+        padding-bottom: 5.2083333333vw;
+        margin-left: 0.3645833333vw;
+    }
+
+    .content_wrap .journey .swiper_list .swiper_list_item {
+        height: 32.03125vw;
+        padding-right: 4.6875vw;
+        margin-left: 0;
+        position: relative;
+        width: auto;
+        flex: 0 0 auto;
+    }
+    .content_wrap .journey .swiper_list .swiper_list_item .journey_img{
+        margin-top: 2.7604166667vw;
+        width: 57.2916666667vw;
+        margin-left: 0;
+    }
+
+    
+    .content_wrap .journey .swiper_list .swiper_list_item .text_wrap {
+        top: -1.71875vw;
+        left: 39.21875vw;
+    }
+    .content_wrap .journey .swiper_list .swiper_list_item .text_wrap .text_y {
+        font-size: max(11px,3.125vw);
+    }
+    .content_wrap .journey .swiper_list .swiper_list_item .text_wrap .text_m {
+        font-size: max(11px,1.5625vw);
+        margin-top: 0.8854166667vw;
+    }
+    .content_wrap .journey .swiper_list .swiper_list_item .text_wrap .text_s {
+        font-size: max(11px,1.0416666667vw);
+        margin-top: 0.15625vw;
+        margin-left: 0;
+        line-height: 1.634;
+        letter-spacing: -.02em;
+        color: #fff;
+    }
+
+    .content_wrap .journey .swiper_list .list_item_01 .journey_img{
+        /* width: 14.0625vw; */
+        padding-left: 29.84375vw;
+        margin-top: 10.5729166667vw;
+        margin-right: 0;
+        width: 44vw;
+    }
+
+    .content_wrap .journey .swiper_list .list_item_01 .text_wrap {
+        top: -1.71875vw;
+        left: 39.21875vw;
+        
+    }
+
+    .content_wrap .journey .swiper_list .list_item_02 .journey_img{
+        width: 15.1041666667vw;
+    }
+    .content_wrap .journey .swiper_list .list_item_02 .text_wrap{
+        width: 100%;
+        top: 1.4583333333vw;
+        right: 0;
+        left: auto;
+        bottom: 0;
+    }
+    .content_wrap .journey .swiper_list .list_item_03 .journey_img{
+        width: 18.75vw;
+        margin-top: 13.1770833333vw;
+    }
+    .content_wrap .journey .swiper_list .list_item_03 .text_wrap{
+        top: -1.1458333333vw;
+        left: 4.7395833333vw;
+    }
+    .content_wrap .journey .swiper_list .list_item_04 .journey_img{
+        width: 22.9166666667vw;
+        margin-top: 6.9791666667vw;
+    }
+    .content_wrap .journey .swiper_list .list_item_04 .text_wrap{
+        top: 1.4583333333vw;
+        left: 0;
+    }
+    .content_wrap .journey .swiper_list .list_item_05 .journey_img{
+        width: 14.0625vw;
+        margin-top: 9.53125vw;
+    }
+    .content_wrap .journey .swiper_list .list_item_05 .text_wrap{
+        top: 1.4583333333vw;
+        left: 0;
+    }
+    .content_wrap .journey .swiper_list .list_item_06 .journey_img{
+        width: 18.75vw;
+        margin-top: 3.28125vw;
+    }
+    .content_wrap .journey .swiper_list .list_item_06 .text_wrap{
+        top: -1.1458333333vw;
+        left: 3.125vw;
+    }
+    .content_wrap .journey .swiper_list .list_item_07 {
+        padding-right: 23.4375vw;
+    }
+
+    .content_wrap .journey .swiper_list .list_item_07 .journey_img{
+        width: 14.0625vw;
+        margin-top: 6.40625vw;
+    }
+    .content_wrap .journey .swiper_list .list_item_07 .text_wrap{
+        top: -3.8020833333vw;
+        left: 11.5625vw;
+    }
+    .content_wrap .journey .indicator {
+        margin-left: 30.2083333333vw;
+        margin-top: 2.0833333333vw;
+        width: 57.2916666667vw;
+        height: 0.2083333333vw;
+        background: #5c5c5c;
+    }
+    .content_wrap .journey .indicator_bar {
+        height: 0.2083333333vw;
+        background: #fff;
+    }
+}

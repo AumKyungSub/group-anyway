@@ -1,0 +1,517 @@
+@charset "utf-8";
+/* 공통 코드 */
+body {
+    font-family: 'Theinhardt','Noto Sans KR', 'Nanum Gothic', '나눔고딕', sans-serif;
+    font-size: 62.5%;
+}
+
+/* Header */
+#header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+    background: white;
+}
+.moblie_header_inner {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.moblie_header_inner .logo {
+    margin: 0 80px 0 106px;
+}
+.moblie_header_inner .logo img {
+    width: 112px;
+}
+.moblie_header_inner .search img {
+    width: 20px;
+}
+.pc_header_inner {
+    display: none;
+}
+
+/* ================== 햄버거 아이콘 ==================== */
+.header_line .hamburger {
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+}
+.hamburger #sideBar_open {
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    margin-top: -15px;
+    padding: 5px;
+    z-index: 2;
+    cursor: pointer;
+}
+.hamburger #sideBar_open .icon_menu {
+    position: relative;
+    width: 23px;
+    height: 18px;
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
+    background: 0;
+    display: inline-block;
+}
+.hamburger #sideBar_open .icon_menu::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: -1px;
+    border-top: 2px solid #999;
+}
+/* ================== /햄버거 아이콘 ==================== */
+
+/* ================== 사이드 메뉴 ==================== */
+/* Side MENU */
+.side_cover {
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100vw; /* 초기 메뉴 숨겨진 상태 */
+    z-index: 10;
+    transition: left .4s ease;
+    opacity: 1;
+}
+.side_cover.open, .side_header.open  {
+    left: 0; /* isOpen이 true일 때 사이드 메뉴를 보이도록 위치 조정 */
+    opacity: 1;
+  }
+.side_header {
+    opacity: 1;
+    transition: all .4s;
+    padding: 0 20px;
+    width: 100vw;
+    height: 60px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    z-index: 10;
+}
+.side_bar {
+    width: 100vw;
+    height: 100%;
+    background-color: #333;
+    padding-top: 60px;
+    overflow-y: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.side_bar::before {
+    transition: all .3s cubic-bezier(.56, .06, 0, .97);
+}
+.sideBox {
+    height: 100%;
+}
+.side_header .orange_logo {
+    display: inline-block;
+    background: url('../images/main/sulwhasoo_orange_logo_220902.png') no-repeat center;
+    background-size: contain;
+    width: 112px;
+    height: 40px;
+    margin-top: 10px;
+}
+.side_header .close_btn {
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/main/icon/gnb_close.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    cursor: pointer;
+}
+.side_header::after {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 59px;
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+}
+.side_content {
+    height: calc(100% - 60px);
+    overflow-y: auto;
+}
+.nav_list {
+    padding: 16px 0;
+    letter-spacing: -1px;
+    background-color: #fff;
+}
+.nav_list .nav_d1 {
+    position: relative;
+    z-index: 1;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+/* depth 메뉴가 없는 메뉴 */
+.nav_list .nav_d1 .no_depth_menu,
+.nav_list .nav_d1 .depth_toggle {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0 12px 20px;
+    color: #333;
+}
+/* depth 메뉴가 있는 메뉴 */
+.nav_list .nav_d1 .depth_toggle {
+    /* + 이미지 */
+    background: url('https://cdn-icons-png.flaticon.com/512/1828/1828925.png') no-repeat center right 20px/14px auto;
+}
+.nav_list .nav_d1.on .depth_toggle {
+    /* - 이미지 */
+    background: url('https://cdn-icons-png.flaticon.com/512/860/860821.png') no-repeat center right 20px/14px auto;
+}
+
+/* 2depth menu */
+/* 메뉴 안보이게 */
+.nav_d2_box {
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s;
+}
+.nav_list .nav_d1.on .nav_d2_box {
+    /* display: block; */
+    max-height: 500px;
+}
+.nav_d1 .nav_d2_box {
+    color: #333;
+    font-size: 19px;
+    background: #faf9f5;
+    padding: 0 20px;
+}
+.nav_d1 .nav_d2_box .nav_d2 {
+    position: relative;
+    z-index: 10;
+    line-height: 1.6;
+}
+.nav_d1 .nav_d2_box .nav_d2 a{
+    position: relative;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.nav_d1 .nav_d2_box .nav_d2 .nav_d2_menu {
+    border-bottom: 1px solid #eceae3;
+}
+.nav_d1 .nav_d2 .nav_d3_menu {
+    /* + 이미지 */
+    background: url('https://cdn-icons-png.flaticon.com/512/1828/1828925.png') no-repeat center right 0/14px auto;
+}
+.nav_d1 .nav_d2.on .nav_d3_menu {
+    /* - 이미지 */
+    background: url('https://cdn-icons-png.flaticon.com/512/860/860821.png') no-repeat center right 0/14px auto;
+}
+
+/* 3depth menu */
+.nav_d3_box {
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s;
+}
+.nav_d1 .nav_d2.on .nav_d3_box {
+    /* display: block; */
+    max-height: 500px;
+}
+.nav_d2 .nav_d3_box {
+    position: relative;
+}
+.nav_d2 .nav_d3_box .nav_d3 {
+    position: relative;
+    z-index: 10;
+    line-height: 1.6;
+    font-size: 16px;
+}
+.nav_d2 .nav_d3_box .nav_d3 a {
+    position: relative;
+    display: block;
+    padding: 8px 0 8px 25px;
+    color: #333;
+}
+/* 4depth menu */
+.nav_d4_box .nav_d4 {
+    position: relative;
+    z-index: 10;
+    line-height: 1.6;
+    font-size: 15px;
+}
+.nav_d4_box .nav_d4 a {
+    position: relative;
+    display: block;
+    padding: 2px 0 2px 33px;
+    color: #888;
+}
+.nav_list>li.noDepth a {
+    background-image: none;
+}
+.b500 {
+    /* 영문 글자 두께 */
+    font-weight: 600;
+}
+
+/* 사이드메뉴 하단 */
+.other_info {
+    padding-top: 12px;
+    background: #333;
+}
+.other_info ul {
+    padding-bottom: 13px;
+}
+.other_info ul li {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 20px;
+    line-height: 1.4;
+}
+.other_info ul li:first-child a {
+    border-bottom: 1px solid #fff;
+}
+.other_info .mobile_select_language {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 18px 20px;
+    border-top: 1px solid #424242;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+.other_info .mobile_select_language .language_select img {
+    padding: 4px 0px 0px 4px;
+}
+
+
+/* ================== /사이드 메뉴 ==================== */
+
+
+@media screen and (min-width:1024px){
+    /* Side MENU */
+    .side_cover {
+        display: none;
+    }
+    .moblie_header_inner {
+        display: none;
+    }
+
+    /* ======== PC Header ======== */
+    .pc_header_inner  {
+        display: block;
+    }
+    #header {
+        /* padding: 20px 0 0 0; */
+        padding-top: 20px;
+        z-index: 10;
+        background: rgba(255, 255, 255, 1);
+        transition: all .3s;
+        cursor: pointer;
+    }
+    .w1440 {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .w1100 {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    .pc_lnb {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        max-width: 1100px;
+        height: 78px;
+        justify-content: space-between;
+        color: black;
+        font-size: 15px;
+    }
+    .pc_lnb .language_select img {
+        padding: 3px 0 0 6px;
+    }
+    .pc_lnb .pc_logo {
+        position: absolute;
+        top: 0;
+        left: 35%;
+        z-index: 5;
+        display: table;
+        height: 60%;
+        width: 30%;
+        margin: 0 auto;
+        text-align: center;
+        vertical-align: top;
+    }
+    .pc_lnb .pc_logo a {
+        display: table-cell;
+        width: 100%;
+        padding-top: 1px;
+        vertical-align: middle;
+    }
+    .pc_lnb .pc_logo img {
+        width: 166px;
+    }
+    .search_area span {
+        padding: 0 15px;
+        font-size: 15px;
+        line-height: 1.5;
+        position: relative;
+    }
+    .search_area span:nth-child(2):after {
+        content: '|';
+        display: inline-block;
+        position: absolute;
+        top: 42%;
+        left: -2px;
+        transform: translateY(-50%);
+    }
+    .search_area span:nth-child(3):before {
+        content: '|';
+        display: inline-block;
+        position: absolute;
+        top: 42%;
+        left: -2px;
+        transform: translateY(-50%);
+    }
+    .search_area span img {
+        margin-top: 3px;
+        width: 17px;
+        height: 17px;
+    }
+
+    /* ========= GNB MENU ========= */
+    .pc_nav {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 7%;
+    }
+    .pc_gnb_menu {
+        display: flex;
+        justify-content: space-between;
+        max-width: 772px;
+        margin: 0 auto;
+    }
+
+    .pc_gnb_menu .pc_nav_d1 {
+        color: #666;
+        font-size: 16px;
+    }
+    .hover_border {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        border-bottom: 1px solid #eaeaea;
+        z-index: 9999;
+        pointer-events: none;
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+
+    #header:hover .d1_menu {
+        color: #666;
+    }
+
+    /* ===== 1depth MENU 호버시 css ===== */
+    .pc_nav_d1 .d1_menu {
+        position: relative;
+        display: inline-block;
+        padding-bottom: 12px;
+    }
+    .pc_nav_d1 .d1_menu::after {
+        position: absolute;   
+        left: -2px;
+        right: -2px;
+        bottom: -1px;
+        content: '';
+        height: 2px;
+        background: #000;
+        opacity: 0;
+        transition: opacity .3s linear;
+    }
+    .pc_nav_d1:hover .d1_menu::after {
+        opacity: 1;
+    }
+    .pc_nav_d1:hover .pc_nav_d2_box {
+        display: block;
+    }
+    /* ===== 2depth MENU css ===== */
+    .pc_nav_d2_box {
+        display: none; 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 3px 0;
+        background-color: #fff;
+        border-top: 1px solid #eaeaea;
+    }
+    .pc_nav_d2_container {
+        max-width: 772px;
+        margin: 0 auto;
+        display: flex;
+        text-align: left;
+    }
+    .pc_nav_d2_container .pc_nav_d2 {
+        color: #888;
+        font-size: 15px;
+    }
+    .d2_box1, .d2_box2, .d2_box3, .d2_box4  {
+        justify-content: center;
+    }
+    .d2_box1 li, .d2_box2 li, .d2_box3 li, .d2_box4>.pc_nav_d2  {
+        padding: 9px 15px 6px;
+    }
+    .d2_box2 {
+        width: 400px;
+        transform: translateX(34%);
+    }
+    .d2_box3 {
+        width: 500px;
+        transform: translateX(37.5%);
+    }
+    .d2_box4 {
+        padding-top: 22px;
+        padding-bottom: 30px;
+        width: 100%;
+        justify-content: space-between;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .d2_box4 .pc_nav_d2 {
+        font-size: 15px;
+        line-height: 2.5;
+        font-weight: 600;
+        color: black;
+    }
+    .pc_nav_d3_box .pc_nav_d3 a {
+        padding: 9px 15px 6px 0;
+        color: #888;
+    }
+    .pc_nav_d2:hover .d2_hover,
+    .pc_nav_d3 a:hover {
+        font-weight: bold;
+        color: black;
+    }
+}

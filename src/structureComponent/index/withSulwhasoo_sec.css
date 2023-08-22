@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* #With Sulwhasoo Area */
+.sns_review {
+    padding: 0 20px;
+    margin-top: 95px;
+    text-align: center;
+}
+.with_sulwhasoo h2 {
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 24px;
+    font-weight: bold;
+}
+.with_img:first-child {
+    margin-left: 1px;
+}
+.with_img {
+    width: 160px !important;
+    height: 160px !important;
+    margin: 0 9px;
+    cursor: url('../../images/main/icon/cursor_img.webp');
+    position: relative;
+}
+.img_section {
+    width: 160px;
+    height: 160px;
+}
+.with_img img {
+    width: 160px;
+    height: 160px;
+}
+.with_img .circle_icon {
+    display: inline-block;
+    background: #000;
+    color: white;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: 5;
+}
+
+/* 리액트 추가 css */
+path {
+    transform: scale(0.65);
+    transform-origin: center center;
+}
+.with_img .circle_icon::after {
+    content: '\f290';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: white;
+    font-style: normal;
+}
+.hover_content {
+    display: none;
+}
+.sns_button_prev {
+    display: none;
+}
+.sns_button_next {
+    display: none;
+}
+
+
+/* 태블릿 미디어 쿼리 768px 이상 */
+@media screen and (min-width:768px){
+    /* #With Sulwhasoo Area */
+    .with_sulwhasoo h2 {
+        text-align: left;
+    }
+    .with_img {
+        width: 160px;
+        height: 160px;
+        margin: 0 9px;
+        position: relative;
+        overflow: hidden;
+    }
+    .with_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .with_img .circle_icon {
+        width: 26px;
+        height: 26px;
+        line-height: 26px;
+        font-size: 14px;
+    }
+    .footer_button_bg {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        width: 70px;
+        height: 100%!important;
+    }
+    .hover_content {
+        display: none;
+    }
+    .sns_button_prev {
+        display: block;
+        left: 0;
+        background: url('../../images/main/icon/swiper_arrow_prev.png') rgba(255,255,255,.8) no-repeat center;
+        background-size: 80px 80px;
+    }
+    .sns_button_next {
+        display: block;
+        right: 0;
+        background: url('../../images/main/icon/swiper_arrow_next.png') rgba(255,255,255,.8) no-repeat center;
+        background-size: 80px 80px;
+    }
+
+    .swiper-button-sns {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        width: 50px;
+        height: 100%;
+        background-color: rgba(255,255,255,.4);
+        cursor: pointer;
+    }
+}
+
+/* PC 미디어 쿼리 1024px 이상 */
+@media screen and (min-width:1024px){
+    /* #With Sulwhasoo Area */
+    .with_sulwhasoo h2 {
+        font-size: 28px;
+        padding-bottom: 30px;
+    }
+    .withSwiper {
+        cursor: url('../../images/main/icon/cursor_img.webp'), auto;
+    }
+    .with_img {
+        width: 301px !important;
+        height: 301px !important;
+        margin: 0;
+        position: relative;
+    }
+    .with_img img {
+        width: 301px !important;
+        height: 301px !important;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+    }
+    .hover_content {
+        display: none;
+        transform: translateY(0px);
+        transition: transform 0.3s ease-in-out;
+    }
+    .swiper-slide:hover .hover_content {
+        display: block;
+    }
+    
+    .with_img .sns_info {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+        position: relative;
+    }
+    .with_img .sns_info::before {
+        content: "";
+        position: absolute;
+        top: 36px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 375px;
+        height: 134px;
+        background-color: white;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .with_img .sns_txt {
+        background-color: #fff;
+        width: 100%;
+        position: relative;
+        bottom: -66px;
+        z-index: 100;
+        cursor: pointer;
+    }
+    .with_img .sns_txt .user_id {
+        color: #323a45;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 4px;
+        font-size: 13px;
+        cursor: pointer;
+        display: block;
+    }
+    .with_img .sns_txt .user_caption {
+        color: #4d5866;
+        display: block;
+        font-size: 12px;
+        overflow: hidden;
+        padding: 15px 10px;
+        position: relative;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .swiper-button-sns {
+        width: 70px;
+        height: 100%;
+        z-index: 1;
+        opacity: 1;
+    }
+    .swiper-button-sns {
+        height: 100% !important;
+        background-color: rgba(255,255,255,.8) !important;
+    }
+    .sns_button_prev {
+        display: block;
+        left: 0;
+        background: url('../../images/main/icon/swiper_arrow_prev.png') rgba(255,255,255,.8) no-repeat center;
+        background-size: 80px 80px;
+    }
+    .sns_button_next {
+        display: block;
+        right: 0;
+        background: url('../../images/main/icon/swiper_arrow_next.png') rgba(255,255,255,.8) no-repeat center;
+        background-size: 80px 80px;
+    }
+}

@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/* Bestseller Area */
+.bestseller {
+    margin-top: 98px;
+    padding: 0 20px;
+    position: relative;
+}
+.bestseller picture img {
+    max-width: 100%;
+}
+.bestseller_txt {
+    position: absolute;
+    left: 15%;
+    bottom: 8.3333333333%;
+    line-height: 1.7;
+}
+.bestseller_txt h2 {
+    font-size: 24px;
+    letter-spacing: -.025em;
+    font-weight: 500;
+}
+.bestseller_txt p {
+    color: #666;
+    font-size: 14px;
+    font-weight: 300;
+}
+.bestseller_txt button {
+    font-size: 11px;
+    padding: 5px 20px;
+    margin: 18px 0 0 0;
+    border: 1px solid rgba(0,0,0,.4);
+    cursor: pointer;
+}
+
+/* 태블릿 미디어 쿼리 768px 이상 */
+@media screen and (min-width:768px){
+    /* 베스트셀러 텍스트 위치 수정 */
+    .bestseller_txt {
+        left: 12.1951219512%;
+        bottom: 16%;
+    }
+    .bestseller_txt button {
+        font-size: 10px;
+        margin: 20px 0 0 0;
+        letter-spacing: -.025em;
+        padding: 8px 23px;
+        border: 1px solid #000;
+    }
+}
+
+/* PC 미디어 쿼리 1024px 이상 */
+@media screen and (min-width:1024px){
+    /* 베스트셀러 css */
+    .bestseller {
+        margin-top: 120px;
+        padding: 0 24px;
+    }
+    .bestseller picture img {
+        width: 100%;
+    }
+    .bestseller_txt h2 {
+        font-size: 32px;
+    }
+    .bestseller_txt p {
+        font-size: 18px;
+        padding: 7px 0 0 0;
+    }
+    .bestseller_txt button {
+        font-size: 14px;
+        padding: 8px 23px;
+        margin: 26px 0 0 0;
+    }
+}
+

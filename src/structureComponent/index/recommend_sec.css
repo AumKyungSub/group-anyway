@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+/* Recommend Area */
+.recommend {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 36px;
+    padding: 0 20px;
+}
+.recommend h1 {
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 24px;
+    color: black;
+    font-weight: 500;
+}
+.recommend_card {
+    position: relative;
+    z-index: 1;
+}
+.recommend_card img {
+    width: 100%;
+}
+
+/* 추천섹션 텍스트 css */
+.recommend_txt {
+    text-align: center;
+    line-height: 1.5;
+}
+.recommend_txt h2 {
+    font-weight: 500;
+    margin-top: 23px;
+    font-size: 16px;
+}
+.recommend_txt span {
+    font-weight: 600;
+}
+.recommend_txt p {
+    font-size: 13px;
+    padding: 2px 0 10px;
+    color: #888;
+}
+.recommend_txt .price {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -.025em;
+    color: #000;
+}
+
+/* 슬라이드 이전/다음 버튼 */
+.swiper-button-sec2 {
+    position: absolute;
+    top: 32%;
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255,255,255,.4);
+    cursor: pointer;
+}
+.swiper_button_prev {
+    position: absolute;
+    left: 0;
+    background: url('../../images/main/icon/swiper_arrow_prev.png') rgba(255,255,255,.4) no-repeat center;
+    background-size: 40px 40px;
+}
+.swiper_button_next {
+    position: absolute;
+    right: 0;
+    background: url('../../images/main/icon/swiper_arrow_next.png') rgba(255,255,255,.4) no-repeat center;
+    background-size: 40px 40px;
+}
+
+
+/* 프로그레스바 */
+.recommend_container {
+    position: relative;
+    margin-top: 20px;
+}
+.recommend_container_inner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.recommend_progressbar {
+    width: 90% !important;
+    position : relative;
+}
+.recommend_container_inner .swiper-pagination-progressbar {
+    background: rgba(0,0,0,0.3);
+}
+
+.recommend_container .swiper-pagination-progressbar-fill {
+    background: #000 !important;
+    height: 3px !important;
+}
+
+
+/* 슬라이드 재생/멈춤 */
+.recommend_container_inner .recommend_pause {
+    width: 13px;
+    height: 16px;
+    z-index: 30;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  .recommend_container_inner .recommend_pause > span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-left: 3.5px solid #aeaeae;
+    border-right: 3.5px solid #aeaeae;
+  }
+  
+  /* 추가된 스타일 */
+  .recommend_container_inner .recommend_pause.active > span {
+    border-left: 10px solid #aeaeae;
+    border-right: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+  }
+
+  /* 추가된 스타일 */
+  .recommend_container_inner .recommend_play.active > span {
+    border-left: 10px solid #aeaeae;
+    border-right: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+}
+
+
+/* 태블릿 미디어 쿼리 768px 이상 */
+@media screen and (min-width:768px){
+    /* Recommend Area */
+    .recommend {
+        margin-top: 85px;
+    }
+    .recommend h1 {
+        text-align: left;
+        font-weight: 500;
+    }
+
+    /* 추천섹션의 이미지 크기 변경 */
+    .recommend_card img {
+        width: 30.9479vw;
+    }
+    /* 프로그레스바 */
+    .recommend_container_inner {
+        /* flex-start -> center */
+        justify-content: center;
+    }
+    .recommend_progressbar {
+        width: 300px !important;
+        position : relative;
+    }    
+
+    /* 슬라이드 재생/멈춤 아이콘 크기 수정 */
+    .recommend_container_inner .recommend_play > span {
+        border-left: 7px solid #aeaeae;
+        border-right: 0;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+    }
+    .recommend_container {
+        position: relative !important;
+        margin-top: 36px;
+    }
+    /* 베스트셀러 텍스트 위치 수정 */
+    .bestseller_txt {
+        left: 12.1951219512%;
+        bottom: 16%;
+    }
+    .bestseller_txt button {
+        font-size: 10px;
+        margin: 20px 0 0 0;
+        letter-spacing: -.025em;
+        padding: 8px 23px;
+        border: 1px solid #000;
+    }
+    
+    /* 슬라이드 이전/다음 버튼 */
+    .swiper-button-sec2 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        width: 50px;
+        height: 50px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(255,255,255,.4);
+        cursor: pointer;
+    }
+    .swiper-button-sec2 {
+        position: absolute;
+        top: 32%;
+        transform: translateY(-50%);
+        z-index: 1;
+        width: 50px;
+        height: 50px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(255,255,255,.4);
+        cursor: pointer;
+    }
+    .pc_swiper_prev {
+        display: block;
+        position: absolute;
+        left: 0;
+        background: url('../../images/main/icon/swiper_arrow_prev.png') rgba(255,255,255,.4) no-repeat center;
+        background-size: 50px 50px;
+    }
+    .pc_swiper_next {
+        display: block;
+        position: absolute;
+        right: 0;
+        background: url('../../images/main/icon/swiper_arrow_next.png') rgba(255,255,255,.4) no-repeat center;
+        background-size: 50px 50px;
+    }
+}
+
+/* PC 미디어 쿼리 1024px 이상 */
+@media screen and (min-width:1024px){
+    /* Recommend Area */
+    .recommend {
+        margin-top: 85px !important;
+    }
+
+    .recommend h1 {
+        font-size: 28px;
+        letter-spacing: -.025em;
+        padding-bottom: 20px;
+    }
+
+    /* 추천섹션의 이미지 크기 변경 */
+    .recommend_card img {
+        width: 100%;
+        margin-right: 24px;
+    }
+    .swiper_button_prev,
+    .swiper_button_next {
+        top: 37%;
+    }
+
+    /* 추천섹션 css */
+    .recommend_txt {
+        text-align: center;
+        line-height: 1.5;
+    }
+    .recommend_txt h2 {
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: -.025em;
+        margin-top: 23px;
+    }
+    .recommend_txt span {
+        font-weight: 600;
+    }
+    .recommend_txt p {
+        font-size: 16px;
+        letter-spacing: -.025em;
+        color: #888;
+        padding: 2px 0 14px;
+    }
+    .recommend_txt .price {
+        font-size: 16px;
+        letter-spacing: -.025em;
+    }
+
+    .recommend_progressbar {
+        width: 420px !important;
+        position : relative;
+    }
+}

@@ -1,0 +1,26 @@
+/* spaPro_intro */
+.spaPro_intro_img {
+    text-align: center;
+}
+.spaPro_intro_img img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+@media screen and (min-width:768px){
+    /* 태블릿단 세이프에리어 */
+    .spaPro_intro_img  {
+        max-width: 1100px;
+        padding: 0 30px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .spaPro_intro_img {
+        max-width: 100%;
+        padding: 0 7%;
+        margin: 0 auto;
+    }
+}

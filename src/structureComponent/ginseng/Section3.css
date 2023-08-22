@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+/* Section 3 */
+.ginseng-section3 {
+  display: block;
+  margin: 0 auto;
+}
+.ginseng-section3 img {
+  width: 100%;
+}
+.ginseng-section3 .text-wrap {
+  font-family: Theinhardt, NotoSans, "Malgun Gothic", "맑은 고딕",
+    "Nanum Gothic", "나눔 고딕", "돋움", dotum, sans-serif;
+  text-align: center;
+  padding: 16.555% 0;
+}
+.ginseng-section3 .text-wrap .ginsengName-kr {
+  font-size: 6.111111111111111vw;
+  font-weight: 600;
+}
+.ginseng-section3 .text-wrap .ginsengName-en {
+  font-size: 3.4666666666666663vw;
+  letter-spacing: 0.5px;
+  color: #888;
+  margin-top: 1.7317722222%;
+}
+.ginseng-section3 .text-wrap > p:nth-of-type(2) {
+  margin: 6.111111111111111% 0;
+  font-size: 3.4666666666666663vw;
+}
+.ginseng-section3 .text-wrap .price-part {
+  font-size: 3.733333333333333vw;
+  font-weight: 300;
+
+  /* 플렉스 */
+  display: flex;
+  justify-content: center;
+}
+.ginseng-section3 .price-part p {
+  font-weight: 700;
+}
+.ginseng-section3 .btn-wrap {
+  width: 100%;
+  margin-top: 8.663194444444445%;
+
+  /* 플렉스 */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.ginseng-section3 .btn-wrap a {
+  padding: 2.9166666666666665% 5.777778%;
+  border: 1px solid #000;
+  font-size: 3.4666666666666663vw;
+  font-weight: 600;
+  letter-spacing: -0.1em;
+}
+.ginseng-section3 .btn-wrap a:nth-child(2) {
+  background: #000;
+  color: #fff;
+  margin-left: 6px;
+}
+.ginseng-section3 .text-wrap .price-part span {
+  color: #888;
+}
+
+.ginseng-section3 .product-img img {
+  width: 100%;
+}
+
+/* 태블릿 750px이상 : 1920기준 */
+@media screen and (min-width: 751px) {
+  .ginseng-section3 {
+    /* 수정 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ginseng-section3 .text-wrap {
+    /* 추가 */
+    width: 50%;
+
+    /* 수정 */
+    padding: 0;
+  }
+  .ginseng-section3 .product-img {
+    /* 추가 */
+    width: 50%;
+  }
+  .ginseng-section3 .text-wrap .ginsengName-kr {
+    /* 수정 */
+    font-size: max(var(--font-size), 2.1875vw);
+    letter-spacing: -0.05em;
+  }
+  .ginseng-section3 .text-wrap .ginsengName-en {
+    font-size: max(var(--font-size), 1.25vw);
+  }
+  .ginseng-section3 .text-wrap > p:nth-of-type(2) {
+    /* 수정 */
+    font-size: max(var(--font-size), 1.25vw);
+  }
+  .ginseng-section3 .text-wrap .price-part {
+    /* 수정 */
+    font-size: max(var(--font-size), 1.3541666666666667vw);
+  }
+  .ginseng-section3 .price-part p {
+    /* 수정 */
+    font-weight: 600;
+  }
+  .ginseng-section3 .btn-wrap a {
+    /* 수정 */
+    font-size: max(var(--font-size), 1.25vw);
+  }
+}

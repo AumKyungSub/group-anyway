@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* Important!!!!!!!! */
+.dpNone {
+  display: none;
+}
+.dpNone_m {
+  display: none !important;
+}
+.dpNone_p {
+  display: block !important;
+}
+[class*="dpn_m_"] {
+  display: none;
+}
+
+/******************** PC 1024px ************************/
+@media only all and (min-width: 1024px) {
+  .dpNone_m {
+    display: block !important;
+  }
+  .dpNone_p {
+    display: none !important;
+  }
+}

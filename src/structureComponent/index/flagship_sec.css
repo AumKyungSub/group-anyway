@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/* Flagship Area */
+.flagship {
+    padding: 0 20px;
+    margin-top: 95px;
+    text-align: center;
+}
+.bukchon_box, .dosan_box {
+    width: 100%;
+}
+.bukchon img, .dosan img {
+    width: 100%;
+}
+.bukchon h2, .dosan h2 {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 28px 0 20px;
+}
+.bukchon button {
+    margin-bottom: 45px;
+}
+.bukchon button, .dosan button {
+    font-size: 11px;
+    padding: 6px 20px;
+    border: 1px solid rgba(0,0,0,.4);
+    cursor: pointer;
+}
+
+/* 태블릿 미디어 쿼리 768px 이상 */
+@media screen and (min-width:768px){
+    /* Flagship Area */
+    .flagship_container {
+        display: flex;
+        justify-content: center;
+        margin: 0 -10px;
+    }
+    .bukchon_box, .dosan_box {
+        width: 100%;
+        margin: 0 10px;
+    }
+    .bukchon img, .dosan img {
+        width: 100%;
+    }
+    .bukchon, .dosan {
+        margin: 0 10px;
+    }
+    .bukchon button, .dosan button {
+        font-size: 10px;
+        padding: 2.171875% 4.39453125%;
+        border: 1px solid #000;
+    }
+}
+
+/* PC 미디어 쿼리 1024px 이상 */
+@media screen and (min-width:1024px){
+    /* Flagship Area */
+    .bukchon h2, .dosan h2 {
+        font-size: 28px;
+        padding: 25px 0 30px;
+    }
+    .bukchon button, .dosan button {
+        font-size: 14px;
+        padding: 1.3020833333% 4.6875%;
+    }
+    .bukchon img, .dosan img {
+        width: 100%;
+    }
+
+}

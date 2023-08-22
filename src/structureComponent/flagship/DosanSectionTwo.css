@@ -1,0 +1,22 @@
+/* Section2 */
+.main_dosan .sec_2 {
+    display: block;
+  }
+  .main_dosan .sec_2::before {
+    content: none;
+  }
+
+/******************** PC 1024px ************************/
+@media only all and (min-width: 1024px) {
+    /* Section2 */
+    .main_dosan .sec_2 {
+      width: 100%;
+      /* Position */
+      position: relative;
+      z-index: 0;
+    }
+    .main_dosan .sec_2::before {
+      content: none;
+    }
+
+}

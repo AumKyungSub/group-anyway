@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/* Section 6 */
+.ginseng-section6 {
+  margin-top: 23.333333333333332%;
+}
+.section6-img-wrap {
+  /* 위치기준값 */
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: auto;
+}
+.ginseng-section6 .text-wrap {
+  /* 포지션 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 16.11111111111111% 0 0 8.055555555555555%;
+}
+.ginseng-section6 img {
+  width: 100%;
+}
+.ginseng-section6 .text-wrap h3 {
+  font-size: 6.933333333333333vw;
+  font-weight: 700;
+  line-height: 1.38;
+  margin-bottom: 3.3333333333333335%;
+  letter-spacing: -0.06em;
+}
+.ginseng-section6 .text-wrap p {
+  font-size: 3.4666666666666663vw;
+  line-height: 1.53;
+  letter-spacing: -0.14em;
+}
+
+/* 태블릿 750px이상 : 1920기준 */
+@media screen and (min-width: 751px) {
+  .ginseng-section6 {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .ginseng-section6 {
+    /* 수정 */
+    margin-top: 8.1145733333%;
+    text-align: left;
+  }
+  .ginseng-section6 img {
+    width: 31.25vw;
+  }
+  .section6-img-wrap {
+    /* 수정 */
+    margin: 0 auto;
+
+    /* 플렉스 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12.5%;
+  }
+  /* 추가 */
+  .section6-img-wrap .section6-img-part {
+    padding-left: 1.3888888889%;
+  }
+  .ginseng-section6 .text-wrap {
+    /* 수정 */
+    position: static;
+    padding: 0 0 0 8.055555555555555%;
+  }
+  .ginseng-section6 .text-wrap h3 {
+    /* 수정 */
+    font-size: max(var(--font-size), 2.5vw);
+  }
+  .ginseng-section6 .text-wrap p {
+    /* 수정 */
+    font-size: max(var(--font-size), 1.25vw);
+  }
+}

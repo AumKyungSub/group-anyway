@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* 전체 공통 */
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+/* Main */
+.main_dosan {
+  width: 100%;
+  overflow-x: hidden;
+  /* Font Common */
+  color: #fff;
+}
+.main_dosan .sec_1 div,
+.main_dosan .sec_2 div {
+  padding-top: 0;
+}
+
+/* Important!!!!!!!! */
+.dpNone {
+    display: none;
+}
+.dpNone_m {
+    display: none !important;
+}
+.dpNone_p {
+    display: block !important;
+}
+[class*='dpn_m_'] {
+    display: none;
+}
+
+/******************** PC 1024px ************************/
+@media only all and (min-width: 1024px) {
+  .dpNone_m {
+      display: block !important;
+  }
+  .dpNone_p {
+      display: none !important;
+  }
+  /* Main */
+  .main_dosan {
+    overflow-x: visible;
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,182 @@
+/* section03 */
+.yunjo_essence_info {
+    width: 100%;
+    padding: 15.4% 0;
+    text-align: center;
+}
+.yunjo_essence_info h2 p:nth-child(1) {
+    font-size: 6.1333333333vw;
+    font-weight: 600;
+}
+.yunjo_essence_info h2 p:nth-child(2) {
+    margin-top: 1.3333%;
+    font-size: 3.4666666667vw;
+    color: #888;
+}
+.yunjo_essence_info h2 p:nth-child(3) {
+    margin-top: 6.2667%;
+    font-size: 3.4666666667vw;
+}
+.yunjo_essence_info h3 {
+    margin-top: 6.4%;
+    font-size: 3.7333vw;
+    font-weight: 500;
+    color: #888;
+    /* animation: fadeIn60 1.2s ease-in-out; */
+}
+.yunjo_essence_info h3 span {
+    font-weight: 500;
+    color: #222;
+    margin-left: 1.875%;
+}
+.yunjo_essence_info h3 span:first-child::after {
+    content: "|";
+    margin: 0 2%;
+    color: #999;
+}
+.yunjo_essence_info article {
+    width: 100%;
+    margin-top: 8.6667%;
+    /* 플렉스 */
+    display: flex;
+    justify-content: center;
+}
+.yunjo_essence_info article button {
+    width: 31.3333vw;
+    padding: 2.9333% 0;
+    text-align: center;
+    font-size: 3.4667vw;
+    font-weight: 600;
+}
+.yunjo_essence_info article button:nth-child(1){
+    border: 1px solid #222;
+    color: #222;
+    /* animation: fadeIn60 1s ease-in-out; */
+}
+.yunjo_essence_info article button:nth-child(2){
+    margin-left: 1.6667%;
+    background-color: #222;
+    border: 1px solid #222;
+    color: #fff;
+    /* animation: fadeIn60 1.1s ease-in-out; */
+}
+/* yunjo essence 이미지 */
+.yunjo_essence_img {
+    margin-bottom: 21.2%;
+}
+.yunjo_essence_img img {
+    width: 100%;
+    height: 100%;
+    /* animation: scale 1.5s ease; */
+}
+/* yunjo video02 */
+.yunjo_video02 {
+    padding: 0 5.3333333333%;
+}
+.yunjo_video02 h2 {
+    font-size: 3.2vw;
+    color: #e86e25;
+    text-align: center;
+    letter-spacing: .1em;
+    word-spacing: 0.05em;
+    padding-bottom: 4.375%;
+    font-weight: 300;
+    /* animation: fadeIn80 1s ease-in-out; */
+}
+#video02 {
+    width: 100%;
+    /* animation: fadeIn80 1.1s ease-in-out; */
+}
+
+
+
+@media screen and (min-width:768px){
+    /* section03 */
+    #yunjo_sec03 br.mo {
+        display: none;
+    }
+    /* 속성값 추가 */
+    #yunjo_sec03 {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 9.37%;
+        /* 플렉스 */
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: space-between;
+        /* align-items: center; */
+    }   
+    /* 속성값 추가 */
+    .yunjo_essence_info {
+        width: 50%;
+        padding: 0;
+        /* 플렉스 */                                                                      
+        display: flex;                            
+        justify-content: center;              
+        align-items: center;            
+    }
+    /* 요소 추가 */
+    .yunjo_essence_info_flex {
+        width: 50%;
+        text-align: left;
+    }
+    /* 속성값 수정 */
+    .yunjo_essence_info h2 p:nth-child(1) {
+        font-size: 2.1875vw;
+    }
+    /* 속성값 수정 */
+    .yunjo_essence_info h2 p:nth-child(2) {
+        font-size: 1.25vw;
+        margin-top: 2.2917%;
+    }
+    /* 속성값 수정 */
+    .yunjo_essence_info_flex h2 p:nth-child(3) {
+        font-size: 1.35vw;
+        margin-top: 8.3333333333%;
+        margin-bottom: 8.75%;
+    }
+    /* 속성값 수정 */
+    .yunjo_essence_info h3 {
+        font-size: 1.25vw;
+        margin-top: 0;
+    }
+    /* 속성 추가 */
+    .yunjo_essence_info article {
+        margin-top: 14.1666666667%;
+        justify-content: flex-start;
+    }
+    /* 속성값 수정 */
+    .yunjo_essence_info article button {
+        /* (88/384)*100 = 22.916666666666664 */
+        /* width: 22.916666666666664%; */
+        width: 11.4583vw;
+        padding: 4.1666666667% 0;
+        font-size: 1.25vw;
+        display: inline-block;
+    }
+    .yunjo_essence_info article button:nth-child(2) {
+        margin-left: 3.6667%;
+    }
+    /* 속성값 추가 */
+    .yunjo_essence_img {
+        width: 50%;
+        height: 100%;
+    }
+    /* 속성값 수정 */
+    .yunjo_essence_img {
+        margin-bottom: 0;
+    }
+/* yunjo video02 */
+    /* 속성값 수정 */
+    .yunjo_video02 {
+        margin: 0 auto;
+        padding: 0 12.5%;
+    }
+    /* 속성값 수정 */
+    .yunjo_video02 h2 {
+        font-size: 1.1458vw;
+    }
+}
+@media screen and (min-width:1024px){
+
+}

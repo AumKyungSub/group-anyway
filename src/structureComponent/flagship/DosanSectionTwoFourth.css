@@ -1,0 +1,191 @@
+/* Section2 4th */
+.main_dosan .sec_2_fourth {
+    /* padding: 9.867vw 0 14vw !important; */
+    background-color: #f2eeec;
+  }
+  .main_dosan .sec_2_fourth h3::before {
+    content: " ";
+    width: 100%;
+    height: 9.867vw;
+    background-color: transparent;
+    display: block;
+  }
+  .main_dosan .sec_2_fourth h3 {
+    padding-bottom: 2.1649vw !important;
+  }
+  .main_dosan .sec_2_4th_content {
+    width: 86.4vw !important;
+    height: 100% !important;
+    margin: 0 auto;
+    background-color: #fff;
+    /* Position */
+    position: relative;
+  }
+  .main_dosan .empty_bottom {
+    content: " ";
+    width: 100%;
+    height: 14vw;
+    background-color: transparent;
+    display: block;
+  }
+  .main_dosan .sec_2_4th_img_cover {
+    width: 100%;
+    height: 56.0911vw;
+    /* Flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_dosan .sec_2_4th_content img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+  .main_dosan .sec_2_4th_text_cover {
+    padding: 4.267vw 4.444vw 18.934vw 5.333vw !important;
+    /* Font */
+    font-size: 3.733vw;
+    color: #74675e;
+    font-weight: 400;
+  }
+  .main_dosan .sec_2_4th_text_cover h4 {
+    text-align: left;
+    /* Position */
+    position: relative;
+  }
+  .main_dosan .sec_2_4th_text_cover h4 span {
+    /* Font */
+    font-family: "Theinhardt";
+    font-size: 5.867vw;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #25150b;
+  }
+  .main_dosan .sec_2_4th_text_cover h4::after {
+    content: " ";
+    width: 4.667vw;
+    height: 1px;
+    display: block;
+    background-color: #1f1a15;
+    /* Position */
+    position: absolute;
+    bottom: -1vw;
+    left: 0;
+    z-index: 1;
+  }
+  .main_dosan .sec_2_4th_text_cover p {
+    padding-top: 2.933vw;
+    word-break: keep-all;
+    /* Font */
+    letter-spacing: -0.8px;
+    text-align: left;
+  }
+  .main_dosan .time {
+    padding-top: 4vw !important;
+  }
+  .main_dosan .time span {
+    padding-bottom: 1vw !important;
+  }
+  .main_dosan .time::after {
+    content: " ";
+    width: 100%;
+  }
+  .main_dosan .sec_2_4th_reservation {
+    width: calc(100% - 8.534vw) !important;
+    padding-top: 1.031vw !important;
+    /* Position */
+    position: absolute;
+    bottom: 4.267vw;
+    left: 4.267vw;
+    /* Font */
+    font-size: 3.2vw;
+    color: #000;
+    text-size-adjust: 100%;
+  }
+  .main_dosan .sec_2_4th_reservation a {
+    width: 100%;
+    height: 9.867vw;
+    font-size: 3.2vw;
+    border: 1px solid rgb(106, 100, 95);
+    /* Reset from Main CSS  */
+    background: none !important;
+    text-shadow: none !important;
+    padding-right: 0 !important;
+  }
+  .main_dosan .sec_2_4th_reservation a {
+    /* Flex */
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+/******************** PC 1024px ************************/
+@media only all and (min-width: 1024px) {
+    /* Section2 4th */
+    .main_dosan .sec_2_fourth h3::before {
+      height: 4.639vw;
+    }
+    .main_dosan .sec_2_fourth h3 {
+      width: 66.804vw;
+      max-width: 1296px;
+      margin: 0 auto;
+      /* Font */
+      font-size: 2.835vw;
+      letter-spacing: 0.103vw;
+      line-height: 1.5;
+    }
+    .main_dosan .sec_2_4th_content {
+      width: 66.804vw !important;
+      max-width: 1296px;
+      height: auto;
+      /* Flex */
+      display: flex;
+    }
+    .main_dosan .sec_2_4th_img_cover {
+      width: 58.333% !important;
+      height: auto;
+    }
+    .main_dosan .sec_2_4th_content img {
+      max-width: 100%;
+      height: auto;
+    }
+    .main_dosan .sec_2_4th_text_cover {
+      width: calc(100% - 58.333%) !important;
+      padding: 1.701vw 0 1.289vw 2.165vw !important;
+    }
+    .main_dosan .sec_2_4th_text_cover h4 {
+      /* Font */
+      font-size: 1.031vw;
+      color: #74675e;
+      font-weight: 400;
+    }
+    .main_dosan .sec_2_4th_text_cover h4 span {
+      /* Font */
+      font-size: 1.753vw;
+      line-height: 1.5;
+    }
+    .main_dosan .sec_2_4th_text_cover h4::after {
+      width: 1.804vw;
+      /* Position */
+      bottom: -0.464vw;
+    }
+    .main_dosan .sec_2_4th_text_cover p {
+      padding-top: 1.134vw;
+      word-break: normal;
+      /* Font */
+      font-size: 1.031vw;
+      letter-spacing: -1.3px;
+    }
+    .main_dosan .time {
+      padding-top: 1.031vw !important;
+    }
+    .main_dosan .sec_2_4th_reservation {
+      display: none;
+    }
+    .main_dosan .empty_bottom {
+      width: 100%;
+      max-width: calc(100vw - ((100vw - 66vw) / 2));
+      height: 10.309vw;
+    }
+
+}

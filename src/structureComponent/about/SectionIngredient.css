@@ -1,0 +1,17 @@
+/* ingredient */
+.content_wrap .ingredient {
+    padding: 6.6666666667vw 0;
+}
+.content_wrap .ingredient h1{
+    margin-top: 6.6666666667vw;
+}
+@media screen and (min-width:751px) {
+     /* ingredient */
+     .content_wrap .ingredient {
+        padding: 2.6041666667vw 0;
+    }
+    .content_wrap .ingredient h1{
+        margin-top: 3.6458333333vw;
+    }
+
+}

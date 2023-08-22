@@ -1,0 +1,42 @@
+/* Section2 */
+.sec_2::before { 
+    /* Background */
+    background-image: url('../../images/flagship/main/intro_bukchon_mobile.jpg');
+    background-position: right center;
+    /* Position */
+    bottom: 0;
+    /* Effects */
+    animation: bukchonAni .5s ease-in-out forwards;
+}
+
+@keyframes bukchonAni {
+    from {
+        left: 0;
+    }
+    to{
+        left: -20vw;
+    }
+}
+/******************** PC 1024px ************************/
+@media only all and (min-width: 1024px) {
+    
+    /* Section2 */
+    .sec_2::before { 
+        /* Background */
+        background-image: url('../../images/flagship/main/intro_bukchon.jpg');
+        /* 포지션 */
+        position: absolute;
+        right: 0;
+        /* Effects */
+        animation: none;
+    }
+    .sec_2::after {
+        right: 0;
+    }
+
+
+}
+
+/* PC over 1440px */
+@media only all and (min-width: 1441px) {
+}

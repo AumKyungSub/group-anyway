@@ -1,0 +1,37 @@
+/* Section1 */
+.sec_1::before { 
+    /* Background */
+    background-image: url('../../images/flagship/main/intro_dosan_mobile.jpg');
+    background-position: left center;
+    /* Effects */
+    animation: dosanAni .5s ease-in-out forwards;
+}
+
+@keyframes dosanAni {
+    from {
+        right: 0;
+    }
+    to{
+        right: -20vw;
+    }
+}
+/******************** PC 1024px ************************/
+@media only all and (min-width: 1024px) {
+    /* Section1 */
+    .sec_1::before { 
+        /* Background */
+        background-image: url('../../images/flagship/main/intro_dosan.jpg');
+        position: absolute;
+        left: 0;
+        /* Effects */
+        animation: none;
+    }
+    .sec_1::after{
+        left: 0;
+    }
+
+}
+
+/* PC over 1440px */
+@media only all and (min-width: 1441px) {
+}

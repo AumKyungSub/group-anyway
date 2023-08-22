@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+/* ================== Moblie Content Area ==================== */
+.gift_section {
+    margin-top: 7.3333333333%;
+    text-align: center;
+    cursor: default;
+}
+.gift_txt p:first-child {
+    margin-bottom: 3.7333333333%;
+    /* 브라우저 너비에 따라 반응하는 폰트사이즈 */
+    font-size: max(11px,4.5333333333vw);
+    font-weight: 600;
+    letter-spacing: .3em;
+    color: black;
+}
+.gift_txt h2 {
+    color: black;
+    font-weight: 700;
+    font-size: max(11px,6.9333333333vw);
+}
+.tab_pc_only {
+    display: none;
+}
+.video_container {
+    margin-top: 5.6%;
+}
+.content_box {
+    position: relative;
+}
+.content_box:nth-child(2) {
+    margin-top: -2px;
+}
+.content_box .video_section video {
+    width: 100%;
+    cursor: pointer;
+}
+.content_box .poster_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.content_box .poster_img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 비디오 컨트롤러 숨기기 */
+.video_section video::-webkit-media-controls-panel {
+    display: none;
+}
+.video_poster_txt {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    color: #fff;
+}
+.video_poster_txt p {
+    margin-top: 36.4%;
+    margin-bottom: 2.6666666667vw;
+    font-size: max(11px,3.4666666667vw);
+    font-weight: 500;
+}
+.video_poster_txt h2 {
+    font-size: max(11px,5.6vw);
+    font-weight: 600;
+}
+.more_info {
+    position: absolute;
+    bottom: 0;
+    font-weight: 500;
+    color: #fff;
+    border-bottom: 1.5px solid #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: max(11px,3.2vw);
+    margin-bottom: 36%;
+    padding: 0 0 .9333333333% 0;
+    cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 태블릿 미디어 쿼리 768px 이상 */
+@media screen and (min-width:768px){
+    .gift_section {
+        margin-top: 2.1875%;
+    }
+    .gift_txt p:first-child {
+        margin-bottom: .9375%;
+        font-size: max(11px,1.1458333333vw);
+        letter-spacing: .1em;
+    }
+    .gift_txt h2 {
+        font-size: max(11px,1.5625vw);
+    }
+    /* 태블릿/PC에서만 나오는 텍스트 */
+    .tab_pc_only {
+        letter-spacing: 1;
+        color: black;
+        display: block;
+        font-size: max(11px,.9375vw);
+        margin-top: .8333333333%;
+        font-weight: 400;
+    }
+    .video_container {
+        margin-top: 1.4583333333%;
+        display: flex;
+        cursor: pointer;
+    }
+    .content_box {
+        flex: 1;
+    }
+    .content_box:nth-child(2) {
+        margin-top: -2px;
+    }
+    .content_box .video_section {
+        height: 100%;
+    }
+    .content_box .video_section video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .content_box:nth-child(2) {
+        margin: 0;
+    }
+    .video_poster_txt {
+        transform: translateX(-50%);
+        top: 0;
+    }
+    .video_poster_txt p {
+        margin-bottom: 0.7291666667vw;
+        font-size: max(11px,.8333333333vw);
+    }
+    .video_poster_txt h2 {
+        font-size: max(11px,1.3541666667vw);
+        font-weight: 600;
+    }
+    .more_info {
+        font-size: max(11px,.8333333333vw);
+        margin-bottom: 6.25%;
+    }
+}
+
+@media screen and (min-width:1024px){
+    /* =============== gift_section CSS =============== */
+    .gift_section {
+        margin-top: 4.1875%;
+    }
+    /* 태블릿/PC에서만 나오는 텍스트 */
+    .tab_pc_only {
+        letter-spacing: 1;
+        color: black;
+        display: block;
+        font-size: max(11px,.9375vw);
+        margin-top: .8333333333%;
+        font-weight: 400;
+    }
+    .video_container {
+        margin-top: 1.4583333333%;
+        display: flex;
+        cursor: pointer;
+    }
+    .content_box {
+        flex: 1;
+    }
+    .content_box:nth-child(2) {
+        margin-top: -2px;
+    }
+    .content_box .video_section {
+        height: 100%;
+    }
+    .content_box .video_section video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .content_box:nth-child(2) {
+        margin: 0;
+    }
+    .video_poster_txt {
+        transform: translateX(-50%);
+        top: 0;
+    }
+    .video_poster_txt p {
+        margin-bottom: 0.7291666667vw;
+        font-size: max(11px,.8333333333vw);
+    }
+    .video_poster_txt h2 {
+        font-size: max(11px,1.3541666667vw);
+        font-weight: 600;
+    }
+    .more_info {
+        font-size: max(11px,.8333333333vw);
+        margin-bottom: 6.25%;
+    }
+    
+}

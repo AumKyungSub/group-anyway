@@ -1,0 +1,129 @@
+/* Section2 2nd */
+.main_dosan .sec_2_second {
+    background-color: #fcf5ef;
+  }
+  .main_dosan .sec_2_second > h3 {
+    display: block;
+    padding-top: 9.867vw;
+    margin-bottom: 7.333vw;
+  }
+  .main_dosan .video_play_btn {
+    width: 100%;
+    height: 56.267vw;
+    cursor: pointer;
+    font-size: 0;
+    /* Background */
+    background-image: url("../../images/flagship/dosan/video_thumbnail_dosan.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* Position */
+    position: relative;
+  }
+  .main_dosan .video_play_btn::after {
+    content: " ";
+    width: 10.667vw;
+    height: 10.667vw;
+    box-shadow: 0px 0px 0.515vw 0px rgb(0 0 0 / 40%);
+    border-radius: 50%;
+    /* Background */
+    background-image: url("../../images/flagship/icon/play_white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* Position */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .main_dosan .iframe_video {
+    height: 56.267vw;
+    /* Display None First than Display Block After Click video_play_btn */
+    display: none;
+  }
+  .main_dosan .explanation {
+    height: 28vw;
+    padding: 4vw !important;
+    background-color: #fcf5ef;
+    overflow-y: scroll;
+    /* Font */
+    font-size: 3.2vw;
+    color: #74675e;
+    text-align-last: left;
+  }
+  .main_dosan .explanation > .explanation_text > h4 {
+    /* Font */
+    font-weight: 700;
+  }
+
+/******************** PC 1024px ************************/
+@media only all and (min-width: 1024px) {
+    /* Section2 2nd */
+    .main_dosan .sec_2_second {
+      background-color: #fff;
+      /* Position */
+      position: relative;
+      left: 0;
+      top: 0;
+      z-index: -10;
+    }
+    .main_dosan .sec_2_second::before {
+      content: " ";
+      display: block;
+      width: 100%;
+      height: calc(100% - 2.68vw);
+      background-color: #fcf5ef;
+      /* Position */
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 0;
+    }
+    .main_dosan .sec_2_second > h3 {
+      display: block;
+      padding-top: 6.186vw;
+      margin-bottom: 1.031vw;
+      /* Font */
+      font-size: 2.835vw;
+      letter-spacing: 0.103vw;
+    }
+    .main_dosan .video_area_cover {
+      width: 75.773vw !important;
+      height: 100%;
+      padding: 0.825vw !important;
+      margin: 0 auto;
+      border: 2px solid #d3c2b5;
+      background-color: #fff;
+      /* Position */
+      position: relative;
+      z-index: 10;
+    }
+    .main_dosan .video_play_btn {
+      height: 42.01vw;
+      cursor: pointer;
+      margin: 0 auto;
+      /* Background */
+      background-image: url("../../images/flagship/dosan/video_thumbnail_dosan_pc.jpg");
+      /* Position */
+      z-index: 10;
+    }
+    .main_dosan .video_play_btn::after {
+      content: " ";
+      width: 5.155vw;
+      height: 5.155vw;
+    }
+    .main_dosan .iframe_video {
+      height: 425px;
+      /* Display None First than Display Block After Click video_play_btn */
+      display: none;
+    }
+    .main_dosan .explanation {
+      height: 11.031vw;
+      padding: 0.825vw !important;
+      /* Font */
+      font-size: 0.825vw;
+    }
+
+}

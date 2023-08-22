@@ -1,0 +1,17 @@
+/* Section2 1st */
+.main_bukchon .sec_2_first {
+    height: 38.867vw;
+    /* Background */
+    background-image: url("../../images/flagship/bukchon/section2_1st_bgc.jpg");
+  }
+
+/******************** PC 1024px ************************/
+@media only all and (min-width: 1024px) {
+    /* Section2 1st */
+    .main_bukchon .sec_2_first {
+      height: 11.959vw;
+      /* Background */
+      background-image: url("../../images/flagship/bukchon/section2_1st_bgc_pc.jpg");
+    }
+
+}

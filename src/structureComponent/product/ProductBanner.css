@@ -1,0 +1,8 @@
+.products_banner {
+    padding: 0;
+    text-align: center;
+}
+.products_banner img {
+    width: 100%;
+    height: auto;
+}
