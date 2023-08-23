@@ -12,7 +12,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 0 0 0;
+    padding: 20px;
     cursor: pointer;
 }
 #index_header .moblie_header_inner {
@@ -301,8 +301,8 @@ body {
         display: block;
     }
     #index_header  {
-        /* padding: 20px 0 0 0; */
-        padding-top: 20px;
+        padding: 20px 0 0 0;
+        /* padding-top: 20px; */
         z-index: 10;
         background: rgba(255, 255, 255, 0);
         transition: all .3s;
