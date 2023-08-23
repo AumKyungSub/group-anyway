@@ -13,7 +13,9 @@ strong {
     /* Font */
     font-weight: 700;
 }
-h3 {
+.main_main h3,
+.main_dosan h3,
+.main_bukchon h3 {
     /* Font */
     text-align: center;
     font-family: 'Theinhardt';
