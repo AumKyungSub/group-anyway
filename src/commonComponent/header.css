@@ -321,8 +321,8 @@ body {
         display: block;
     }
     #header {
-        /* padding: 20px 0 0 0; */
-        padding-top: 20px;
+        padding: 20px 0 0 0;
+        /* padding-top: 20px; */
         z-index: 10;
         background: rgba(255, 255, 255, 1);
         transition: all .3s;
