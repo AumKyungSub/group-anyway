@@ -6,7 +6,7 @@ body {
 /* Main */
 .main_dosan {
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   /* Font Common */
   color: #fff;
 }
