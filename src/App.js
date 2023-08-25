@@ -15,6 +15,8 @@ import Header from "./commonComponent/Header.js";
 import Footer from "./commonComponent/Footer.js";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
+import TopBtn from './commonComponent/TopBtn.js';
+
 function ConditionalHeader() {
   const location = useLocation();
 
@@ -45,6 +47,7 @@ function App() {
         <Route path="/flagshipBukchon" element={<FlagshipBukchon />} />
       </Routes>
       <Footer />
+      <TopBtn/>
     </BrowserRouter>
   );
 }

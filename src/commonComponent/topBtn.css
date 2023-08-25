@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+.scroll__container{
+    position: fixed;
+    right: 8%;
+    bottom: 0%;
+    z-index: 1;
+  }
+  #top{
+    width: 60px;
+    height: 60px;
+    background-color: #767676;
+    opacity: 0.75;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  #top img {
+    width: 100%;
+    max-width: 100%;
+  }
+  #top:hover {
+    background-color: black;
+    opacity: 0.75;
+  }
+
+  
+@media screen and (max-width:1812px){
+  .scroll__container{
+      position: fixed;
+      right: 5%;
+      bottom: 0;
+      z-index: 1;
+    }
+
+}
+@media screen and (max-width:1691px){
+  .scroll__container{
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+
+}
